@@ -52,3 +52,9 @@ assets/figures/long-vowels.svg
 - Constraints: No network-required frameworks. Use plain HTML/CSS (and minimal JS only if necessary without external CDNs).
 - Links: Include relative links to the PDFs in the repo for verification. When asserting rules, cite which PDF and section/page keyword when feasible.
 - Review: Perform a fidelity check to ensure all claims match the PDFs; avoid adding examples not supported by them.
+
+## Authoring Protocol (concise)
+- Sources of truth: The two PDFs in this repo and official Kyouro notes at `https://note.com/j9a/n`.
+- Invariants: Do not modify PDFs; keep assets local; avoid external CDNs.
+- Blog: Use `blog.html`, `post.html`, `blog.js`, and `posts/index.json` with `posts/<slug>.html` files.
+- Traceability: Prefer citing relevant PDF page keywords/sections when restating rules.

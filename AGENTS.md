@@ -48,7 +48,8 @@ assets/figures/long-vowels.svg
 - Scope: Create a static website in this repository that explains Kyouro “in the name of Yumi” (a 23-year-old biology student in Wisconsin, bilingual in English/Japanese).
 - Sources only: All website content must be derived strictly from the two PDFs in this repo: `Proposing a new romanization system of Japanese (book).pdf` and `Semantics of Tokyo Japanese.pdf`. Do not import external linguistic knowledge or assumptions.
 - No PDF changes: Never modify, rename, or move the PDF files; they are reference materials.
-- Output: A `site/` directory with `index.html`, section pages (e.g., `romanization.html`, `semantics.html`, `notation.html`, `quickstart.html`), and `styles.css`. Keep tone accessible and authored by “Yumi,” while remaining faithful to the PDFs.
+- Output location: Place HTML/CSS/JS at the repository root (do not use a `site/` directory unless explicitly requested).
+  - Required files include `index.html`, section pages (e.g., `romanization.html`, `semantics.html`, `notation.html`, `quickstart.html`), and `styles.css`.
 - Constraints: No network-required frameworks. Use plain HTML/CSS (and minimal JS only if necessary without external CDNs).
 - Links: Include relative links to the PDFs in the repo for verification. When asserting rules, cite which PDF and section/page keyword when feasible.
 - Review: Perform a fidelity check to ensure all claims match the PDFs; avoid adding examples not supported by them.

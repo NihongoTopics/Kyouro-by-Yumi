@@ -65,6 +65,17 @@ assets/figures/long-vowels.svg
 - Scope: Apply consistently across `ja/` (titles, headings, taglines, footers, posts index, etc.).
 - Term: Translate “Kyouro” as “教育ローマ字” on all Japanese pages. Use “教育ローマ字（Kyouro）” only on first mention if disambiguation helps; otherwise use “教育ローマ字” consistently thereafter.
 
+### Response Etiquette
+- Do not ask for new tasks at the end of outputs.
+- It is acceptable to ask clarifying questions strictly about the current task.
+- Provide concise status and results without prompting for next work unless explicitly requested.
+
+### OCR Normalization (internal)
+- Common OCR confusions in extracted texts:
+  - `G1` misread as `Gi` → normalize to `G1`.
+  - `P5` misread as `Ps` → normalize to `P5`.
+- Scope: Apply fixes in `ocr_out/` and `ocr_tmp/` when detected; verify with regex searches for standalone `Gi`/`Ps` tokens.
+
 ### Bilingual Parity Checklist
 - Pages: Every English page must have a Japanese counterpart in `ja/` with equivalent sections/structure (e.g., `index.html` ↔ `ja/index.html`, `accent.html` ↔ `ja/accent.html`, `blog.html`/`post.html` ↔ `ja/blog.html`/`ja/post.html`). Do not add or remove sections on the JP side; only localize text.
 - Legal: Add and maintain `disclaimer.html` ↔ `ja/disclaimer.html` with identical structure and the three required points (AI‑generated with human moderation; characters are fictional; site is based on official documents but is not itself official).

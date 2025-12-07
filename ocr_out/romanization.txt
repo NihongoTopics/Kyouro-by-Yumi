@@ -101,7 +101,7 @@ Notable changes in 5.0:
 Ver. 5.0, the original version of this document, released in December 2023.
 In the linguistic theory:
 
-- Added Ps, Gi, and G2 boundaries.
+- Added P5, G1, and G2 boundaries.
 
 ・ Ci reinterpreted.
 
@@ -4460,7 +4460,7 @@ zero items without changing the right boundary of the phrase.
 whose gap can be filled with zeros—can be employed and G1 and G2
 are separately postulated. Accordingly,
 
-。 wa Gi\G2
+。 wa G1\G2
 。 mo G1\G2
 。 sae G1\G2
 。 shita G2|R1
@@ -4564,7 +4564,7 @@ jowly
 a zero that turns a |G1 item into a noun (R2/m-i, to be more
 specific):
 
-。 [O| Gi\R2/m-ii
+。 [O| G1\R2/m-ii
 
 and that typical |G1 items such as unten and soju are lexically ./G1
 since they do not allow a preceding |R2 unless they are turned into a
@@ -4643,7 +4643,7 @@ A4/R1
 A4/R1
 A4/R1
 ./ dei
-./A4               ./A4           ./G1           Gi\d-i        d-i\A4/R1
+./A4               ./A4           ./G1           G1\d-i        d-i\A4/R1
 konankun wa kurumao unten      deki        ta
 s konankun wa kuruma o unten shita.
 A4/R1
@@ -4653,7 +4653,7 @@ A4/R1
 konankun wa kurumao unten      shita
 。 *konankun wa kuruma o unten mo dekita.
 ./G2
-./A4               ./A4           ./ば1           Gi\G2        Gi\d-i
+./A4               ./A4           ./ば1           G1\G2        G1\d-i
 konankun wa kurumao unten        mo            deki ...
 
 Illformed since ./G2 and G1\A4/R1 cannot merge.
@@ -4663,7 +4663,7 @@ A4/R1
 A4/R1
 A4/R1
 ./G2
-./A4               ./A4           ./G1           Gi\G2        G2\A4/R1
+./A4               ./A4           ./G1           G1\G2        G2\A4/R1
 | konankun wa kurumao unten      mo         shita          J
 。 kurumano untenno jozuna konankun.
 f                              R2/m-il                                                   ]
@@ -6582,8 +6582,8 @@ last chance, so make sure you succeed.
 
 where
 kakujitsu ./km-iii
-seiko ./Gi
-sasetekudasai Gi|
+seiko ./G1
+sasetekudasai G1|
 
 Ni km-iii\A2 constitutes an “adverbial” phrase that semantically modifies the
 predicate of the same clause. The boundary km-iii as opposed to km-ii is postulated
@@ -7805,10 +7805,10 @@ number is 1 regardless of the number of words the AP consists of.
 unless better evidence for or against any of these options is available.
 The G1 boundary fall
 
-¢ The Gi boundary fall arises at an AP boundary where the left AP is |
+¢ The G1 boundary fall arises at an AP boundary where the left AP is |
 G1, not counting zeros between G1 and G2.
 
-¢ The Gi boundary fall is marked by a boundary fall symbol with a
+¢ The G1 boundary fall is marked by a boundary fall symbol with a
 space only on the right side.
 
 日本を旅した                 niho nn wo ta bi sr ta
@@ -8503,6 +8503,6 @@ Tomodachini Shaza sae                    Shinakatta
          A4/Ru
 A4/R1
 ./G2
-./A2                      ./G1            Gi\G2         G2\A4/R1
+./A2                      ./G1            G1\G2         G2\A4/R1
 6     tomodachini         shazai          sae               shinakatta
 

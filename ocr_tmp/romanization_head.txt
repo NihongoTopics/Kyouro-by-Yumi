@@ -77,7 +77,7 @@ Ver. 5.0, the original version of this document, released in December 2023.
 Ver. 5.1 released in January 2024.
 In the linguistic theory:
 In the linguistic theory:
-・ Added P5, Gi, and G2 boundaries.
+・ Added P5, G1, and G2 boundaries.
 ・ The role of the lexicon explained.
 ・ Ci reinterpreted.
 ・ “Adjunct” ku no longer considered an adjective suffix.

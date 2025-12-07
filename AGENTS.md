@@ -65,7 +65,7 @@ assets/figures/long-vowels.svg
 - Scope: Apply consistently across `ja/` (titles, headings, taglines, footers, posts index, etc.).
 
 ### Bilingual Parity Checklist
-- Pages: Every English page must have a Japanese counterpart in `ja/` with equivalent sections/structure (e.g., `index.html` ↔ `ja/index.html`, `accent.html` ↔ `ja/accent.html`, `blog.html`/`post.html` ↔ `ja/blog.html`/`ja/post.html`).
+- Pages: Every English page must have a Japanese counterpart in `ja/` with equivalent sections/structure (e.g., `index.html` ↔ `ja/index.html`, `accent.html` ↔ `ja/accent.html`, `blog.html`/`post.html` ↔ `ja/blog.html`/`ja/post.html`). Do not add or remove sections on the JP side; only localize text.
 - Posts: For each `posts/<slug>.html`, add `ja/posts/<slug>.html` with a faithful Japanese version; mirror `posts/index.json` into `ja/posts/index.json` (titles/summaries localized; slugs identical).
 - Assets/links: Keep CSS/JS shared via `../styles.css` and `../blog.js`; verify all relative links to PDFs and cross‑language pages.
 - Verification step: `rg -n "由美" ja || true` (should be empty), `rg -n "<h2>|<section|<div class=\"card\"" accent.html ja/accent.html` (check section parity), and spot‑check that each English section headline exists in Japanese.

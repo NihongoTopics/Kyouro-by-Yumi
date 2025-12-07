@@ -1,0 +1,4524 @@
+SEMANTICS OF TOKYO JAPANESE
+ABOUT THIS MANUSCRIPT
+
+This volume is intended to complement the volume titled Proposing a New
+
+Romanization System of Japanese (https://nihongotopics.github.io/Kyouro/),
+
+available in the following repository: https://github.com/NihongoTopics/Kyouro.
+
+The said volume is referred to as Proposing.
+
+Like Proposing, this manuscript is expected to be updated dozens of times after the
+
+initial release. Be sure to check for the latest version from time to time.
+
+Feel free to redistribute this manuscript, partially or entirely, as long as the original
+
+place is indicated.
+
+Author: Junichi lida, aka @awesomenewways on x.com.
+
+VERSION HISTORY
+
+Initial release: ver. 6.0.0, December 2024 on https://github.com/NihongoTopics/
+
+Kyouro.
+
+・ Ver. 6.3, May 2025. Changed style to match Proposing. Fixed several errors.
+
+・ Ver. 6.4, June 2025. Fixed the $-specification of dakeo as noted in pp. lexington-
+
+momentum.
+
+・ Ver. 6.5, July 2025. Added Convention 2.2 as discussed in p. henna. Fixed several
+
+errors.
+
+SENTENCE INITIALISM
+
+Japanese sentences used in this manuscript are referred to by a sequence of initials
+of spaced words it contains, bounded by ##. For example, the sentence mugi shika
+kawaiku nat is referred to as #+MSKN#, and mugi mo kawaii is referred to as #MMK#
+If the sentence has a question mark at the end, the question mark is included in the
+
+initialism. For example, the sentence doko itta? is referred to by #DI?#.
+
+Sometimes, an orthographic sentence has different versions depending on the
+positions of $. In the body text, these versions are distinguished with initialisms
+
+that include $, such as #$DI?#.
+
+Example sentences and their associated initialisms are given at the end of this
+manuscript sorted in the alphabetical order. (Initialisms with $ are not included.)
+
+Sentences with the same initial letters are listed under the same initialism.
+TABLE OF CONTENTS
+
+The table of contents is also available in the PDF menu.
+
+Proposing a New Romanization of Japanese
+Sentence initialism
+Table of contents
+Chapter One: The Framework
+Transcription of meaning
+
+Informal transcription of meaning
+Function notation
+Tree notation
+
+Context and references
+Context
+Articles
+Why three topics?
+Node structure and operations
+
+The vinculum notation
+The dot notation
+Mood
+
+The null topic
+
+The dummy
+
+Negation
+
+Serials and parallels
+Nest
+
+Identity index
+
+Role
+
+Type
+Node types
+The type of a complex node
+Type checking on merge
+Type checking at the base
+Chapter Two: Truth-Conditional Meaning
+Truth condition
+
+Proposal, entailment, and proposition
+Event
+
+abstainer
+
+apple
+
+ditto
+
+genetics
+
+hammer
+
+Moods and sentence types
+
+Partial interrogative
+Total interrogative
+Imperative
+Declarative
+
+Other moods
+
+Chapter Three: Information Structure
+
+Preliminary
+
+$-theory in semantics
+
+Review
+
+Question types and the position of $
+
+Topic, comment, and semantic segment
+$-specification of comments
+
+Bringing $ from an implication to the comments
+Conventions of nests and the negator
+
+Articles as $-assigners
+
+Predicates as $-assigners
+Issues on complex predicates
+
+Chapter Four: Lexicon
+
+Type (cont.)
+
+Lexical insertion
+
+Conclusion
+
+Role
+Relative root
+
+The target of lexical insertion
+
+Arity
+Relative clause
+
+Sentences
+References
+
+Dictionaries and literary sources
+Endnotes (not referred to in the body text)
+
+humor
+
+iquitos
+
+japan
+
+resident
+
+Stardust
+CHAPTER ONE: THE FRAMEWORK
+
+TRANSCRIPTION OF MEANING
+
+INFORMAL TRANSCRIPTION OF MEANING
+An easy way to transcribe the meaning of a sentence is to translate it into another
+language.
+
+mugi mo kawaii. — Mugi, too, is cute.
+
+We translate sentence fragments to show partial correspondences between
+
+Japanese and English:
+mugi — Mugi
+mo — too
+
+kawaii — is cute
+
+FUNCTION NOTATION
+
+Sometimes it is difficult to establish partial bilingual correspondences. Observe the
+
+following example:
+mugi shika kawaiku nai. — Only Mugi is cute.
+
+Intuitively, this sentence can be broken down into two major parts:
+mugi shika — ?
+kawaiku nai — is not cute
+
+How can we construct the meaning “only Mugi is cute” by combining two forms,
+one of which is “is not cute”? We can do a pseudo-math with the following equation
+
+and solve it for X.
+X + is not cute = only Mugi is cute
+
+“. X = only Mugi — not
+
+#MMK# #MSKN#
+
+Page 4 of 53
+
+(We use the symbol .’. for “therefore” and = for equivalence. The symbols + and -
+
+stand for “plus” and “minus” here.)
+
+The value represented by the tentative symbol X is something that becomes “only
+Mugi” when “not” is added to it. This can be understood as a function that takes
+
+“not” and returns “only Mugi,” which we write:
+
+not: only Mugi
+
+Convention 1.1:
+
+i) The form A: B is understood as a function that takes A and returns B.
+
+We then obtain:
+mugi shika — not: only Mugi
+kawaiku nai — is not cute
+
+which can be further broken down into:
+mugi — Mugi
+shika — not: only
+kawaiku — is cute
+
+nai — not
+
+TREE NOTATION
+
+Following Proposing, sentence structures are represented as trees. For semantics we
+put the terminal nodes at the top. A parent node is placed below its daughters. The
+last two sentences are represented by the following trees. (The phonetic form is
+
+italicized when included in the tree notation.)
+
+(-                                                                                                                                                                           ~)
+mugi           mo            kawaii
+Mugi        too         is cute
+Mugi too
+Mugi, too, is cute
+
+abstainer
+| mugi         shika           kawaiku nai                                                                                   )
+Mugi        not:only is cute         not
+not: only Mugi                is not cute
+only Mugi is cute
+XM                                                                                                                                             ノ
+CONTEXT AND REFERENCES
+
+CONTEXT
+
+Consider #MSKN# again. A reasonable introspection would reveal that the meaning
+of the translated version of the sentence can be broken down into roughly the
+
+following:
+
+Mugi is cute.
+Everybody else is not cute.
+
+A
+(   B _ means A, B, ... and Z.)
+
+Z
+
+Who is everybody else? This depends on the context. Let us say Mugi is a cat and
+there are two other cats, Bibi and Runa, living in the same house, and suppose that
+the statement is about these three cats. Now the statement can be decomposed into
+
+the following:
+
+Mugi is cute.
+
+Bibi is not cute.
+Runa is not cute.
+
+In this case, the triple |Mugi, Bibi, Runa] is the context of Mugi. Each element of a
+context is called a topic. The sentence however does not specifically say that the
+other members of the context are Bibi and Runa. When a part of a sentence refers to
+an entity, the reference carries a context, but the rest of the contents of the context
+
+remain implicit as to what they refer to.
+
+In the literature, concepts similar to our context are often rather informally employed. Kuroda
+(1965) uses the term relativized universe to talk about the scope of the exhaustive ga (see
+
+#MSKN#
+
+notes in pp. attention-boy) and Kuno (1973) discusses “registry of discourse” (see notes in p.
+bunnies). In formal semantics the term “domain” is often used to mean the set of denotations
+under consideration. Perhaps the defining feature of our concept of context is that it is
+independently postulated for each input of an article (see p. attention).
+
+Definition of context:
+
+For any referent X in a sentence, the context of X is the triple [x xX’, X | where
+X' and X"’ are implicit, X #4 X’, X # X"’, andダデパ
+(チ stands for non-equivalence.)
+The dichotomy between the topics with and without primes is analogous to Numata’s (2009,
+pp. 37-58) dichotomy between jisha and tasha although, unlike our topics, Numata’s terms
+
+refer to syntactic objects. Jisha and tasha do not distinguish between exhaustive and non-
+exhaustive references (see also p. ditto).
+
+With the prime symbol, we can rewrite the meaning of the sentence as the
+
+following:
+
+f Mugi is cute
+
+く Mugi’ is not cute
+
+Mugi”’ is not cute
+い
+
+This is a more accurate representation of the meaning of the sentence. When we
+interpret a sentence, we typically process it as a component of a discourse. Some
+may say for this reason the meaning depends on the discourse. But surely a
+sentence has some intrinsic meaning. While the actual effect of the same sentence
+can be differently inferred from different surroundings, it would not be reasonable
+to claim that given the discourse, the internal elements of the sentence do not
+matter to the meaning. Therefore we need some way to isolate semantics from
+pragmatics. The idea is analogous to phonology. In phonology, we think that a
+physical sound is a superficial realization of a truer, more abstract representation of
+a phonological segment. Here, as the worldly referents of the context of Mugi may
+vary utterance-to-utterance, we devised a means to represent contexts the way
+
+semantics should handle them.
+
+apple
+ARTICLES
+
+Articles of the reference dialect include ga, mo, wa, o, and dakeo, among others. They
+are some of what are commonly referred to as “particles,” but not all particles are an
+article in our terms. An article generally requires some reference to the context.
+Each relevant topic of the context needs to be specified for the polarity of the
+predicate. This implies that the polarity of a sentence is more complex than it may
+
+appear.
+
+It is widely accepted that at least two different interpretations can be associated
+with ga. One of them is called the exhaustive reading, and the other is the neutral
+reading, with slight variations of each term. According to Kuno (1973, p.38), this
+distinction was pointed out for the first time by Kuroda (1965) (this claim is
+
+dubious; see notes below). I will discuss the exhaustive reading first.
+
+Kuno’s (1973) explanations on the distinction between two types of ga’s are as follows:
+
+“
+
+C.         ga for neutral descriptions of actions or temporary states
+Example:
+
+Ame ga hutte imasu.
+rain falling is
+Tt is raining.’
+d.         ga for exhaustive listing.2 “X (and onlyX) ...” ‘It is X that...”
+Example:
+John ga gakusei desu
+student is
+(Of all the people under discussion) John (and only John) is a student.’ It is
+John who is a student.” (Kuno 1973, p. 38)
+And in the footnotes of the same page, he argues that Kuroda (1965) was the first to point out
+the distinction:
+
+“The distinction between the ga for neutral descriptions of actions or temporary states and
+
+the ga for exhaustive listing was first pointed out by Sige-Yuki Kuroda (1965a).” (Kuno 1973, p.
+
+38)
+Here it needs to be pointed out that, contrary to Kuno’s assertion, the distinction may have
+been described in 1914, long before Kuroda (1965), by William Imbrie. To see this, a quick
+comparison between the descriptions by Kuno and Kuroda, before comparing them with the
+description by Imbrie, would be worthwhile. In Kuroda (1965), exhaustive listing corresponds
+to characterizational judgment as opposed to nonpredicational description, which corresponds
+to neutral description. Kuroda explains the nonpredicational description as follows:
+
+“The claim made here is that a sentence does not necessarily represent predication in
+the above sense but may be merely a description of a fact or situation. In such a sentence,
+which we shall call nonpredicational description or simply a description,? the subject can be
+
+considered neither the premise of some judgment nor something about which a predication is
+made. Rather, the subject of the sentence is nothing more than an item which stands in a
+particular relation to the verb of the sentence, just as the object, if the sentence has one is an
+item which stands in a particular relation to the verb. |...|” (Kuroda 1965, p. 37. Underlines
+are his.)
+
+An example of a nonpredicational description is “hito-ga macikado-ni tat-te i-ru” (Kuroda
+1965, p. 46).
+Kuroda’s description of the exhaustive ga follows below.
+
+“Now if, on the one hand, use of the ga-phrase is restricted to nonpredicational
+descriptions and, on the other hand, use of the copulative expression byooki-da is restricted
+to predications, then it should follow that the ga-phrases can never be the subject of the
+predicate byooki-da. But this is not true, as seen below:
+
+(57)  ano-hito-ga byooki-da.
+that man             sick
+That man is sick
+
+(58) John-ga byooki-da.
+John is sick
+
+The English translations of (57) and (58) do not really help to clarify the meaning of these two
+sentences. The two English sentences are more naturally taken to be translation of:
+
+(59)  ano-hito-wa byooki-da.
+That man is sick.
+
+(60)  John-wa byooki-da.
+John is sick.
+
+which represent the familiar type of predication. But sentences (57) and (58) are not
+descriptions either; seeing John lying on a bed, one would say:
+
+(61) a, John-ga byooki-de ne-te i-ru.
+sleep (lie)
+Oh, John is lying sick (on the bed).
+but not:
+(62) a,John-ga byooki-da.
+Oh, John is sick.
+
+attention
+The difference between the kind of judgment represented by (57) and (58) and that
+represented by (59) and (60) lies in the fact that (57) and (58) mean not only that that man is
+sick and John is sick in the usual reading of these English sentences, but also, conversely, the
+sick one is that man and the sick one is John. Sentences (57) and (58) characterize that man
+
+and John by the property of sickness, rather than just attributing that property to them. This
+characterization is, of course, made within some relativized universe. In the actual discourse
+
+the universe is explicitly or implicitly delimited, so that the characterization takes place
+within those limits (which may be vacuous, i.e., the relativized universe may coincide with the
+whole universe). Let us give an example. Assume that a doctor is called, and when he comes
+he finds three people, John, Bill, and Tom lying in bed. He then wants to know which one of
+them is sick. When his question is answered, the relativized universe includes only the three
+people in bed. If the answer is (58), then John, but neither Bill nor Tom, is sick. If on the
+contrary, John and Bill are sick, but not Tom, the answer should be:
+
+(63)  John-to Bill-ga byooki-da.
+John and Bull are sick.
+
+On the other hand, if the doctor is given (60) as an answer, then he knows that John is sick,
+but he gets no information about the other two.
+
+The following two sentences can replace (58) and (63), respectively:
+(64)  byooki-na-no-wa John da.
+
+The one who is sick is John.
+(65)  byooki-na-no-wa John-to Bill-da
+
+Those who are sick are John and Bill.
+
+These forms can be considered as derived from (58) and (63) by a transformation, but we will
+not discuss that transformation here.
+
+As an another example one may say:
+
+(66) — ningen-ga hane-no-na-i nihon-asi-no doobucu-da.
+man                 feather-not        two-leg animal
+Aman is a featherless biped.
+
+characterizing human beings by that property. In this case one may say that the relativized
+universe of the characterization coincides with the whole universe, and in this sense (66) may
+be taken as a generic statement.” (Kuroda 1965, pp. 48-50. Underlines are his.)
+
+In Kuno (1973) and Kuroda (1965), using Kuno’s terminoogy, neutral description is pure
+description of what can be said about the subject in an event or stiation, and exhaustive
+listing “singles out” the one that satisfies the predicate from the “registry” (Kuno’s term) or
+“relativized universe” (Kuroda’s term).
+
+What seems to be the same distinction was pointed out by Imbrie (1914). Imbrie classified ga
+into four classes. Class I is the use of ga with a wh-word, such as doko or dare. An example of
+Class I ga is “Dare ga iin ni narimashita ka” (p. 4). Class II seems to be the exhaustive ga in
+Kuno’s terms. An example of Class II ga is “Kore ga byoin da’ (p. 6). Class III is the use of ga
+with “incisive precision.” An example of Class III ga is “Sore ga honto de gozaimasu” (p. 8).
+
+Class IV seems to be the descriptive ga in Kuno’s terms. An example of Class IV ga is “Sakuban
+kaji ga arimashita’” (p. 11).
+By way of precaution, the following are excerpts from Imbrie’s descriptions of the four classes
+of ga.
+
+“CLASS I.
+
+Subject and predicate are connected by Ga, when the subject is one of the
+interrogative pronouns. These are Dare, donata, dochira, dore (with its adjective form dono)
+and nani: Who? which? what? Doko, Where? (what part of?) when the subject, is also followed
+by Ga.” (Imbrie 1914, p. 4)
+
+“CLASS II.
+
+Subject and predicate are connected by Ga, when the purpose of the sentence is to
+
+indicate, or (in questions) to determine, which one of a number is the subject by which in fact
+
+the predicate is qualified.” (Imbrie 1914, p. 6. Underline is mine.)
+“CLASS III.
+Subject and predicate are connected by Ga, when the purpose of the sentence is to
+indicate, or (in questions) to determine, the subject with incisive precision.” (Imbrie 1914, p. 8)
+“CLASS IV.
+
+Subject and predicate are connected by Ga, when attention is directed to the subject,
+though without the selective emphasis of Class II, or the incisive precision of Class III
+
+Generally however, though not always, in such sentences in English there is at least an
+appreciable emphasis on the subject.” (Imbrie 1914, pp. 10-11. Underline is mine.)
+
+The explanations and examples suggest that Kuno (1973), Kuroda (1965), and Imbrie (1914) all
+highlight the same distinction. It appears, therefore, that Imbrie’s description was overlooked.
+(To confirm my interpretation of the situation, I consulted Kondo (p.c.). After kindly
+reviewing Imbrie’s monograph, he agreed that the two linguists seem to have overlooked this
+description, which preceded theirs by decades. He further noted that, to his knowledge,
+Imbrie’s classification of ga has never been introduced in the literature.)
+
+It is also notable that Imbrie (1914) classified wa into four classes. It seems that the distinction
+between Class II and Class IV well corresponds to the distinction between the contrastive and
+thematic wa’s.
+
+Kuno (1973) puts forth the following sentence as an example of the exhaustive ga.
+In his words, this sentence means “(Of all the people we are talking about) John
+(and only John) is a student; it is John who is a student” (p. 51), which seems to fit
+
+well with what I can observe in my introspection.
+
+boy
+jon ga gakusei desu. — It is John who is a student.
+
+(The Japanese sentence and the English translation are both from Kuno 1973, pp.
+
+38, 51, 60. Romanization of Japanese has been altered.)
+
+Kuno’s explanation of the exhaustive ga is sufficiently precise for our purpose. To
+cite his words again, “all the people we are talking about” should correspond to
+what we call the context. (See notes below as what it takes to be “the people we are
+talking about” may need some attention). Within the context, John is a student, and
+everybody else is not a student. In our notation, Kuno’s account can be represented
+
+as the following:
+
+John is a student
+John’ is not a student
+John”’ is not a student
+
+He seems to have failed in his wording to be precise about the distinction between pragmatics
+and semantics. He claims that, taken literally, whether a given object or concept can be used
+as a theme of a sentence depends on whether the object or concept has been mentioned in
+the discourse:
+
+7 seems that only objects and concepts that have been mentioned and recorded in the
+registry of the present discourse can become themes of sentences. |...| Objects of some specific
+references are added to the registry of the current discourse the first time they are
+mentioned|.| [...] Only after this entry in the registry is accomplished can they become
+themes of sentences.” (Kuno 1973, p. 39)
+It is difficult for me to believe that he truly intended to claim what this assertion seems to
+contend. The grammaticality of a (non)sentence is independent of the discourse. A speaker of
+a language can utter a sentence that deviates from the discourse. Take the following discourse
+as an example:
+
+John said he liked Sarah.
+
+The cat walks, but the books need a shower and medication.
+
+Compare:
+John said he liked Sarah.
+*Liked John she too Sarah said.
+
+The first discourse is made of acceptable sentences only, but it is odd because the second
+sentence does not seem to fit into the conversation. This utterance is wellformed and deviant.
+The second discourse, in contrast, has an illformed utterance (a nonsentence), but a
+charitable mind would promptly comprehend that the second speaker wants to say “Sarah
+
+#JGGD# #JSGJA#
+
+said she liked John too,’ which perfectly fits in the conversation. This utterance is illformed
+and cooperative. Illformedness and deviance are different.
+
+Perhaps he meant some hypothetical discourse the sentence assumes which under the ideal
+condition the actual discourse mirrors completely. (The discussion in the body text is based
+on this assumption.) Maybe this kind of idealization should be understood without saying,
+just like other types of idealization conventionally done in linguistics. But here it seems
+crucial to draw the line between inferences made from the actual, objectively observable
+elements in a discourse and elements that a sentence or parts of a sentence refer to. When we
+talk about the intrinsic meaning of a sentence, we should only talk about the latter.
+
+Some may have noticed that the semantic representation of #JGGD# above is
+
+analogous to that of #+MSKN#, reproduced below:
+
+f Mugi is cute
+
++ Mugi’ is not cute
+
+Mugi”’ is not cute
+、
+
+(Reproduced)
+
+I do not claim that jon shika gakusei ja arimasen is completely synonymous with
+#J]GGD#. The difference between ga and shika ... nai comes from somewhere else
+than what the prime notation can cover. Part of the difference will be treated in
+Chapter Two. As far as the prime notation is concerned, the two constructions are
+
+equal. The prime notation is not the whole picture.
+
+The meaning of shika and ga can be schematized as follows:
+
+Observation of shika and the exhaustive ga:
+
+X’not Y
+The meaning of a sentence X shika Y nai is schematized as: く "not Y.
+
+メア
+The meaning of a sentence X ga Y, where ga is the exhaustive ga, is schematized
+
+XY
+as: < X’notyY.
+ダメ“not Y
+
+(Seeing them as sets, they are identical but tor now we pretend that the order of
+
+elements matters without stating how.)
+
+bunnies
+We can obtain the meaning of the neutral ga by simply removing the lines of the
+primed topics from the meaning of the exhaustive ga. As Kuno observes, the
+neutral ga is more restricted in distribution than the exhaustive ga. It can only
+appear with a predicate that represents, in his words, “an action, existence, or
+
+temporary state” (p. 60).
+jon ga gakusei desu. — It is John who is a student. (Exhaustive)
+(Reproduced)
+jon ga kita. — John came. (Neutral) / It was John who came. (Exhaustive)
+(From Kuno 1973, pp. 53, 60. Romanization is altered.)
+
+The latter can be transcribed as:
+
+John came          (Neutral)
+
+John comes
+John’ does not come (Exhaustive)
+John’’ does not come
+
+Observation of the descriptive ga:
+
+The meaning of a sentence X ga Y, where ga is the neutral ga, is schematized as:
+xX 7
+
+Similarly, a sentence with mo can be schematized as follows (recall #MMK#):
+
+Observation of mo:
+
+メア
+"アダ
+
+The meaning of a sentence X mo Y is schematized as: 1
+
+Lastly, let us take wa as an example of an article. The mainstream treatment of this
+article is to divide it broadly into two kinds: the contrastive wa and the thematic wa.
+In our framework, this particular distinction is considered inessential. The prime
+notation treats them identically. Later chapters sporadically discuss how the
+
+conventional categories are described in our theory of semantics. Readers who are
+
+#JGGD# #JGK# #MWK# #TWJGI#
+
+distracted by the familiar distinction are asked to interpret wa as the contrastive
+
+one unless otherwise noted.
+Consider the following sentence:
+(satoko wa pati ni kita kedo) masao wa konakatta.
+(From Tsujimura 2007, p. 408. Parentheses are mine. Romanization is altered.)
+
+The part masao wa konakatta is represented in the prime notation as:
+
+Masao does not come
+Masao’ comes
+
+In this particular case, we can infer from the parenthesized part that the primed
+topic refers to Satoko. But referents of primed topics are inherently implicit. This is
+
+shown by the following example:
+
+tokyoni wa jon ga iru.
+
+(From Kubo 1994, p. 26. Romanization is altered.)
+This sentence is interpreted as the following:
+
+In Tokyo John is present
+In Tokyo’ John is not present
+
+In this case, we do not know what the primed topic in Tokyo’ refers to.
+
+Observation of wa:
+
+メア
+
+The meaning of a sentence X Y is schematized as: 4 ©),
+X’ not Y
+
+Compare this with the case of ga. In both cases, like shika, the semantic
+representation includes primed topics and each primed topic present is specified
+for the polarity of the predicate. The article decides which topics are present and
+
+which of them receives which polarity.
+
+cookie
+WHY THREE TOPICS?
+
+Each context has exactly three topics. The prime symbol is only used for two of the
+topics, one with just one prime, and the other with two primes. When all three
+topics appear, we know that the context is exhausted. (Each primed topic does not
+necessarily correspond nicely to a worldly entity. Surely when you refer to a person
+
+in your sentence you can think of more than three people in the context.)
+
+A practical implication of having more than two topics in a context is shown by
+#MMKz#. Unlike #MSKN#, even within the context of mugi we do not know who else
+is cute. If in the context of mugi of #MMK# the primed topics are Bibi and Runa, the
+other cute one is either Bibi or Runa, but we do not know which. This is because
+mugi mo is a non-exhaustive reference with respect to the context of mugi whereas
+
+mugi shika is an exhaustive reference.
+The meaning of #MMK#* can be written as the following:
+1 Mugi is cute
+
+Mugi’ is cute
+
+Convention 1.2:
+
+i) When we refer to only one of the primed topics, we use exactly one prime.
+
+If the contents of a context are variable, why do we restrict a context to have exactly
+
+three topics? Assume that we alternatively have a context with four topics. In this
+case, a context would have three primed topics: |X, X XX my. An exhaustive
+
+reference would make use of three primed topics, and a non-exhaustive reference
+one or two. Here is the problem with this alternative system: in the reference
+dialect, we do not (yet) find a minimal contrast between an expression that refers
+to exactly two out of three primed topics and one that refers to exactly one. If such
+a case is found, our three-topic system is then falsified.
+
+Roughly speaking, for given X, X’ is “something else,’ and {X’, X’’} is “all else.” A four-topic
+
+system would introduce another mode of quantification in between. Whether a four-topic
+system is generally unfit for human language would be an interesting question.
+
+NODE STRUCTURES AND OPERATIONS
+
+THE VINCULUM NOTATION
+
+f Mugi is cute
+
+Recall that #MSKN# means 4 Mugi’ is not cute . Here, the topic Mugi receives is
+
+Mugi”’ is not cute
+
+a
+
+cute while the primed topics receive is not cute. We are dealing with two different
+comments for this sentence. The difference between is cute and is not cute lies in the
+polarity. The former is positive and the latter negative. This is an example of a case
+where for the same sentence topics of the same context receive comments of
+
+opposite polarities.
+
+The semantic form of the predicate of this type of sentence contains both versions
+of the comments. At the same time, the sentence needs to know which topics
+receive which comments. We need some means to “divide” the comments and the
+topics into two groups: one that has the positive comment and the corresponding
+topics, and the other that has the negative comment and the corresponding topics.
+
+We use the following notation to implement such a mechanism (the vinculum
+
+notation):
+is not cute
+kawaiku nai — 一
+Is cute
+Mugi’, Mugi“
+mugi shika —     9 9
+Mugi
+
+Each side of the vinculum (the line in the middle, as shown above) of a node is
+called a half (plural: halves). The one on the upper side of the vinculum is the upper
+half. The one on the lower side the lower half. A half may contain more than one
+topics, separated by commas. The usage of the comma will be explained later, but
+
+here what matters is that the primed topics of mugi shika are in the upper half.
+
+ditto
+When the node of the topics and the node of the predicates merge, the upper half
+matches with the other upper half, and the lower half matches with the other lower
+half. In the case of #MSKN# when mugi shika merges with kawaiku nai, the topics
+
+Mugi' and Mugi’'match with the comment is not cute, and the topic Mugi matches
+
+with the comment is cute.
+
+THE DOT NOTATION
+
+When halves A and B match, we write A - B, in which the dot is called the operator
+of the match and A and B the operands. The terms operator and operand are used
+concerning a given match. When we refer to the symbol in other contexts, the dot is
+
+called simply a dot.
+
+A       C
+When 3 and D merge, A and C and B and D match, where A, B, C, and D are the
+
+operands of the matches. As a result, we get     . In the tree notation, this
+
+operation is represented as:
+
+/                                                                                                                   >
+
+C
+D
+
+by | >
+
+\.                                        ノン
+
+An operand may be a bundle. A bundle is a list of topics (the order matters)
+
+represented in the form A, B or A, B, C, where A, B, and C are topics.
+
+In the following example, the list A, B matches with X.
+
+4                                                                 Y
+A,B   x
+
+C      Y
+A,B-X
+
+C-Y
+
+                                                                 プ
+
+#MSKN# is an example of a sentence with this exact structure:
+
+#MSKN#
+
+f Mugi’, Mugi’’ isnot cute                                                                                                       )
+Mugi              is cute
+Mugi’, Mugi’’- is not cute
+Mugi - is cute
+、                                                                                                                                              ノ
+
+MOOD
+
+Semantic derivation begins from a linear sequence of the terminal nodes of a tree
+corresponding to the sentence in question. This linear sequence is called the base
+structure, or the base for short. The tree is formed in a step-by-step fashion, with
+each step involving two nodes merging. The root node is obtained by merging a
+node with a special node called mood. When a node merges with a mood, the node
+is converted to a list of implications. This list is called the body of the clause and is
+shown with brackets: []. An implication represents part of the surface meaning of
+the sentence. Implications are represented in such a way that they are similar to
+
+natural language, but the method of precise interpretation will be discussed later.
+
+A mood is placed in the base as the rightmost node of the clause. For example,
+
+#MSKN# is represented as the following:
+
+一                                                                                                                                     >
+Mugi’, Mugi’’ isnot cute
+Mugi              is cute
+Mugi’, Mugi’’- is not cute
+Mugi - is cute
+Mugi'・is not cute
+Mugi’’- is not cute
+Mugi・is cute
+L                                                                                                                                      ノ
+
+The mood of this sentence is represented by the symbol . (period). This mood is
+called the indicative mood. It is used to indicate that the sentence is a declarative
+
+sentence.
+
+emission
+In the simplest case, the body of a sentence is obtained by simply ignoring the
+
+A:C
+B-D
+
+vinculum of the node merging with the mood.        is converted to      | This
+
+process of converting and merging a node with a mood is called finalization:
+
+Convention 1.2:
+
+。 4・C
+i) 一一   M
+B-D
+
+au
+B-D
+(M stands for a mood.)
+
+is finalized as a list of implications
+
+When merging with a mood, a node
+
+i 5   (the vertical order matters). The product of this merge is represented as
+A-C) y
+B-D.
+., A,B-X
+ii)                   M
+C-Y
+A-X
+B-X|M
+C-Y
+
+In finalization, an operand matched with a bundle is duplicated and distributed
+
+to each of the elements of the bundle.
+
+THE NULL TOPIC
+
+Mugi is cute                   oo
+#MMK# means          . This corresponds to the set of implications
+
+Mugi’ is cute
+
+Mugi - is cute      ーー
+os      . According to Convention 1.3, the implications can be obtained
+Mugi ・is cute
+
+from:
+
+Mugi, Mugi’- is cute.
+
+We want to represent this as a form with a vinculum. As a placeholder, we define
+
+the null topic, represented by the symbol 0 as defined in Convention 1.4:
+
+Convention 1.4:
+
+X-Y X-Y
+0-Z O
+
+i)
+
+xX:Y
+
+is equivalent to
+
+x-Y
+ii) 一一     M
+
+0
+
+[X-Y]M
+
+is finalized as [X - Y] M.
+
+X:-Y
+iii)                   M
+0-Z
+[X-Y]M
+・ア
+Therefore,     a is finalized as [X - Y] M.
+
+Consequently, the meaning of #MMK# is given as follows:
+
+(-                                                                                                                                      >
+Mugi,the other iscute
+0             is notcute |
+Mugi, Mugi・iscute Mugi, Mugi’- is cute
+0・is not cute      7              0
+Mugi - is cute
+
+ee is ma
+
+、                                                                                                                                      ノ
+
+eloquence
+THE DUMMY
+
+In some cases we want the structure       but do not want X to have a concrete
+
+a
+meaning. For such cases we use the symbol @ and obtain      . The symbol a is
+
+called a dummy.
+
+Dummies are necessary only for derivation. On finalization, we apply the following
+
+convention:
+
+Convention 1.5:
+
+i) [a-X] っ区]
+
+When an implication would otherwise have a, the a and the accompanying dot
+
+are deleted.
+
+NEGATION
+
+Yasashii and yasashiku nai take the following forms:
+
+.          is kind
+yasashii — -
+is not kind
+      t kind
+yasashiku nai — ーー
+is kind
+
+Shika is sensitive to negation (*“Mugi shika kawaii). There must be some way to
+structurally distinguish the negative form such as yasashiku nai and the positive
+
+form of the same “basic” item such as yasashii. To accomplish this, we introduce the
+
+aX
+forms a and ——. The former corresponds to the negative version of a predicate,
+
+a
+
+and the latter the positive version. We may refer to the former a negative predicate
+
+and the latter a positive predicate.
+
+Convention 1.6:
+
+i) —X denotes the negative counterpart of X.
+
+The nodes of yasashii and yasashiku nai are represented as follows:
+
+is kind
+yasashii — ————
+sis kind
+
+っis kind
+
+yasashiku nai — —————
+is kind
+
+The new notation allows us to express shika’s sensitivity to negation:
+
+Observation:
+
+aX
+A phrase headed by shika requires =
+
+An interesting case regarding this requirement is illustrated by the following example:
+
+erebetade shika ido ga muzukashii kata ga imasu. 一 There are those for whom only using
+an elevator it is not difficult to move. (Naturally: “For some people, it is difficult to move
+without an elevator.”)
+
+(https://www.asahi.com/articles/DA3S15370750.html)
+
+The form muzukashii used here is not a typical negative form. For this reason, some people
+question the correctness of this sentence. It is likely that the sentence is ungrammatical for
+some people and grammatical for the others. It is possible that the two groups of people have
+different grammars, but a simpler solution is to attribute the difference to lexical entries.
+Suppose that the form muzukashii corresponds to either one of the following semantic forms
+depending on the speaker:
+
+is difficult
+
+ais difficult
+
+ais not difficult
+
+is not difficult
+
+They mean roughly the same thing, but the former does not satisfy the requirement of shika
+
+aX
+while the latter does as it is in the form of >
+
+Hence, it can be hypothesized that those who accept this sentence have the latter form as a
+semantic form of muzukashii in their lexicon, perhaps with a semantic feature (see Proposing,
+p. lungs) that indicates the item is “non-standard” (e.g., [+ colloquial]), and those who reject
+it does not.
+
+forgery
+SERIALS AND PARALLELS
+
+is kind             ais kind
+To obtain the forms such as ————— and ———— from a more “basic” form like
+ais kind            is kind
+ーー                      .                   コル
+is kind, we define two forms as possible nodes: X : —— and X: a
+              え    コル     .
+These are functions that take some input X and return —— and a respectively. If
+is kind            ais kind
+the input is is kind, the outputs are ————- and ————. This allows us to treat
+ais kind            is kind
+
+is kind as a node. The following sentences are examples of how the functions work
+
+with the input.
+
+yasashii. — is kind.
+
+と                                                                                                                                                      ~
+iskind X:  =
+is kind
+っis kind
+電                                                                                                                                                      ノ
+and,
+
+yasashiku nai — is not kind
+
+(                                                                                                                                                       ヽ
+AX
+iskind X: —
+xX
+sis kind
+is kind
+電                                                                                                                                                       ノ
+
+x
+A node in the form ァ is a parallel. As a parallel has one operand on each side of a
+
+vinculum, it needs to merge another parallel for the operands to match.
+
+X:A
+
+Once two parallels, for example, ァ and merge, the resulting node, ——,, is not a
+
+parallel. A node in the form of        is treated as the same type as a node in the
+
+form of X. These forms are called serial. A serial cannot merge with a parallel, but it
+
+#Y# #YN# #MWMWN¥#
+
+can be taken as an input by a function that returns a parallel. Such a function as a
+
+node is called a parallelizer.
+
+NEST
+
+There are a few caveats as to when the input of a parallelizer is a complex node like
+
+. Take the following example:
+
+mugi wa miruku wa nonda. — Specifically Mugi drank specifically milk.
+
+4                                                                                             J
+mugi  x:  milk x:  drink X; xX: ・
+xX’             xX’              aX      aX
+Mugi              milk            drink
+Mugi’                                  milk’                            adrink
+milk - drink
+
+milk’ - sdrink
+
+milk . drink
+milk’. sdrink
+
+_     milk. drink
+
+milk’. sdrink
+.           ilk . drink
+Mugi- ( i
+ner   ( milk” rd)
+
+Musi’: —   milk - drink
+8           milk’. sdrink
+
+Muoi -   milk - drink
+St) milk’ - adrink
+
+Musi’. =  milk - drink
+9         milk’ - adrink
+
+friction
+This sentence has two arguments: mugi wa and miruku wa. The first innermost
+
+lk                                  drink
+ーー   , which can be taken by    ーー
+milk’                                 adrink
+
+argument is miruku wa or                                                     . When they merge,
+
+milk « drink
+milk’ - adrink
+Mugi
+
+Mugi
+
+the result is           . This form is a serial. Because of this, the second
+
+innermost argument         cannot directly merge with it. The predicate needs to
+
+milk . drink
+milk’. =drink
+
+milk . drink
+milk. =drink
+
+be parallelized once again:                    . This form looks monstrous, but it
+
+milk « drink
+milk’ - adrink
+
+xX
+follows the same principle of X: x If the input is               , the output is
+
+milk . drink
+milk’ .=drink
+_      milk . drink
+milk’. =drink
+
+parallel can finally merge with
+
+plainly                 . The parentheses are given for visual clarity. This big
+
+Mugi
+
+けけ0
+
+Mugi
+
+Mudi - milk . drink
+f \ nilk’ drink
+
+Muai’ - -  milk . drink
+9           7っみん
+
+When the node               is finalized, the subform
+
+milk « drink
+milk’ - adrink
+
+within the resulting
+
+milk - drink
+milk’ - adrink
+
+ is converted to the form 1
+
+implication. Such a structure is called a nest. A nest is a special type of segment,
+
+which we will discuss later.
+
+Now, introspect into #MWMWN# and find that this sentence means roughly the
+
+following:
+
+#OMSN#
+
+| Mugi - milk - drink
+Mugi - milk’ - sdrink
+
+] Mugi-milk・-drink
+
+| Mugi・ milk’ - sdrink
+
+milk’ - adrink
+
+no   milk - drink
+milk’ - adrink
+
+Mugi- mt - drink
+
+Comparing it with the root node                                   っ we find that when
+
+interpreting an implication with a nest the operand on the left side of the nest is
+
+distributed to each of the lines inside of the nest. That is, the form X - 2 in a root
+
+X:A
+
+node is interpreted to mean 1       .
+P                     X-B
+
+Additionally, when negation is applied to a nest, the negator is “moved” to the top
+
+line of the nest. That is, the form ~ 2 in a root node is interpreted to mean 1 "4
+
+These two rules of interpretation will be restated in Chapter Two.
+
+IDENTITY INDEX
+
+A sentence with a relative clause can be decomposed into multiple sub-sentences.
+Take the following example:
+oishii miruku shika nomanakatta. — drank only milk that is tasty.
+
+The meaning of this sentence can be broken down into:
+
+ drank milk,
+¢ didn’t drink anything else
+
+milk, is tasty
+.
+
+That is, this sentence is a combination of the following two sub-sentences (clauses),
+
+each of which can be adequately interpreted as shown:
+
+fundamentals
+た     .                                .     ee                                                                                                                                             ]
+miruku                   oishii
+
+;         xX ,          X
+milk,     xX: で istasty X:—— M
+milk;                       is tasty
+0                         ais tasty
+
+milk, - is tasty
+0
+Imilki ・is tasty| M
+
+miruku — shika            nom        anakatta
+X’, xX”                      AX
+milk,         XxX:                drink メー .
+xX
+milk’, milk’’                       っdrink
+milk,                           drink
+
+milk’, milk)’’- adrink
+milk, - drink
+milk,’ - adrink
+milk,’’- adrink
+milk, - drink
+
+The symbol M stands for a mood.
+
+Identity indexes are shown when the same meme appears in multiple terminal
+
+nodes or when two memes that need distinction happen to have the same label.
+
+A relative clause is said to be restrictive if the antecedent refers to one of the multiple entities
+present that are referred to by the same noun. Compare the following:
+
+(1) The house which is empty is available.
+(2) The house, which is empty, is available.
+(Both from Heim & Kratzer 1998, pp. 87-88)
+
+(1) is intended to be a case of a restrictive relative clause and (2) non-restrictive. For (1) there
+are potentially multiple houses and the one that is empty is available and for (2) there is only
+one house and that house happens to be empty and available (Heim & Kratzer 1998, p. 88). In
+effect, the distinction is simply between the case where the context includes two or more
+houses and the case where the context includes only one house.
+
+ROLE
+
+Some lexical items can appear as part of an argument in one sentence and as part
+
+of a predicate in another. Nouns are a class of such items. (In Proposing, nouns are
+
+#SWKD#4 #KWSD#
+
+defined as tokens that are either |m-i or |m-ii, but here the precise definition is
+inessential.) A noun can appear as part of an argument when followed by an article
+and as part of a predicate when followed by a copula. Take the following sentence
+
+as an example:
+
+saitosan wa kagakusha desu. — Specifically Saito is a scientist.
+
+(-                                                                                                                                     >
+saitosan wa              kagakusha_ desu
+Saito         specifically scientist is
+specifically Saito             is scientist
+
+specifically Saito is scientist
+\                                                                                                                                                                             ノ
+
+Saitosan and kagakusha are nouns, and accordingly their positions can be switched
+
+(although the meaning of the sentence will be different):
+
+kagakusha wa saitosan desu. — Specifically the scientist is Saito.
+
+kagakusha wa                  saitosan desu                                                                            )
+scientist specifically Saito is
+specifically scientist            is Saito
+specifically scientist is Saito
+、                                                                                                                                      ノ
+
+Observations made in Proposing as well as the informal transcriptions of the
+sentence examples above suggest that a copula like desu and a noun like kagakusha
+and saitosan has node-hood in semantics. That is, a predicate like saitosan desu or
+kagakusha desu is unlikely to be a terminal node. Therefore we want our grammar
+to have some mechanism to make the predicate is Saito from the combination of
+Saito and is, for example.
+Consider the following translations of #SWKD# and #KWSD#:
+A. Saito is a scientist.
+B. The scientist is Saito.
+They roughly mean:
+
+A. Saito € scientist
+
+B. scientist € { {Saito}, Saito}
+
+garlic
+where scientist is the set of all scientists in the discourse for each sentence.
+
+From these transcriptions and the derivational trees given in the previous page, we can infer
+that the meanings of Saito and is Saito are:
+
+Saito — Saito
+is Saito 一- で { {Saito}, Saito}
+The semantic representations of the original sentences will be given shortly.
+
+Some may feel that the said difference should be attributed to the general difference between
+a comment and a topic instead. At the moment I am not able to dispute this. Yet, at least as a
+notational convention, we proceed with the role /。 placed on a copulative predicate because 1
+
+feel that clearly indicating the difference with a visible marker is convenient.
+
+We define the following function as a node:
+
+eX
+yx. is
+Tis
+
+;           .                  /soG7O            .
+
+This function returns           ー for the input Saito:
+4 jgSaito
+(                      xX                                                                                                 >
+saito        x:
+“tis
+isSaito
+
+ーijsSaito
+
+電                                                                                                                        ノ
+
+#SWKD# and #KWSD# receive the following derivations:
+
+(                                                                                                              >
+;              x          。         isえ
+Saito      メー      scientist X:
+x’                                       Tig X
+Saito                        isScientist
+Saito’                       っjsScientist
+Saito -j, scientist
+Saito’ - 4;.scientist
+Saito -j, scientist
+Saito’ - +; .scientist]
+Se                                                                                                             ノ
+
+と                                                                                                                   バ
+
+。          x           ;             isえ
+scientist X:—       Saito X:
+x’                                       Tig X
+scientist                    isSaito
+scientist’                   ーisSaito
+scientist ・j。 Saito
+scientist’ - 4; .Saito
+scientist -;, Saito
+scientist’ - 7; .Saito|
+\                                                                                                              ノ
+
+With the semantic representation of a copula, we can now decompose some items
+
+that semantically contains a copula. Kawaii, for example, has been transcribed as a
+
+xX
+combination of is cute and X : ——, but now we can extract is from és cute:
+
+-
+
+4                                                                                                                                                                            >)
+jsえ
+is
+
+cute X:
+Tis
+jgcute
+;gCute
+\                                                                                                                                                                             ノ
+
+This treatment adequately captures the inflection of adjectives. (Note, however,
+that kawaii is not an adjective.) Recall that the adjective paradigm has, among many
+
+others, the following suffixes:
+i                 k-i\Aq/Ri
+sa              k-i\R2/m-ii
+(Proposing, pp. meiosis, moose)
+
+The former makes a predicate form of an adjective, and the latter a noun form of it.
+
+The following is an example of the former:
+iskind
+
+yasashii —
+1 iskind
+
+This form can be obtained through the following tree:
+
+gaslighting
+                          X                                                                                                                                               ヽ
+kind x:—
+_isえ
+iskind
+~iskind
+a                                                                                                                                                                           ノ
+
+The non-predicate, “bare” form of an adjective can be used as a noun. Take the
+
+following example:
+
+atsusa ga kibishii. — Exactly the heat is harsh.
+
+と                                                                                             ~
+isえ
+hot          harsh X:——.
+メソ               っis。え
+hot                isharsh
+hot’, hot“                    _isharsh
+
+hot ・i。 harsh
+hot’, hot’’- >jgharsh
+
+hot ・i。 harsh
+hot’ - >;gharsh
+hot’’- a;gharsh
+、                                                                                                             ノ
+
+Switching the linear positions of hot and harsh automatically switches their
+
+syntactic standings:
+
+kibishisa ga atsui. — Exactly the harshness is hot.
+
+(                                                                                                                                                                           ~
+harsh X:
+
+x’, xX"
+harsh
+harsh’, harsh“
+harsh :。 hot
+harsh’, harsh"・ーi。hot
+
+harsh ・i。 hot
+harsh’ - >; ,hot
+harsh" - a;,hot
+
+、                                                                                             ノ
+Given that we have only dealt with very superficial aspects of the language—we have not
+
+even considered semantic subcomponents of a noun, which probably include number,
+specificity, definiteness, animacy, etc—it is reasonable to suspect that what we now regard as
+the bare form of an adjective is not semantically equal to a noun. While further investigations
+
+#AGK# #KGA# #YGKD# #KGSD#
+
+into the reference dialect may reveal the necessity of additional markers for the “bare” forms
+of adjectives, I am currently not aware of distinctions further than the binary distinction of
+predicatehood.
+
+The same treatment can be applied to adjectival nouns. Recall that the adjectival
+
+noun paradigm has, among many others, the following suffixes:
+[o]           km-i\C2
+sa             km-ii\R2/m-ii
+(Proposing, p. phenomenal)
+The former, since it is |C2, can be used with desu to form a predicate:
+
+yama ga kirei desu. — Exactly the mountains are beautiful.
+
+(                                                                                                                                                                                                          ヽ
+.                                             .                 isえ
+mountain X:                    beautiful X :
+xX’ 」  xX”                                          + igX
+mountain                     isbeautiful
+
+mountain’, mountain’ —j; beautiful
+
+mountain ・i。 beautiful
+
+mountain’, mountain”’ - >; beautiful
+
+mountain ・i。 beautiful
+mountain’ - 7; beautiful
+
+mountain”’- >; beautiful
+
+\.                                     ノ
+
+The latter can be used with ga to form an argument:
+
+kenkyosa ga suki desu. — Exactly the humbleness is liked. (Naturally: (I) like the
+modesty.)
+
+gateau
+と                                                                                                                   バ
+
+.                        isX
+humbleダ:              liked      Xx:          .
+xX’, xX”                         ig X
+humble                        istiked
+humble’, humble’’          Tjgliked
+
+humble -j. liked
+humble’, humble"・っij。lHiked
+humble ・j。 liked
+humble’ - 4;.liked
+humble’: 4;.liked
+
+\                                      ノン
+
+In jsX, jg is a role and X is a meme.
+
+The term “meme” comes from The Selfish Gene by Richard Dawkins. In Chapter 6, Dawkins
+discusses how replication and propagation of aspects of human culture can be understood in
+the analogy of how genes are replicated and passed down to generations. He calls the notion
+of a basic replicating unit of idea, habit, or any cultural component that a person can imitate
+by the term meme. Examples of memes Dawkins puts forth include tunes and clothes
+fashions. As it should be obvious from these examples, the notion applies to a broader
+context than language. I chose the term because the internal contents of a (linguistic) meme,
+in our terms, concerning real-world meaning, are invisible to language—it is treated as a
+basic unit—and because it is replicated and propagated through language一-it is a currency of
+semantics. The former point can be seen in our semantic representations of memes. The
+symbols such as humble and liked are nothing more than arbitrary labels, and the grammar
+knows only that they are distinct; it does not care what humble is like to us. The latter point
+should be self-explanatory. We include memes in our semantic notation because we know for
+a fact that, trivially, they are included in the meanings of sentences. (Dawkins points out that
+the idea of God spreads through language.) Since the term “meme” can refer to non-linguistic
+cultural units of imitation, we could pinpoint the notion of the meme as a component of
+semantic representation by the term “linguistic meme” or perhaps “semantic meme,” but such
+a meticulousness would be unnecessary because in the remaining parts of this manuscript we
+do not mention non-linguistic or non-semantic memes.
+
+Another example of a role is of This role, like /。, is copular Unlike ;., of is used to
+express possession. Consider the following example:
+
+watashino pasokon. — it’s my computer.
+
+#WP#
+
+4                                                                                                                                                                             J
+              x                                             isえ
+it X:— computer,         xX:
+0                                       ig X
+it                            jgcomputer |
+0                        っjsCOmputer」
+
+It ・is computer,
+
+0
+
+it ‘is computer,
+
+x                of X
+computer, X:—me      xX:       M
+
+0                  a
+
+computer |             ofme
+
+—_            ーー
+
+computer, - of me
+0
+|computer, ‘of me| M
+、                                                                                                         ノ
+
+It Is computer ,
+
+Combined, this reads, roughly,          sof me
+computer, Is of me
+
+TYPE
+
+NODE TYPES
+
+The serial, the mood, and the root can be represented without a vinculum. An
+
+example of a serial is Mugi.
+
+The mood is denoted by the letter M. The root is denoted by the symbol RooT. The
+other types are denoted using angle braces with a template of the form inside. The
+
+serial is denoted in the form (X).
+
+genetics
+A parallel has a vinculum and a symbol on each side. An example of a parallel is
+
+jgcute
+
+xX
+. This type is denoted by the symbol (7).
+4 jgcute                                    Y
+A parallelizer has a symbol on the left side followed by a colon, which is then
+
+followed by a vinculum with a symbol on each side. An example of a parallelizer is
+
+XxX’, xX”                                                Y
+X:            . This type is denoted by the symbol (x 7)
+
+THE TYPE OF A COMPLEX NODE
+
+The type is determined based on the outermost structure of the node. In the
+following, the angle brackets () are taken to be a function that takes a semantic
+
+object and returns its type.
+
+(Mugi)                 =        (X)
+jgcute                   ー              x
+ココisCUte                 7           (>)
+x:                      =
+x
+
+Nested vinculums are ignored:
+
+(AO
+
+We parenthesize nested vinculums for visual clarity.
+
+A bundle is treated in the same way as a meme:
+B,C                                      Y
+A: —                      =           Xi
+いテ/     2
+Mugi’, Mugi”’              ー             X
+Mugi                   7            Y
+
+If the outermost vinculum of a form has a dot operator directly placed on it, the
+
+form is a serial:
+A-B
+ーー Vay
+( ー >)    (x)
+TYPE CHECKING ON MERGE
+
+Only the following combinations are allowed to merge:
+
+4                                                                                                                                                                >
+(1) A serial node followed by a parallelizer node
+
+(2)
+
+(2) A parallel node followed by another parallel node
+
+(r) (y)
+
+(X)
+(3) Aserial node with a mood
+(X) M
+ROOT
+、                                                                                                                                                       ノ
+
+TYPE CHECKING ON THE BASE
+
+At the base, only serials, parallelizers, and the mood are allowed.
+
+Page 20 of 53                                                                                                                                           gods
+CHAPTER TWO: TRUTH-CONDITIONAL
+MEANING
+
+TRUTH CONDITION
+
+PROPOSAL, ENTAILMENT, AND PROPOSITION
+
+The root node derives a proposal. A proposal is a structure of a list of entailments
+and the mood passed from the root node. An entailment is a statement of whether
+a specific proposition is true (+) or false (—) and is represented in the form +P,
+where + stands for the truth value and P the proposition. A proposition is a
+
+statement that is true or false for some event.
+
+Convention 2.1:
+
+SY
+
+When converting a root node to a proposal, $ is ignored. (The symbol $ will be
+
+explained in Chapter three.)
+
+(where X and Y do not contain a negater.)
+
+An implication with a negater is converted to a negative entailment. A
+
+proposition cannot have a negater.
+
+ws    Y    +X-Y
+iii) x-{2] m— |w
+
+An implication with nests, the segment governing the scope is distributed to the
+
+nests to form multiple entailments.
+
+|     X-A      ーア・4
+iy)  eee tle alm
+
+#IDT#
+
+(where X, A, and B do not contain a negator or prime symbol.)
+
+アア
+。 [ad x yl ao wey
+メ・ア
+
+(where X and Y do not contain a negator )
+
+In a tree, we put the proposal below the root node with one less tab space on the
+
+— strawberry’ - eat
+
+left. In the following sentence, | — strawberry"’: eat| . is the proposal.
+
++ strawberry - eat
+
+ichigo dakeo tabeta. — (I) ate only strawberries.
+
+a(X', X"”)              Xx
+BASE     strawberry X:———      eat X:— .
+aX                aX
+
+4 (strawberry’, strawberry’ ’ )           eat
+
+astrawberry                                    Teat
+
+strawberry’, strawberry’’ - seat
+
+strawberry - eat
+
+strawberry’ - seat
+ROOT                            strawberry”’- seat
+
+strawberry - eat
+
+— strawberry’ : eat
+MEANING            — strawberry’: eat] .
++ strawberry - eat
+
+ノ
+
+To be precise, the semantic form of this sentence should include the agent. Here and
+elsewhere, some covert arguments may be omitted for simplicity. When arguments are
+omitted from the tree structure, the corresponding parallelizers are also omitted. See Chapter
+Four for why this is necessary.
+
+Henceforth, we use labels for visual clarity. BASE, ROOT, and MEANING are given alongside the
+base structure, the root node, and the surface meaning of the sentence, respectively. Later we
+will use the labels SYNTAX and PHONOLOGY for syntactic and phonological structures,
+respectively.
+
+The article dakeo and related conventions are covered in Chapter Three.
+
+hammer
+EVENT
+
+An event is a set of segments. A proposition is true for an event iff all of its segments
+are included in the event it refers to. Suppose that the speaker is aware of the
+
+following two events:
+event, = {festival, tomorrow, I, you, Yoshimi, go, ...}
+event, = {doughnut, eat, I, yesterday, ...}
+
+To be precise about the meaning of an event, segments need to have roles. From
+{doughnut, eat, I, ...} alone, we cannot tell if 7 ate a doughnut or a doughnut ate me.
+
+To determine the semantic relations, we can rewrite event, as:
+
+event. = {gndoughnut, 」。eat byl atyesterday ...}
+
+For the action (marked by /。) eat, the patient (marked by 。ヵ) is doughnut, the
+
+agent (marked by by) is I, and the time (marked by g+) is yesterday. I often leave
+roles implicit.
+
+It was assumed until ver. 6.4 that exactly one event is assigned to a proposal. This
+assumption has been found inadequate as no single event cannot satisfy a proposal
+
+like the following, reproduced from p. nitrogen.
+
+— Saito - takoyaki - eat
+
++ Saito - takoyaki’ - eat
++ Saito - takoyaki’’- eat
++ Saito’: takoyaki - eat
++ Saito’: takoyaki’ - eat
+
+It seems necessary to allow multiple events to be alloted to the same proposal and
+
+we accordingly adopt the following revised convention:
+
+Convention 2.2:
+
+i) Aproposal refers to one or multiple events. Each proposition of the proposal
+
+is evaluated against one of the referent events.
+
+ii) A proposition is true iff there exists an event assigned to the proposal such
+
+that all segments in the proposition are in the event.
+
+The aforementioned proposal is satisfied by a pair of events such as the following:
+
+{ Saito, takoyaki’, takoyaki eat |
+{ Saito ’, takoyaki, takoyaki’, eat |
+
+This convention alone is insufficient to characterize sentences like #MSKN#, which
+generates the following proposal, whose propositions must refer to the same event
+
+to correctly capture the meaning.
+
+ー Mugi’- cute
+— Mugi’’- cute
++ Mugi - cute
+
+Event assignment may be able to be better discussed with the notion of tense. We
+assume the referent events are magically given for each proposal and discuss event
+
+assignment no further at this time.
+
+Given a reference X, the other references in the context of X are denoted as primed
+topics (X’ and X’’). Suppose event E involves the state of being an engineer and the
+themes John, Erica, and Chin-Wu. This event is represented as follows if John, Erica,
+
+and Chin-Wu are not in the same context:
+E = {jgengineer, ;,John, jrErica, itChin-Wui
+it stands for theme, distinguished from patient.
+
+If Erica and Chin-Wu are in the context of John, the event is represented as follows:
+EF’ = fisengineer ;,John, ;,John’, ;,John’’}
+
+Across the events assigned to the same proposal, a segment belonging to the
+
+context of another segment must be shown as a primed topic.
+
+henna
+The intuition behind this formal convention of events is that an event is
+distinguished from other events by what co-occurs in it. We expect that we can
+“know” whether a given proposition is true for an event without such a formal
+convention. We want the meaning of an event “meaningful” extra-linguistically.
+(Introspection into the linguistic meaning is only possible if the linguistic meaning
+is defined in such a way that it has some connection to extra-linguistic meaning.
+This is analogous to how phonology must maintain some connection to phonetics
+to meaningfully describe a language. As phonetics stands between phonology and
+
+physics, events stand between semantics and worldly meanings. )
+
+An event may have up to one comment to be referred to by a sentence. Suppose the
+
+following proposition P and its event *E:
+
+P = ;John- dorun
+“E = {dolUn, do8 tolestival, byJohn, byErica}
+
+to Stands for goal. *E is illformed.
+
+If in the same event two actions (sleep and go) and two agents (John and Erica)
+appear, nothing indicates which agent belongs to which action. Without a formal
+convention, we would not be able to tell whether P is true or false. We simply do not
+know what this event means. (Alternatively, we could have stated that all topics
+
+belong to all comments simultaneously; the choice is arbitrary.)
+
+Having multiple topics of the same role is not a problem. All topics belong to the
+
+same comment. For the same proposition P, consider the following event F:
+
+F = {qorun, byJohn, byErica}
+
+For F, P is true because the segments の and 4 run are both included in F. For F,
+
+the following proposition Q is simultaneously true:
+Q= byErica ・dorUn
+
+In event E, John ran, and Erica ran.
+
+#JMH# #YWI#
+
+Page 23 of 53
+
+How do we knowif a given event has no more than one comment? For a segment of
+
+an event, the role decides whether it is a comment or not. ,。 is a role with
+
+comment-hood, as well as of
+
+We do not worry about “impossible” events. If the comment of a given event is sleep,
+
+it is unexpected that the event has a segment with the role +) because the action of
+
+sleeping does not usually take a goal. Whether it is truly impossible to
+
+conceptualize such an event is not an issue. The event {,,sleep, tafestival, byJohn}
+has no problem with the proposition byJohn ‘ dosleep. The proposition is true for
+this event because the segments by John and 4 sleep are included in the event. The
+
+oddness of ¢,festival in this event does not interfere with this judgment. Ultimately,
+the source of an event must be somewhere outside of language. For example, the
+speaker’s consciousness seems to have some discretion over what event the
+sentence refers to. (You can deliberately tell a truth or a lie.) The grammar may need
+to filter out incompatible events, such as an event with non-primed topics
+belonging to the same context, but it does not give directions on what should go
+into an event; events are given to language as-is. The same can be said about an
+event without a comment. Since all propositions have one comment, a
+commentless event would falsify all propositions. This is not a problem of the
+
+grammar because we then know the truth value (false).
+
+A segment in an event cannot have a negater. (This is why we need the notion of
+
+entailment on top of the notion of proposition.) The implication by John - > go sleep
+is converted to the entailment — byJohn ‘do Sleep, whose proposition
+by John - jo sleep is false for the events { by John, gorun} and { byErica, dosleep} and
+true for { byJohn, do Sleep}. This convention ensures that the falsehood of a
+
+proposition is simply the absence of any one of the segments it holds.
+
+humor
+MOODS AND SENTENCE TYPES
+
+PARTIAL INTERROGATIVE
+
+Consider the following:
+yoshimi wa isogashii? — Is specifically Yoshimi busy?
+
+The speaker expects that somebody else is not busy, and based on this assumption
+
+he asks if Yoshimi is busy or not.
+
+(—                                                                                            >
+vs      x                     isえ
+BASE     Yoshimi メダ: ーー     busy X:—— ?
+x’                    Tig X
+Yoshimi              isbusy
+Yoshimi’                                   a;gbusy
+
+Yoshimi -;, busy
+
+Yoshimi’ - 7; ,.busy
+
+Yoshimi -;, busy
+ROOT                                              f
+Yoshimi’ - >; busy
+
++ Yoshimi -;, busy   5
+
+MEANING                ーー
+ー Yoshimi'・j。busy
+
+\_-                                                                                                                  _/
+Only the top entailment + Yoshimi - is busy is the target of the question. We call this
+
+mood symbolized as ? the partial interrogative mood.
+
+In the following sentence, it is assumed by the speaker that Yoshimi is busy, and the
+
+question asks whether everybody else is not busy.
+
+yoshimi shika isogashiku nai? — Is only Yoshimi busy? (Perhaps more naturally:
+
+“Is Yoshimi the only one that is busy?”)
+
+#YSIN?#4 #YMK?# #YWIN?#
+
+BASE             Yoshimi X:                          busy X:              ?
+TisX
+Yoshimi’, Yoshimi’’               a;gbusy
+Yoshimi                           isbusy
+
+Yoshimi’, Yoshimi"・コi。busy
+
+Yoshimi -;, busy
+
+Yoshimi’ - 7; busy
+
+ROOT                     Yoshimi"’- >; ,busy | ?
+Yoshimi -;, busy
+— Yoshimi’ - ; ,busy
+MEANING          ー Yoshimi"’- ;,busy | ?
++ Yoshimi -;, busy
+し                                                                                                                  ノン
+
+In both #YWT?7# and #YSIN?#, only the first entailment is the point of the question.
+This is why the order of entailments matters. The first entailment of a proposal is
+
+called the primary entailment and the rest the secondary entailments.
+The case of mo is another good example:
+yoshimi mo kuru? — Is Yoshimi coming too?
+
+This question assumes somebody else is coming, and based on this assumption it
+asks whether Yoshimi is coming. We need an entailment that roughly means
+“Yoshimi is coming” as the primary entailment and one that roughly means
+“somebody else is coming” as the secondary entailment. Our specification of mo
+
+naturally achieves this result:
+
+(                                                                   ヽ
+BASE     Yoshimi X:—— come   メダ:ーー ?
+0              AX
+Yoshimi, Yoshimi’            come
+0         acome
+
+Yoshimi, Yoshimi’ - come
+
+0
+Yoshimi - com
+ROOT              sume Come | 9
+Yoshimi’ - come
++ Yoshimi - come
+MEANING             iy       ?
++ Yoshimi’ - come
+、                                                                        ノノ
+
+ibuprofen
+Observe another example below:
+yoshimi wa isogashiku nai? — Is specifically Yoshimi not busy?
+
+This question assumes that somebody else is busy and asks whether Yoshimi is not
+
+busy.
+4                                                                                                                   >)
+。 」       x                         Tis X
+BASE     Yoshimi X: —     busy X:      ?
+x’                                         isえ
+Yoshimi                                    ーisbusy
+Yoshimi’                  jgbusy
+Yoshimi - 7; ,busy
+Yoshimi’ -;, busy
+Yoshimi - a;,bus
+ROOT                           SOY) 9
+Yoshimi’ -;, busy
+— Yoshimi - ; ,busy
+MEANING                     ーー」             ?
++ Yoshimi’ -;, busy
+、                                                                                                                   ノ
+TOTAL INTERROGATIVE
+
+A total interrogative sentence has the total interrogative mood, symbolized as ;.
+Consider the following:
+taro ga waratta?
+
+whose meaning is represented as the following structure of a root node.
+
+| Taro - laughed
+Taro’: slaughed | ;
+
+Taro’’- slaughed
+
+This amounts to asking if X in the following template, if it is to produce a
+
+completely truthful proposal, is Taro.
+
+be laughed
+X’- alaughed
+X"’- alaughed
+
+#TGW?4 #MWT# #MMT#¥
+
+Page 25 of 53
+
+which could be translated roughly as “Is it Taro who laughed?” We call this type of
+question the total interrogative because the scope of interrogation includes all
+
+implications of the root node.
+
+So-called wh-questions typically falls in the category of total interrogative.
+
+Supposing a separate mood for the wh-questions as opposed to the typical yes-no questions
+implies that these two types of questions have distinct predicate forms underlyingly. In the
+reference dialect, the distinction is not necessarily reflected to the phonetic forms. Nani o
+mimashitaka? (“What did you see?”) and nanika mimashitaka? (“Did you see anything?”) have
+the phonetically identical (except for the difference in the typical $ positions) predicate form
+mimashitaka (Kyouro: > mi・masltaka ). In English, the wh-questions and the yes-no questions
+receive different intonations. How moods are mapped onto the phonological forms is
+discussed in Chapter Four.
+
+IMPERATIVE
+
+The imperative mood is denoted by the symbol /. The following sentence assumes
+
+that something else than peach is not eaten, and commands that peach be eaten.
+momo wa tabete. — Eat at least peach.
+
+The meaning of this sentence can be derived as follows:
+
+/                                                                                             >
+x                 x
+BASE       peach X:—      eat X:—— !
+x’                 aX
+peach                eat
+peach’               neat
+peach - eat
+
+peach’ - seat
+
+peach - eat
+ROOT
+peach’ - seat
++ peach - eat
+MEANING                     ,        ・
+— peach’ : eat
+、                                                                                                              ノ
+
+1ce
+Observe how ! interacts with mo. The following sentence assumes that something
+
+else will be eaten, and commands that peach be eaten too:
+
+momo mo tabete. — Eat peach too. (e.g., “You will eat apple, but eat peach too.”)
+
+4                                                                                                                                              >)
+Xx, XxX’                 x
+BASE          peach X:           eat X:  =X   !
+peach, peach’          eat
+0                       Teat
+
+peach, peach’ - eat
+
+0
+peach - eat
+ROOT
+peach’ - eat
++ peach - eat
+MEANING                     ;        !
++ peach’ - eat
+\                                                                                                              ノ
+
+Other articles work the same way.
+
+momo shika tabenaide. — Eat only peach. (e.g., “You will eat peach and not
+
+pear, and do not eat apple.”)
+
+/                                             >
+BASE peach X:     eat メメーー !
+peach’, peach”’            Teat
+peach      eat
+
+peach’, peach”’- eat
+
+peach - eat
+
+peach’ - seat
+
+ROOT                peach’’- seat 1 !
+peach - eat
+— peach’ : eat
+MEANING      ーpeach“・eat | !
++ peach - eat
+、                                                                                                             ノ
+DECLARATIVE
+Recall:
+
+#MST#
+
+Observation of shika and the exhaustive ga:
+
+X’not Y
+X''not Y.
+XY
+
+The meaning of a sentence X shika Y nai is schematized as:
+
+The meaning of a sentence X ga Y, where ga is the exhaustive ga, is schematized
+メア
+
+as: 4 X’notY.
+"not Y
+
+(Seeing them as sets, they are identical, but for now we pretend that the order of
+
+elements matters without stating how.)
+
+(Reproduced from p. bunnies)
+
+Part of the difference between X shika Y nai and X ga Y is their orders of
+implications. In the former, a negative statement is placed on top while in the latter
+
+the positive statement is placed on top. As proposals, they can be written as:
+
+—X'-Y
+—X"-Y].
++X-Y
++X-Y
+~x’.y]|.
+_xX”".y
+
+In a declarative sentence, the difference between the primary and the secondary
+entailments may appear less clear. It may be worth thinking about what imperative
+
+or interrogative sentence it should correspond to.
+
+OTHER MOODS
+
+Several other moods are likely necessary to cover predicative intonations and so-
+
+called ending particles (discussed in Proposing, pp. clover-daydream).
+
+indict
+CHAPTER THREE: INFORMATION STRUCTURE
+
+PRELIMINARY
+
+REVIEW
+
+Definition of $:
+
+In the phonological tree of a sentence, a phrase, except for fillers, has R at its
+beginning iff it contains $, where $ is a feature that can be given to an AP; a
+sentence has at least one AP with $; and the distribution of $ typically mirrors
+
+the distribution of the information being asked for.
+
+(Proposing, pp. scholarship-semantician)
+
+QUESTION TYPES AND THE POSITION OF $
+
+Consider the following example:
+
+nani tabeta? — what did (you) eat?
+
+ンー                                                                                                ~
+xX            xX
+BASE what    X:—eat メー ;
+0            AX
+what            eat
+0             seat
+what - eat
+0
+ROOT              [what ・ eat];
+_                                                                                                _ノ
+
+Observe that #NT# is typically pronounced with $ at placed at the first AP only:
+$nani tabeta?
+
+This fits well with our previous observation. The distribution of $ typically mirrors
+the distribution of the information being asked for. In a wh-question, the wh-word,
+
+in this case, nani, works as a placeholder of the information being asked for.
+
+#NT?# #DI?# #1K?# #DK?#
+
+Observe the following examples of the distributions of $ and wh-memes. (Readers
+who speak the language natively or fluently are asked to verify that they have $ at
+
+the most “natural” or “typical” place.)
+
+$doko itta? — where did (you) go?
+
+(                          X             X                                                           >
+BASE      where X:—go X:—— ;
+0            aX
+where           go
+0             720
+where - go
+0
+ROOT                  [where ・ gol;
+、                                                                                                     ノ
+
+$itsu kaeru? — when are (you) going to come back?
+
+r                                                                                                                   a
+BASE      when X: っ come back X: a  ;
+when                  come back
+0                    っcome back
+when・come back
+0
+ROOT                   [when - come back];
+し                                                                                                                   ノ
+
+$dare kaita? 一- who did (you) draw?
+
+ンー                                                                                                         >)
+
+BASE      who     xX: x draw X: て  ;
+
+0                aX
+who              draw
+0               っdraw
+who・draw
+0
+
+ROOT                   [who . draw];
+
+し                                                                                                        ノ
+
+iquitos
+Compare the above with the following, where $ is placed not on the wh-words but
+
+on the predicates:
+nani $tabeta?
+doko $itta?
+itsu $kaeru?
+dare $kaita?
+
+These sentences probably sound unnatural. This is because $ is not placed on the
+
+information being asked for (or its placeholder).
+In a partial question, $ is typically placed on the AP of the predicate:
+
+kore $taberu? — will (you) eat this? (Naturally: “Do you want to eat this?”)
+
+a                                                                                                >
+           X            X
+BASE this     メダ:一eat X:— ?
+0            AX
+this             eat
+0              seat
+this - eat
+0
+ROOT               [this ・ eat| 7
+電                                                                                                ノ
+
+#K$T?# sounds natural because it is a partial question and $ is placed on the
+predicate, where the polarity of the sentence is manifested. (Compare with #$KT?
+
+#.)
+
+In both total questions and partial questions semantic-$’s typically (but not
+obligatorily) coincide with the information being asked for. This holds true for
+declarative sentences too. Since the same literal declarative sentence can
+correspond to multiple implicit questions, it is helpful to think about what question
+the sentence corresponds to to determine its likely prosodic structure. The
+following literal sentences are natural if pronounced with $ at the same place as the
+
+corresponding question:
+$kore tabeta. — (I) ate this. (Corresponding to #$NT?#)
+
+kore $tabeta. — (I) ate this. (Corresponding to #K$T?#)
+
+#NT?#4 #DI?# 41K?# #DK?# #KT?# #KT#
+
+It is useful to see $ as a semantic feature because changing the position of it
+changes the meaning of the sentence. When the difference in pronunciation
+parallels the difference in meaning, it is easy to incorporate the phonetic or
+phonological symbol into the system of semantic representation, just like how in
+most practices of the study of semantics we use literal words to represent both
+semantic and phonetic forms. Where necessary, $ as a phonological feature is called
+
+phonological-$ and as a semantic feature it is called semantic-$.
+
+$-THEORY IN SEMANTICS
+
+TOPIC, COMMENT, AND SEMANTIC SEGMENT
+
+We convert each implication into a collection of comments. This collection is called
+a commentary. (We use the same terms “comment” and “topic” also in the context of
+semantic derivation and subcomponents of implications. This is intentional.) The
+comment is a basic unit of information structure. What this means will be
+
+explained shortly.
+An implication A - B - Cis converted to the following comments:
+
+C
+B-C
+A:B-C
+
+This process is called factorization of an implication.
+
+japan
+Convention 2.1:
+
+i) A-B-C....-X-¥-Z> ・
+
+moe XN
+tS べべN
+
+・の
+・し・. ・パ・アダグ
+
+.
+.
+.
+
+An implication A-B-C-...-X-Y-Z is factored to comments
+
+r
+
+moe XN
+mB NN
+
+-Z
+“C-...:X-Y-Z
+
+This conversion is done by building a right-branching tree from the implication.
+
+The underlined nodes are the comments:
+
+A B
+
+QIN
+
+万・
+A-B:
+
+>|
+
+The components of an implication or a comment separated by dots are called
+semantic segments or segments for short. Each segment points to some ét in the
+world that the sentence assumes—be it a fact, an action, a person, a point in time, a
+thing, or whatever—and an implication and a comment are a package of
+
+cooccurring it’s.
+
+$-SPECIFICATION OF COMMENTS
+Take the following sentence as an example:
+
+go
+
+ashita omatsuri iku. > [tomorrow - festival - go| . => て festival - go
+
+tomorrow - festival - go
+
+The comment go refers to some action of going assumed in the sentence. The
+
+comment festival: go refers to the notion of the action of going involving some
+
+#AOI#
+
+entity that is festival. The comment tomorrow - festival - go refers to the notion of
+
+the action of going involving the entity festival and some entity that is tomorrow.
+
+Unlike entailments, comments are not about claiming facts. A sentence of a negative
+statement includes both the negative and positive versions of comments. (See #YWI# below.)
+It is also possible that a positive comment is “highlighted” in such a sentence. An example is
+shown on the next page as a commentary of #YWI#.
+Go appears three times and festival appears twice. They are duplicates of the same
+segments. We could put indexes to show their identities:
+
+rc
+
+80)
+
+¢ festival, - go,
+
+tomorrows - festival, - go,
+
+、
+
+Doing so, however is not necessary because the origin of each can be seen in the
+
+implication and the derivative tree.
+
+Some comments may be more important for the purpose of the sentence than the
+other comments. The “important” part is what we have discussed earlier rather
+informally as “the information being asked for.” A native speaker of the language
+may variously describe the notion. Some may call it focus. Others may say it has
+
+emphasis. Consider the following sentence.
+yoshimi wa $isogashii. — Specifically Yoshimi is busy.
+
+This sentence has the following implications and comments:
+
+isbusy
+Yoshimi -;. bus       Yoshimi -;. bus
+#YWI# >         isomey | os        iso
+Yoshimi’ - 7; busy          1; gbusy
+
+Yoshimi’ - 4; ,busy
+
+い
+
+The last two comments (which correspond to the second implication) are
+noticeably unimportant. (#YW$I# is not a case of the contrastive wa.) They would
+
+easily go unnoticed in a normal conversation.
+
+jargon
+Now consider the following, identical in the common orthography but different to
+
+the ears:
+$yoshimi wa isogashii. — Specifically Yoshimi is busy.
+
+This sentence produces the same four comments, but this time the most important
+comment is the last one only. (This is a case of the contrastive wa.) Highlighted in
+this sentence is that somebody else than Yoshimi is not busy. A natural response to
+
+this sentence would be “who’s not busy?”
+
+We speak of comments when we talk about information structure. Certain
+comments stand out in the information conveyed by a sentence. Our purpose here
+is to correctly characterize comments in such a way that phonologically contrastive
+sentences are distinguished in the semantic representations as well. If two
+sentences that yield the exact same set of comments (but with different
+“importance” of some of the comments) phonologically differ only by the
+placements of $, we want our grammar to correctly mark “importance” of the
+comments differently for the two sentences. For the last two examples, we want the
+following phonological and semantic representations. (We mark the “importance”
+
+by placing the symbol $ at the top of the comment.)
+
+| $ isbusy
+
+$ Yoshimi :。 busy
+yoshimi wa $isogashii. > ¢
+1; gbusy
+
+の  ef
+L  Yoshimi’ - 4; ,busy
+
+rc
+
+isbusy
+
+Yoshimi -;, busy
+$yoshimi wa isogashii. > <
+isDusy
+
+ $ Yoshimi’ - =; busy
+
+The former is an instance of what is in the orthodox categorization called the thematic wa. Of
+course, this is at best an educated guess. We do not have means to directly communicate
+meaning itself. Essentially, the only evidence we have for characterizing semantics of two
+sentences differently is claims by linguists in such forms as “they mean different things” and
+phonetic transcriptions. If two sentences receive distinct phonetic transcriptions and if the
+
+#YWI#
+
+author claims that they are contrastive (ie., they are distinguished in order to convey
+different meanings), we take the description as evidence for associating different semantic
+representations to the two sentences. (Ultimately, our semantic transcription system needs to
+be able to capture all such claims.)
+
+Where the symbol $ goes in the commentary depends on where $ is placed in the
+phonological form. This assumption does not need additional justifications. We
+have defined $ as a phonological feature first and the semantic difference that
+justifies the contrast is now marked by $. The presence of $ on a spaced item in the
+phonological form implies the presence of $ on at least one comment that includes
+a segment corresponding to the item. In the examples above, the second sentence
+has $ on yoshimi, which corresponds to the segments Yoshimi and Yoshimi’, and the
+
+comment that has the latter is given $.
+
+The literature has a rich set of technical terms for notions similar or related to
+“importance” we deal with here. The terminology includes focus, given, and new,
+among others, each with varying definitions and theoretical backgrounds. As far as
+the phonological feature $ is concerned, binary specification of “importance” for
+each comment suffices, at least for the sentences we will examine in version 6.0.
+Given that binary $-specification suffices to predict phonological contrasts, any
+distinctions more granular than that would be overcategorization. (If we ask if
+binary $-specification of comments is truly enough, the question needs to be taken
+back to phonology. While we can think of how information is presented in a
+sentence from unrestrictedly many perspectives, distinctions are not justified
+unless phonological contrasts are evident.) I avoid conventional terms where
+possible. I will instead use the term $-specification (and $-specify, $-specified, etc) to
+talk about whether a given comment has $. $-specification of a specific comment
+may correspond better or worse to different conventional terms depending on the
+
+comment, the sentence, and the discourse.
+
+We began our investigation from phonology instead of logic because our purpose is to
+characterize contrastive sentences from each other, but not to find logical expressions that
+sentences seem to fit well with. (See also the other note in this page.)
+
+jeans
+BRINGING $ FROM AN IMPLICATION TO COMMENTS
+
+All information in a comment, including $, comes from an implication. (In fact, we
+do not add any information after the base. Semantic derivation, like syntax and
+phonology, only handles what has been already given in the beginning. This means
+that $ is present in the base. We will later discuss the procedure to deductively
+assign $ to the implications from a given base.) We need a precise procedure to
+
+assign $ to comments based on what is given as the corresponding implication.
+
+As far as our observations so far concerned, the root node and the base of a clause generally
+have equal or similar information. Therefore it may be generally possible to derive the base
+from the root node. I do not have enough knowledge to rule out either one of them being the
+truly initial state of sentence generation. At the moment, we assume that the root node is
+derived from the base and not the other way around, but this is only for convenience.
+
+Take #AOI# as an example. This orthographic sentence has the following versions:
+
+#AO$I# > 4 $ festival - go
+
+$ tomorrow - festival - go
+
+#A$OI# > 4 $ festival - go
+
+$ tomorrow - festival - go
+.
+
+gO
+#$AOI# => < festival - go
+
+$ tomorrow - festival - go
+い
+
+As shown, the presence of $ in a comment implies the presence in all outer
+
+comments.
+
+Convention 2.2:
+
+i  たる
+A-B
+
+The presence of $ in a comment X implies the presence of $ on all comments
+
+that includes X.
+
+The purpose of this convention is to prevent overgeneration. We are trying to describe the
+language's semantics as a formal system of discrete symbols; we do not want our system to
+predict distinctions that the language never exhibits. It is not to claim that, say, there is a
+$B
+
+$A-B
+
+correct. Rather, we restrict our notation in such a way that the former never appears so that
+
+difference between vA p and 1       as commentaries and only the latter can be
+
+the difference between them safely remains undefined.
+
+The distribution of $ can be sufficiently described by simply inserting $ in the linear
+
+structure of the implication.
+
+rc $ co
+#AO$I# > |tomorrow・festival・$go| . > 4 $ festival - go
+
+$ tomorrow - festival - go
+
+#A$OI# > [tomorrow - $festival - go] . > 4 $ festival - go
+
+$ tomorrow - festival - go
+
+#$A0ば > |$tomorrow - festival - go| .=> 4 festival - go
+
+$ tomorrow - festival - go
+
+kangaroo
+       .                                                                                 Internal lines of a nest are recursively factored into comments. Take the following
+Convention 3.3:
+
+;                                                                     example:
+$C                                                                                                                                              -                                                  -
+i) |A-B-$C] > 4$B-C                                                                                                 tomorrow . 4 Yoshimi - come
+L$4・p・C                                                                                                                 Yoshimi’ - acome
+ashita wa yoshimi wa kuru >
+し                                                                                                                                   /       Yoshimi - come
+C                                                                                tomorrow -: 7      oy
+Yoshimi’ - ~come
+ii) [A-$B-C] > 4$B-C                                               -                 -
+L$4・ぢ・C
+                        Yoshimi - come
+For expository purposes I begin by treating the segment                    only.
+「 で                                                                          P      ry Purp          gin 7        9        9       { weston: come     »
+iii)  [SA -B- C| > B-C                                                                 This segment is factored as follows:
+L$4・ぢ・C
+come
+An implication having $ on its segment X is factored into a collection of                        Yoshimi "come
+
+comments that has $ on all comments that include X.                                                                                     => ¢ Yoshimi’: acome
+
+Yoshimi - come
+Yoshimi’ - ~come
+
+Yoshimi - come
+Yoshimi’ - ~come
+
+CONVENTIONS OF NESTS AND THE NEGATOR                                                                               6
+
+Convention 3.4:                                                                                                           Convention 3.5:
+
+i) [-X] ラ 12 4
+
+コメ                                                                                                                    B
+A
+A negative segment —X in an implication is factored to comments —X and X.               iv)   |  B     |  = <  っ  D
+x C-D               B
+i) s-x]>{                                                   te
+A negative segment $ ーダ, with $ outside the scope of the negation, is factored        When a nest is factored, the nested lines are recursively factored.
+
+into comments $ 7X and X.
+The example above has two potential immediate sources of the segment come: one
+
+iii) |-$ | > (ox,                                                  is _co7ze and the other is Yoshimi: come. But come is only listed once. As a
+
+convention, a comment with the same identity is listed only once in the same
+A negative segment 7$ X, with $ under the scope of the negation, is factored into     commentary. The meme come in =come is the same meme as the one in the
+comments っX and $ X.                                                                    comment Yoshimi - come. (As stated in Chapter One, if two memes have different
+
+identities and have the same label, we use identity indexes.)
+
+#AWYWK#                                                                                                                                                                                                                                                               knowledge
+Convention 2.6:
+
+Y
+Z-Y
+fy
+.  X-Y  X-Y
+*
+ii) yl? yy
+|Z -Y
+
+If factoring implications of the same body into a commentary yields multiple
+
+instances of the same comment, all but one of them are unlisted.
+Now consider the negative version of the same segment. The segment
+
+is just a concatenation of the negator コ and
+
+_   Yoshimi - come
+Yoshimi’ - acome
+
+{ Yost "COMME Since the latter part will be a duplicate, as Convention 3.6
+
+Yoshimi’ - acome
+
+states, we only need to copy the entire segment into the commentary:
+
+_  Yoshimi - come   —  Yoshimi - come
+Yoshimi’ - ~come        Yoshimi’ - ~come
+
+Now we are ready to factor #AWYWKか:
+
+‘come
+
+Yoshimi - come
+acome
+
+Yoshimi’ - ~come
+
+「                                                     7             NN ・COTe
+
+tomorrow・   Yoshimi ・ come                 Yoshimi’ - acome
+Yoshimi’ - っcome
+Yoshimi - come
+
+Yoshimi - come                            Yoshimi’ - ~come
+
+Yoshimi’ - ~come
+-                                 -        _ erm - come
+
+Yoshimi’ - ~come
+
+tomorrow :-  1
+
+tomorrow’: 7 1
+
+Yoshimi・come
+Yoshimi'・っcome
+
+tomorrow’ - 1
+
+し
+
+Let us now turn to how $ jis assigned from implications to comments. We have
+already seen how it is handled inside and outside of the scope of negation. The
+convention is similar for nests. If $ is assigned outside of a nest, $ is not assigned to
+comments sourced from inside of the nest. If $ is assigned inside of a nest, $ is not
+
+inherited to comments sourced from outside of the nest.
+
+Convention 2.7:
+
+xX
+xX    Y
+)  Nd”).
+、  Z
+[ xX
+X    $Y
+りー ls ラテ 1$Z
+。
+
+$ assigned to outside of a nest is not inherited to comments from inside of the
+
+nest.
+x      $Y
+iii)   $y| >i Z
+Z     1
+L    J   | iz
+x      $Y
+iv) *  し2 > 7
+Z      Y
+ST st,
+
+korea
+$ assigned to the inside of a nest is not copied to comments from outside of the
+nest. If $ is assigned to a comment, nested duplicates of the same comment do
+
+not receive $.
+
+The following are some examples of#AWYWK#:
+
+$ashita wa yoshimi wa kuru.
+
+come
+Yoshimi - come
+“come
+Yoshimi’ - ~come
+
+Yoshimi - come                    Yoshimi - come
+tomorrow ・                                    Loy
+Yoshimi’ - ~come                 Yoshimi’ - ~come
+. <           Yoshimi
+imi                        oshiml - come
+$ tomorrow’: 7   Yoshimi - come              tomorrow -         um
+imi’ ・                          Yoshimi’ - ~come
+Yoshimi’ - ~come
+
+_   Yoshimi - come
+Yoshimi’ - ~come
+
+Yoshimi - come
+Yoshimi’ - ~come
+
+$ tomorrow’: 7 1
+
+.
+
+ashita wa $yoshimi wa kuru.
+
+-
+come
+
+Yoshimi - come
+acome
+$ Yoshimi’ - ~come
+
+ie - come
+
+t                  Yoshimi - come
+omorrow      $ Yoshimi’ - ~come                      Yoshimi’ - acome
+
+Yoshimi - come
+
+Yoshimi’ - ~come
+
+Yoshimi - come
+$ Yoshimi’ - ~come
+-                                          -           _ esr -come
+
+Yoshimi’ - ~come
+
+tomorrow ・  1
+
+tomorrow’: 7 1
+
+Yoshimi・come
+Yoshimi’ - ~come
+
+tomorrow’ : {
+
+、
+
+ashita wa yoshimi wa $kuru.
+
+| $ come
+
+$ Yoshimi・come
+ーコcome
+Yoshimi'・-come
+
+1 ・COTe
+
+tomorro         Yoshimi - $ come
+
+W  .                                                                                         .     . /
+
+Yoshimi’: っcome                  Yoshimi’ - acome
+
+Yoshimi - come
+
+Yoshimi’ - come
+
+tomorrow’: 7    ーー
+Yoshimmi'". —come
+
+_   Yoshimi - come
+Yoshimi’ - ~come
+
+Yoshimi - come
+
+tomorrow’: 7       ,
+Yoshimi’ - =come
+
+ARTICLES AS $-ASSIGNERS
+
+Consider the following example.
+
+ashita $omatsuri iku. — (I) will go to the festival tomorrow.
+
+(                                                                                             >
+Xo.         $            X        xX
+BASE tomorrow X: — festival X:— goメダ:ミー X:—
+0               0           aX      aX
+tomorrow              $ festival                  go
+0                 0              720
+
+$ festival - go
+0
+
+$ festival - go
+0
+( $ festival . go )
+|               0
+
+$ festival . go )
+0
+
+tomorrow -  (
+
+0
+
+ROOT              [tomorrow - $festival - go] .
+
+latin
+In the base structure $ is placed in the same place as in the phonological structure.
+The assumption that the base position of a semantic-$ is identical to the
+
+corresponding phonological-$ paves the way to connect syntax and semantics.
+
+However, the following pair of sentences reveal that given a sequence of APs the
+
+mapping from phonological-$ to semantic-$ is not one-to-one:
+pping     p      8
+
+$kohi ga oishii. — Exactly coffee is tasty.
+
+(—                                                                                                                              >
+isX
+BASE coffee メーーーー- tasty X:
+$ coffee                    istasty
+$ coffee’, $ coffee”          jg tasty
+$ coffee -;, tasty
+$ coffee’, $ coffee’ - a}, tasty
+$ coffee ・。 tasty
+ROOT                   $ coffee’ - aj. tasty
+$ coffee’’ - 4}. tasty
+い、                                                                                                                               ノ
+
+$kohi wa oishii. — Specifically coffee is tasty.
+
+4                                                                                             >)
+isX
+BASE coffee X:       tasty X:—.
+ある               Tis X
+coffee            istasty
+$ coffee’                jg tasty
+
+coffee ・j。 tasty
+
+$ coffee’ - 4}. tasty
+coffee -j, tasty
+、 coffee’ - eI
+し                                                                                                                 ノ
+
+ROOT
+
+In both sentences phonological-$ is assigned only to the first AP but semantic-$ is
+distributed differently across the sentences. The difference comes from the nodes
+$X
+
+xX          dX  “
+:        an   ・ 一一一
+SX “$x”
+
+$X"
+different articles assign $ differently, the distribution of $ is in part determined by
+
+The former corresponds to ga and the latter wa. As
+
+lexical properties.
+
+#KGO# #NST#
+
+Articles, when their corresponding AP receives phonological-$, assign semantic-$ to
+
+lexically specified positions inside the resulting node.
+Let us take another example:
+
+$ninjin shika tabenai. — eats only carrot.
+
+|                                      $ X'S メソ"                      aX                                                                                      )
+BASE carrot X:——— eat X:— .
+X
+$ carrot’,$ carrot’’          seat
+carrot                   eat
+$ carrot’, $ carrot’’- seat
+carrot - eat
+$ carrot’ - seat
+ROOT                  $ carrot’’ + seat
+carrot - eat
+\                                                                                                                                      ノ
+$X',$X"
+
+In this case, the node X:          , corresponding to shika, assigns $ to both
+
+topics on the upper half of the resulting node.
+
+The distribution of semantic-$ depends both on the lexical properties of certain
+items and on the prosodic structure. It has been known in the literature that both
+“particles” and prosody are relevant to the information structure of a sentence. $-
+theory naturally explains how they work together to assemble the sentence
+
+information.
+
+Now, let us take one other example, dakeo, because this article is particularly
+
+interesting. Consider the following sentence:
+
+$koe dakeo kiita. — (I) heard only voice.
+
+There seem to be two semantically similar or identical versions of the X dakeo construction.
+One is where dakeo receives the R tone (Koe Dakeo kiita) and the other is where it does not
+(Koe dakeo kiita). My guess at the moment is that the difference is at best paralinguistic. I
+tentatively ignore the semantic difference between them, if any.
+
+leeway
+Because dakeo is pronounced as its own AP it may be better to assume that the origin of
+
+$ carrot’, carrot’
+semantic-$ is not the article but the meme on the left. Under this model,                           is
+carrot
+
+$X', xX”
+
+obtained by merging ‘carrot and *X:          , where the superscript $ is aligned to the
+
+position of phonological-$. (See the other note in this page for the spedification of dakeo.)
+Regardless of the validity of this analysis, for simplicity, the superscript $ is omitted from the
+notation unless otherwise noted.
+
+Ignoring $-specification and the covert subject, introspection would reveal that this
+
+sentence roughly means:
+
+voice’ - shear
+voice’’- shear
+voice - hear
+
+Note that the implications cannot be randomly reordered. Particularly, the
+
+following order changes the meaning:
+
+voice - hear
+#1 voice’ - shear
+voice’’- shear
+
+This can be (probably) more easily seen when the mood is replaced with the partial
+
+interrogative mood:
+
+koe dakeo kiita? — Did (you) hear only voice?
+
+voice’ - shear
+voice” - shear | ?
+voice - hear
+
+The scope of the question is whether something else than the voice is heard, but not
+
+whether the voice is heard.
+
+The article dakeo needs to be characterized in such a way that it is ensured that the
+implications are ordered correctly. Since in the intended order the top implication
+is of the single-primed topic, dakeo as a parallelizer must put the single-primed
+
+topic on the upper half. The problem is that the comment corresponding to the
+
+#KDK# #KDK?# #KSK# #SSK# #SDK# #SSM# #4SDM#
+
+single-primed topic has a negator even though in the phonological form the
+
+predicate is in the positive form.
+
+To solve this puzzle, the following derivative tree is postulated:
+
+(                                                                                                                                      N
+BASE voice    XxX:                      hear     メダ: ーー
+AX                                           コア
+コ ($ voice’, voice’)           hear
+svoice                 shear
+
+ココ ($ voice’, voice’’)  - hear       $ voice’, voice’’- shear
+
+svoice - shear                  voice : hear
+
+$ voice’ - shear
+
+ROOT                          voice’’- shear
+voice - hear
+、                                                                                                         ノ
+a($X',X"
+Dakeo is assumed to be X:               . This contrasts with the shika ... nai construction,
+=
+$ XY.$ メソ                            $ voice’ - shear
+
+with shika assumed to be X:
+
+. The resulting root node, | voice’’- ahear| ., would
+
+voice - hear
+$ voice’ - shear
+be | $voice’’- shear | .in the shika ... nai construction, i.e., “$koe shika kikanakatta.”
+voice - hear
+
+This reflects the following observations. First, typically, in X shika Y nakatta, the utterance
+
+assumes that the hearer may expect that Y applies to everyone (i.e.,  [xX ,X', X''|), whereas in X
+
+dakeo Y shita the utterance does not have such an assumption. Consider the following pair of
+examples:
+
+$sore shika kangaenakatta. — (I) thought only about that.
+
+$sore dakeo kangaeta. 一 (1) thought only about taht.
+In the former, the unerlying assumption is that 7 should have thought about everything (in the
+context). In the latter, such an assumption is not expected. Rather, the utterance (relatively
+easily) implies that J was supposed to focus on that. The underlying question here is whether I
+thought about something else. This supports the present characterization of dakeo where only
+one of the primed topics receives $.
+
+Likewise, in the following pair of examples, the former rather than the latter implies 7 should
+have brought everything (in the context) while the latter relative to the former more likely
+suggests the wallet was the minimal requirement.
+
+$saifu shika mottekonakatta. — (I) brought only my wallet.
+$saifu dakeo mottekita. — (I) brought only my wallet.
+
+lexington
+ー (X’, $ Xx”
+
+Why not X:                  ? Assume now that the context is [wallet, smartphone, computer]
+
+ーー
+
+and consider the following sentences:
+e, $saifu dakeo mottekita no!? — Wait, is it that (you) brought only your wallet!?
+e, $saifu mo mottekita no!? — Wait, is it that (you) brought your wallet too!?
+e, $saifu o mottekita no!? — Wait, is it that (you) brought exactly your wallet!?
+e, $saitu wa mottekita no!? — Wait, is it that (you) brought specifically your wallet!?
+
+I find the last sentence is less natural than the others. I hypothesize that this relates to the fact
+that wa is the only article that does not give $ to the top implication among mo, o, and wa. (It
+
+$ X          $ xX, X’
+
+and mo is X:
+
+would be less controversial that o is X:                                    .) Since dakeo is
+
+$ x’, $ xX”
+っ(S$ X’, Xx’)
+natural in the example above, I propose that dakeo is X:           rather than
+3(X',$ Xx’)
+aX
+
+ーー
+
+Earlier (until ver. 6.3), 1 noted dakeo as X:                        . The correction was made in version
+6.4 reflecting the intuition explained above.
+
+One peculiarity of dakeo is that it has a negator despite the fact that it is part of an
+
+argument. In all other contexts so far, we have only seen negators on the predicate
+
+side of a clause. The reason for this surprising setting is shown in the third line. The
+
+a ($ voice’, $ voice’’)  - hear
+
+node              is converted to equivalent
+
+Avoice - shear
+
+$ voice’, $ voice” - shear
+
+;                  . In the conversion, the negator on the topics is shifted to
+voice - hear
+
+the comment (the usual position of the negator), and the two negators on the lower
+half cancel out each other. (The parentheses are shown to make it clear that the
+negator belongs to the entire bundle.) The resulting form then merges with the
+
+mood. The resulting body correctly captures our previous observations.
+
+Convention 2.8:
+
+i) コX・アニメ・-Y
+Anegator is shifted to the comment.
+
+ii) ココタニ
+
+#ESDMN?# #ESMMN?4 #ESOMN?# #ESWMN?# #4K# #TT#4 #SWTOT#
+
+Negators cancel out each other.
+
+PREDICATES AS $-ASSIGNERS
+
+On the predicate side, if the corresponding AP has phonological-$, it has semantic-
+
+$ on the upper half. Take the following sentence as an example:
+
+$kawaii. — (It) is cute.
+
+4                                                                                             >)
+,         x              $ igX
+BASE it     X: — cute     xX:
+0               Tig X
+it           $ j,cute
+0           ーijsCute
+ROOT          [it - $jgcute] .
+、                                                                                             ノ
+
+Contrastive $-specifications are only possible if the sentence has two or more APs.
+
+The following text corresponds to two possible sentences that differ only with $:
+takoyaki tabeta. — (1) ate takoyaki.
+
+If $ is placed only on the first AP:
+
+/                             gx                        x                                                                                                     >
+BASE takoyakiメ:ーー eat X:—
+0                 コル
+takoyaki              eat
+0                  Teat
+ROOT           |$ takoyaki - eat] .
+\                                                                                                                   ノ
+If $ is placed on the second AP:
+(-                                                                                                                   ~
+BASE takoyaki X: x    eat X: $x
+0                  コル
+takoyaki                $ eat
+0                  Teat
+ROOT           [takoyaki - $ eat] .
+し                                                                                                                  ノ
+
+Again $ is simply placed on the upper half of the predicate.
+
+momentum
+ISSUES ON COMPLEX PREDICATES
+
+Consider the following:
+
+saitosan wa takoyaki o $tabeta. — Specifically Saito ate exactly takoyaki.
+
+4                                                                                            >
+.           x           .                           $X       X
+BASE Saito X:— takoyaki X:             eat X:— X:—
+Saito                             takoyaki                 $ eat
+Saito’                     takoyaki’, takoyaki’’         Teat
+
+takoyaki・$ eat
+
+takoyaki’, takoyaki’’ - seat
+
+takoyaki . $ eat
+takoyaki’, takoyaki” . seat
+
+takoyaki -$ eat
+takoyaki’, takoyaki” . seat
+
+                       takoyaki - $ eat
+Saito -                     -                  -
+takoyaki’, takoyaki” . seat
+                           takoyaki -$ eat
+Saito’: 7                    -                  -
+takoyaki’, takoyaki” .-eat
+
+takoyaki - $ eat
+
+Saito - 4 takoyaki’- seat
+
+takoyaki’’ - seat
+ROOT
+takoyaki - $ eat
+
+Saito’- 44 takoyaki’- seat
+
+takoyaki’’ - seat
+
+\.                                         ノン
+
+If $ was assigned to the second parallelizer of tabeta, the tree would generate the
+
+f takoyaki - eat
+Saito - $4 takoyaki' - seat
+
+takoyaki"’ - seat
+root node #          .                  っ which, to me, seems wrong for this
+
+f takoyaki - eat
+Saito’: +4 takoyaki' - seat
+
+takoyaki’’ - seat
+
+particular sentence.
+
+#SWTOT#
+
+Now consider the following:
+saitosan wa takoyaki o tabenakatta.
+
+This orthographic sentence is ambiguous between at least two interpretations.
+Suppose in the context there are two people, Saito and Tanaka, and multiple dishes
+one of which is takoyaki. In one interpretation, Tanaka ate exactly takoyaki and
+nothing else, and Saito either ate something instead of takoyaki or ate nothing. A
+natural response based on this interpretation is “If Saito did not eat takoyai, then
+what did she eat?” In another interpretation, Saito ate everything but takoyaki, and
+Tanaka either ate something not takoyaki or ate nothing. A natural response based
+on this interpretation is “What, instead of takoyaki, did Tanaka not eat?” The first
+interpretation is probably more accessible with $ placed only on tabenakatta, while
+
+the second one is probably more accessible with $ placed only on takoyaki o.
+
+These interpretations are represented as follows, respectively:
+
+— Saito - takoyaki - eat
+— Saito - takoyaki’ - eat
++ Saito’: takoyaki - eat
+— Saito’ - takoyaki’ - eat
+— Saito’ - takoyaki’’- eat
+
+— Saito - takoyaki - eat
+
++ Saito - takoyaki’ - eat
++ Saito - takoyaki’’- eat
++ Saito’: takoyaki - eat
++ Saito’: takoyaki’ - eat
+
+which are obtained through the following derivative trees:
+
+nitrogen
+ン
+
+                               x                 .                          x                                                    x          $ コメ
+BASE Saito                メ:ー takoyaki            xX:                   eat                  X:— X:
+@                                       xX’, xX"                                               aX           x
+Saito                                  takoyaki                             eat
+Saito’                                                      takoyaki’, takoyaki’’                                           seat
+takoyaki - eat
+takoyaki’, takoyaki’’ - seat
+takoyaki - eat
+_ ( takoyaki’, takoyaki’”’ . seat )
+takoyaki - eat
+( takoyaki’, takoyaki’”’ . seat )
+Saito -$— (        takoyaki eat        )
+takoyaki’, takoyaki’”’ . seat
+|   (        takoyaki - eat        )
+Saito’ -         -        -
+takoyaki’, takoyaki’”’ . seat
+takoyaki - eat
+Saito - $4 takoyaki’- seat
+takoyaki”’ - seat
+ROOT
+takoyaki - eat
+Saito’- 4 takoyaki’ - seat
+takoyaki”’ - seat
+f     eat
+takoyaki - eat
+eat
+takoyaki’- seat
+takoyaki”’ - seat
+takoyaki - eat
+takoyaki’- seat
+— Saito - takoyaki - eat                           wy
+takoyaki”’ - seat
+— Saito - takoyaki’- eat
+MEANING                      + Saito’ - takoyaki- eat | . ¢            takoyaki - eat
+— Saito’ - takoyaki’ - eat           $74 takoyaki’- seat
+— Saito’ - takoyaki’’- eat                 takoyaki'・っeat
+takoyaki・eat
+$ Saito・つ< takoyaki'・-eat
+takoyaki”’ - seat
+takoyaki - eat
+Saito’ -      takoyaki’ - seat
+takoyaki”’ - eat
+a
+
+ン
+
+                        x              .                    x                                       $iX xX
+BASE Saito                メ:ー takoyaki            xX:                   eat                  xX:        X:—
+@                                       xX’, xX"                                                 x          aX
+Saito                                            takoyaki                                    $ seat
+Saito’                                                   takoyaki’, takoyaki’’                                            eat
+takoyaki - $ seat
+takoyaki’, takoyaki’’- eat
+takoyaki - $ seat
+takoyaki’, takoyaki”’ - eat
+takoyaki - $>eat
+takoyaki’, takoyaki” - eat
+                  takoyaki - $ seat
+Saito -             :           :
+takoyaki’, takoyaki”’ - eat
+                      takoyaki - $ seat
+Saito’. 7            -           -
+takoyaki’, takoyaki”’ - eat
+takoyaki - $ seat
+Saito・く takoyaki’- eat
+takoyaki"・ eat
+ROOT
+takoyaki - $ seat
+Saito’. = 4 takoyaki’- eat
+takoyaki"・ eat
+f     eat
+$ seat
+$ takoyaki - seat
+takoyaki’ - eat
+takoyaki’’- eat
+takoyaki - seat
+takoyaki’ - eat
+— Saito - takoyaki - eat                           wy
+takoyaki’’ - eat
++ Saito - takoyaki’- eat
+MEANING                       + Saito - takoyaki’’- eat]. <                   takoyaki - meat
++ Saito’ - takoyaki - eat            Saito: takoyaki・eat
++ Saito’ - takoyaki’ - eat                        takoyaki’’- eat
+takoyaki - seat
+a4 takoyaki’- eat
+takoyaki’’eat
+takoyaki - seat
+Saito・コ? takoyaki’- eat
+takoyaki’’- eat
+ノン
+
+oxygen
+For the former, if $ was instead assigned to the second last parallelizer the root
+
+| takoyaki - Seat
+
+Saito - 4 takoyaki'・ —eat
+
+takoyaki’’- —eat
+node would be #                -                              っ which again seems wrong to me
+
+| takoyaki - $ eat
+Saito’: 4 takoyaki’- —eat
+
+takoyaki’’- -eat
+
+for this particular sentence. Similarly, for the latter, if $ was assigned to the last
+
+f takoyaki - seat
+Saito -$ < takoyaki’ - eat
+
+takoyaki’’- eat
+parallelizer, the root node would be #        _            ., which
+takoyaki - seat
+
+Saito’: っ takoyaki'・eat
+
+takoyaki”’ - eat
+
+seems wrong.
+
+In sum, based on my introspection, it seems that when one AP corresponds to
+
+multiple parallelizers, only a specific one of them may have the right to have $.
+
+$ が与えられうるスロットは正確にどこであるか、また、一つの Ap に
+そのようなスロットが複数ある場合に、そのうちのどれに *が与えられ
+るかといった問題は未解決で、ver 6.o でも具体的な提案は行わない。 前
+
+者については、  @LostmyPassword (https://x.com/LostmyPassword/status/
+
+1301347279673020416), @wyoreorm (https://x.com/wyoreorm/status/
+
+1402827512447586307),  HKOSFZ (https://x.com/awesomenewways/status/
+
+ao134756686s5g2328) によって度々問題提起がされてきた。
+
+phosphorus
+CHAPTER FOUR: LEXICON
+
+TYPE (CONT.)
+
+ROLE
+
+In the preceding chapters we assumed that roles are given by parallelizers. For the
+sake of syntax, in this chapter we assume that roles appear as a node in the base
+
+structure. The role is now admitted as a new type.
+
+Convention 4.1:
+
+i) (X) (er)
+
+(ax) = (AEE) 2 0x)
+
+A role takes an immediately preceding serial to form a serial with a role. Serials
+
+with and without a role are considered different types. Only the former can be
+
+taken by serial-to-parallel.
+
+This allows us to redefine parallelizers with roles. The copula, previously defined as
+
+rs区
+メー (p. gaslighting), can be now redefined as:
+MS
+Xx:   ー
+is の・ーマ
+
+The following tree exemplifies that the two definitions achieve the same result:
+
+(-                                                              ~
+xX
+X is ーー
+isX
+isX
+Tig X
+                                                              ノ
+
+RELATIVE ROOT
+
+Later in this chapter we will deal with the index mood, which merges with a node
+and finalizes it. The node finalized by the index mood is a relative root, a special
+type of root node that further merges with a serial. The index mood requires the
+root node to have the index meme, a special meme for this purpose, as its leftmost
+segment. When a relative root then merges with a serial, it is required that the index
+
+meme and the serial are co-indexed.
+
+Convention 4.2:
+
+.、  pindex, - X
+i)              )                             i           X,,
+
+[pindex,, |  i
+
+Xx.
+
+_. pindex, - X
+ii)             )                             i           Xm
+
+[rindex,, |  i
+*K
+
+(where n # m)
+
+iii)
+ok
+
+(where A # index)
+
+resident
+LEXICAL INSERTION
+
+THE TARGET OF LEXICAL INSERTION
+
+A lexical item is a basic unit of syntax. It is the interface between sound
+(phonology, which then connects to phonetics) and meaning (semantics). Lexical
+
+items are inserted to the base structure. Consider the following example:
+
+yumi ga nakimashita. — Exactly Yumi cried.
+
+(-                                                                                                              >
+PHONOLOGY ‘yumi ga                nak’                 1-masita
+Xx
+BASE    Yumi py X: —— ec    X:—.
+um by     X',X"    ty    do     AX
+by Yumi                 doCry
+by Yumi      docry
+by Umt by Yumi”   _doCry
+by mi ‘do Cly
+by Yumi'.py Yumi" ・ “do cry
+[py Yumi ‘do CLy   」
+ROOT                           by Yumi: _doCry
+by Yumi": _doCry
+、                                -                     -                                                       ノ
+
+On top of the base are the lexical items, written in Kyouro. In the tree notation, the
+correspondence between phonological forms and semantic forms are indicated by
+left-aligning the phonological form with the sequence of semantic forms it
+corresponds to. Some correspondences are self-explanatory. The phonological form
+
+‘yumi corresponds to the semantic form Yumi. That is,
+
+‘yumi — Yumi
+
+x
+nak’ corresponds to the sequence of cry, 4, and X: xX
+
+a
+
+nak — cry         do
+
+#YGN#
+
+In many cases a single lexical item contains a sequence of multiple semantic forms.
+In order to make the correspondence visually intuitive, the following notation is
+
+employed:
+
+nak
+
+xX
+X:—
+
+cry      do                AX
+
+This says that the phonological form nak corresponds to the semantic sequence of
+
+x
+CTY; do» and X : —— (in this order). This format will be used as the default notation
+
+a
+
+of a lexical item. The item ‘yumi is represented as the following:
+
+‘yum
+Yumi
+
+When relevant, the syntactic labels are shown alongside the phonological form as
+
+usual:
+
+nak ./dv
+
+xX
+X:—
+
+cry      do                AX
+
+yumi R2/m-ii
+
+Yumi
+
+The lexical item ga is inserted to the sequence of by and X:———. This
+correspondence can be represented as the following:
+ga
+x:   ー
+by    ° X', xX"
+stardust
+Lexical items do not care about the hierarchical structure. Lexical items target a        (Death Note, Season 1, Episode 10, at about 9 min 10 sec. Translation is mine.)
+
+partial linear sequence instead of a constituent.                                                                                                 “anal
+
+In the following sentence, a partial linear sequence, but not a constituent, is
+
+aX      x
+The lexical item X:  ァ  X:   ァ・  does not correspond to a constituent. The first
+
+a
+
+mapped to a syntactic node.
+
+aX
+shinigmi wa ringo shika tabenai. — Specifically Death eats only apples.                    component X: yr merges leftward, leaving the other two behind.
+4                                                                                                                                                                                                                                    )
+PHONOLOGY       sinigami lo| ha            rnngo [o] ska               tabe             ‘anal
+BASE               Death    by    X: a7       apple on X:     ァ         eat do        X: >  X: Xx
+byDeath                       onapple                           doeat
+byDeath                               onapple’,on apple”                   _doeet
+byDeath’                             onapple                     doeat
+
+onapple’.on apple'・-doeat
+onapple ・」。 eat
+
+onapple’.on apple” --4,,eat
+onapple - 4, eat
+
+onapple’.on apple” --4,eat
+onapple ・」。 eat
+
+onapple’.on apple”. =, eat
+byDeath                                         do
+onapple - 4, eat
+
+onapple’.on apple” --4 eat
+byDeath'・ コ                            do
+onapple - 4, eat
+
+onapple’ ・-d。eat
+
+byDeath - + onapple’’- =g,eat
+
+onapple ・』。 eat
+
+ROOT
+onapple’- 7g,eat
+byDeath ・つる onapple - sg,eat
+onapple ・」。 eat
+Ss                                   -                                      -                                                                                                                                                        ノ
+
+#SWRST#                                                                                                                                                                                                                                                               surrealism
+ARITY
+
+When the predicate receives an argument or adjunct, it must be in the form of a
+parallel. When a predicate merges with a parallel, it must be made back parallel to
+be ready for another, until the clause receives the mood. How many times it is
+
+parallelized in the clause tells its arity: how many parallels it merges with.
+
+xX
+In #KYGN#, the predicate cy is parallelized twice by two instances of X: —.
+
+a
+
+Because this form appears twice after /。cの, we can tell, even without looking at the
+
+nodes on the left, that there are two arguments or adjuncts for this predicate,
+provided that the derivative tree is well-formed. Arity solves some cases of
+
+structural ambiguity including the one that we saw in p. ignorance of Proposing.
+
+I expect that this mechanism serves as a basis for case and valency, but in version 6.0 they are
+not discussed.
+
+nak’                nak’
+x              x     x
+To accommodate both cry gy X: xX  and Cry dy X:  ァ X:  y 3s well as
+
+unrestrictedly many other possible semantic forms of nak under the same entry in
+Mm
+
+the lexicon, we use the notation | X to say X can appear minimally n times and
+
+n
+
+maximally m times.
+
+| PHONOLOGY        kinou         [o]         yumi ga                  nak’                                     1-masita    )
+xX.                   x                             x          x
+BASE           yesterday at X: 5 yumi    by *: Xx"  cry do X: =X  X: Xx
+atyesterday              by Yumi                        docy
+atyesterday                     by Yumi                  docry
+0                                        by Yumi’ by Yumi”’                   do Cty
+by mi ‘do Cly
+by Yumi'.py Yumi" “Td Cty
+by emi ‘do Cy
+by uml, Yumi”. “dolly
+by "mi ‘do Cy
+by Py Yumi” doCry
+by emi ‘do Cy
+atyesterday -    by Yumi, Yami = cry
+0
+| atyesterday ‘by Yumi «qo cry   」
+ROOT                                        atyesterday ‘by Yumi’: 7g)cry
+atyesterday  ‘by Yumi ・-doCry
+、                                                                                                                                                ノ
+
+ttanium
+nak’
+CO
+
+The representation cry gy, | X:— > means that the phonological form nak’ is
+
+=
+0
+
+x
+inserted to a sequence of X: xX  optionally repeated any number of times
+
+a
+
+preceded immediately by cry 4). It is postulated here that the minimum number
+
+of times the item nak needs X: —— is zero. This assumption is justified by
+
+a
+
+xX
+#SWRST# where the verb tabe lacks X : 一一.
+
+a
+
+An interesting case of variable arity is found as the structural ambiguity of a part
+of the famous lyrics of Inaba (1993): boku wa kimi dakeo kizutsukenai. Taken as a
+sentence, the text can be understood to mean (a) “you are not the only person
+hurt by me” (shown below) or (b) “you are the only person not hurt by me”
+
+(shown on the next page). The ambiguity comes from the variable arities of the
+
+ンー                                                                                                                           ~ verb stem kizutsuke and the suffix anai, lexically represented as
+BASE 1          x:                      x; OO hon             x x,
+by       79u       on“:          ur       do       ‘Ty タデダー                          kizu tuké                        a-na, t
+——                                 :             hurt             ーー                                 ~ OX                | 、 xX
+OU                              ur                                                                                   7a
+by                 ony                     do                                     hurt dg | X: =X and X: デ    X: =X っ respectively.
+by!                              4 (onyou’.on you”)               dohurt                                                                        0         7                              0         7
+by!                            on you                 qo hurt
+っ(onyou.on you’) qo hurt gnyou’,on you’: gy hurt
+on you - 4g, hurt                  onYOu・do hurt
+onyou'on you”. "do hurt
+7            onyou -q, hurt
+onyou’.on you”-=4, hurt
+onyou ‘do hurt
+1--    onYOU’.on you”. “do hurt
+by                   onyou -g, hurt
+1!      onYOU’.on you”. “do hurt
+by                 onyou-4,, hurt
+onyou’ + 7g, hurt
+by! ・つる onyou”’: ag hurt
+onYOU ・do hurt
+ROOT
+onyou’ + 7g, hurt
+byl:    onyou”’: 4g, hurt
+onYOU ・do hurt
+\                             -                               -                                                              y
+#BWKDK#
+
+turmeric
+x                    aK, X")                  “x. xX
+
+by!                                  onyou                                        do hurt
+
+by!                         コ (onyou’.on you’)            qo hurt
+by!                                            on you                           do hurt
+
+4 (onyouw’.on you’’) ‘Ago hurt ー onYOu on YOU ・do hurt
+
+Ton YOu ・do hurt                         onyou : 4g,hurt
+
+( onYOU’.on you” ‘do hurt
+
+onyou--=4, hurt
+
+onyou’.on you” -4,, hurt
+ー           onyOou- "do hurt
+
+( onYOU’.on you” ‘do hurt
+by!
+Y               onyou ・ “do hurt
+
+onYOU'.on you” ‘do hurt
+T.っ
+by                  onyou JJhurt
+
+onYOou do hurt
+
+by! ・? onYOu +g, hurt
+onyou : 7g,hurt
+
+ROOT
+onYou'・do hurt
+
+by! ・つる onyou’’-g, hurt
+onyou : 7g, hurt
+
+RELATIVE CLAUSE
+
+To derive the meaning of a sentence having a relative clause, we simply drew a
+separate tree for each relative clause. It worked for meaning, but deriving a
+syntax tree poses a challenge. In syntax, a relative clause appears immediately
+left to the antecedent. Consider again #OMSN#. The following is the syntax tree
+
+along with the broad semantic notation of this sentence:
+
+A4/R1
+./A4
+R2/m-ii
+A4/Ri  R2/m-i A2\A4         A4/R1
+oishii miruku shika nomanakatta
+milk,         istasty milk, not: only didn't drink
+milk, is tasty                not: only milk,
+drank only milk,
+
+uranium
+In order to connect the two structures we postulate the following revised
+
+structure.
+
+The symbol 7 stands for a mood postulated for a relative clause. The symbol is
+taken from the first letter of index. Merging the clause with a mood before
+
+merging it with the antecedent ensures it can derive the proposal and the
+commentary. When liemilk, ig tasty| i merges with the head noun, milk, the root
+
+node of the relative clause is simply eliminated and then we obtain the same
+milk, The mood i ensures that the head noun has the same index with the
+leftmost segments of the node it merges with. It checks the indices and if they are
+
+not identical, the base structure is illformed.
+
+Index always sits in the leftmost position of a relative clause. The checking
+process ensures that the relative clause obligatorily appears immediately left to
+
+its head noun.
+
+| sywrax                               ki     kiA4/R1 RiR2 R2/m-ii A1\A2 A2\A4       ./d-vi            d-i\A4/Ri                                                                                    )
+PHONOLOGY       [o]                 OS1      (ja         [o] ‘muiruku [o] sika         nom           a: nakatta
+BASE              index, ij X: * tasty jg X: ーー  i      milk, on X: と  drink gy X: て
+0                   aX                                                             x
+itindex,            istasty                                                     dodrink
+itindex,             istasty                                                     _do drink
+0                Tj, tasty                                                    dodrink
+itindex, -j, tasty
+0
+ROOT                          litindex, is tasty| i
+milk,
+onmilk,
+onmilky JO milk,”
+onmilk,
+on milky’, gy milk,"’- >g,drink
+onmilk, -q, drink
+onmilki ・コodrink
+ROOT                                               onmilk,’’- sg,drink
+onmilk; -g, drink
+S                                                                                                                                                                                                                 ノ
+
+usher
+TOKENS
+
+DAKEDE
+
+Numata (2009, pp. 198-199) observes that the following sentence allows two
+readings. In the first reading, the sentence means you can go there just by taking a
+bus (no other means necessary) and in the second reading it means you can only go
+there if you take a bus (no other means available). She calls the former the minimum
+requirement (originally, “saiteijoken”) reading and the latter absolute requirement
+(“zettaijoken”) reading.
+
+I would like to note here that at least in my introspection, the first reading is not necessary
+
+about what “minimum requirement” would usually refer to. In the first reading, the sentence
+
+does not specify taking a bus as the necessary condition for reaching the destination. Rather,
+it says that if you take a bus, you can reach the destination without using other means; it allows
+
+the possibility that you can go there without taking a bus. Numata’s explanation, “/\ A (Cc 3€
+ればそれだけで他の手段一例えば電車に乗ること一を使わなくてもそこへ行け
+る” (p. 198) (“If you take a bus, that alone, without other means—such as taking a train—will
+
+allow you to go there.” (my translation)) is compatible with my introspection, but her naming,
+“saiteijoken” gives the impression that taking a bus is necessary. I assume it is only a confusing
+name and it does not indicate that her introspection is different from mine.
+
+basu dakede ikeru.
+
+/                                                                                                                                                       >
+
+basu dakede                        ikeru
+b            xy  a(X', X"’)          ァ   X       canx
+
+us         : ーーーーーー g0               ーー X:                ・
+
+SINS             aX        9        do        aX          scan X
+usingbus                                    do89
+7 (usingbUs’-using bus'”)             doZ0
+“using bus                     _do89
+
+ー (usingbUs’-using bus’)  ‘do 8°      (usingb¥s’-using bus”)  do89
+
+“usingbus - 7g 80                       usingbus ・do 80
+
+(using>¥s using bus”)  "do89
+can
+usingDUS ‘do 89
+(singbusrnsing bus”)  "do89
+“can
+usingbus do 8°
+し                                                                                                                                                                                                         ノ
+
+She then considers the following sentence, which only allows the absolute
+
+requirement reading.
+basude dake ikeru.
+
+(Numata points out that the sentence means you can only go there if you take a bus
+only. That is, even if you take a bus, if you use an additional means, you cannot go
+
+there.
+
+basuni dake noreba ikeru
+
+Numata (2009), p. 199
+
+(-                                                                                                                                                                 J
+basu de dake                  ikeru
+b               っ(ダダの)                 canx
+us         ・ ——— g0
+using                ーァ         8          do               scan X
+usingbus                                      do8°
+| (usingbUs’-using bus'”)           candog0o
+“using bus                     っcamdogo
+コ (usingbUs’-using bus”’ )  can gg        (usingbUs’-using bus’ )  ・つCando8o
+“using bus -can7g,g0                              usingbus ・Camdogo
+、                                                                                                                                                                 ノ
+
+vancouver
+ン
+basu dakede                           ikeru
+
+b               A(X", X"")          ァ   xX   ァ   canX
+us         : ——— 90               :— XxX:
+using                ーァ         8          do“: Ty            scan X
+usingbus                                    do8り
+7 (usingb¥s’-using bus”)           dogo
+“using bus                     "do89
+
+ー (usingbUs’ using bus’)  ‘do 8°      (usingbUs’-using bus'”)  do89
+
+“using bus  "do 8°
+
+usingbus ‘do 89
+
+(usingb¥s using bus’) do8?
+
+can
+
+usingDUS do 8°
+(angbusrnsing bus”)  "do89
+ーcam
+usingDUS do 8°
+a
+ンー
+basu de dake                      ikeru
+っ(ダダりう)                 can X
+us 。 nsing                aX         8° _ do               scan X
+usingbus                                            do8°
+7 (usingb¥s’-using bus” )              cangog0
+“using bus                          ーcamdogo
+コ (usingbUs’-using bus”’ )  can gg        (usingbUs’-using bus’ )  ・つCando8o
+_usingDus・canコdo8g0                                     usingbus - cang,go
+
+\
+
+vancouver
+CONCLUSION
+
+SENTENCES
+
+INITIALISM
+#AGK#
+#AOI#
+#AWYWK#
+#BWKDK#
+
+#D|?#
+#DK?#
+#ESDMN?#
+#ESMMN?#
+#ESOMN?#
+#ESWMN?#
+DE:
+HIK OH
+#IGK#
+
+#JGGD#
+#JMh#
+#ISGJA#
+#K#
+#KDK#
+#KDK?#
+#KGA#
+#KGO#
+#KGSD#
+#KSK#
+#KI#
+#KT #
+#KWO#
+
+SENTENCE
+
+atsusa ga kibishii.
+
+ashita omatsuri iku.
+
+ashita wa yoshimi wa kuru.
+
+boku wa kimi dakeo kizutsukenai.
+
+doko itta?
+
+dare kaita?
+
+e, saifu dakeo mottekita no!?
+e, saifu mo mottekita no!?
+
+e, Saifu 0 mottekita no!?
+
+e, saifu wa mottekita no!?
+ichigo dakeo tabeta.
+
+itsu kaeru?
+
+Jon ga kita.
+
+jon ga gakusei desu.
+jon mo hashitta.
+
+jon shika gakusei ja arimasen.
+kawaii.
+
+koe dakeo kiita.
+
+koe dakeo kiita?
+kibishisa ga atsui.
+koht ga oishii.
+kenkyosa ga suki desu.
+koe shika kikanakatta.
+kore tabeta
+
+kore taberu?
+
+kohi wa oishii.
+
+INFORMAL TRANSCRIPTION OF MEANING
+
+Exactly the heat is harsh.
+
+(1) will go to the festival tomorrow.
+
+Specifically tomorrow specifically Yoshimi will come.
+You are not the only person hurt by me.
+
+You are the only person not hurt by me.
+
+Where did (you) go?
+
+Who did (you) draw?
+
+Wait, is it that (you) brought only your wallet!?
+Wait, is it that (you) brought your wallet too!?
+Wait, is it that (you) brought eactly your wallet!?
+Wait, is it that (you) brought epecifically your wallet!?
+(1) ate only strawberries.
+
+When are (you) going to come back?
+
+John came.
+
+it was John who came.
+
+It is John who is a student.
+
+John ran too.
+
+Only John is a student.
+
+It is cute.
+
+(1) heard only voice.
+
+Did (you) hear only voice?
+
+Exactly the harshness is hot.
+
+Exactly coffee is tasty.
+
+Exactly the humbleness is liked.
+
+(1) heard only voice.
+
+(1) ate this.
+
+Will (you) eat this?
+
+Specifically coffee is tasty.
+
+INTRODUCED IN:
+gateau
+jargon
+knowledge
+turmeric
+uranium
+iquitos
+iquitos
+momentum
+momentum
+momentum
+momentum
+hammer
+iquitos
+cookie
+cookie
+bunnies
+humor
+bunnies
+momentum
+lexington
+lexington
+gateau
+leeway
+gateau
+lexington
+japan
+japan
+leeway
+#KWSD#
+#KYGN#
+#MMK#
+#MMI#
+#MSKN#
+#MST#
+#MWMWN#
+#MWK#
+#MWI#
+#NST#
+#NT ?#
+#OMSN#
+#SDK#
+#SDM#
+#SSK#
+#SSM#
+#SWKD#
+#SWRST#
+#SWIOT#
+
+#IGW?#
+#11F
+#IWJGI#
+#WP#
+#Y#
+#YGKD#
+#YGN#
+#YMK?#
+#YN#
+#YSIN?#
+#YWI#
+#YWIN ?#
+
+kagakusha wa saitosan desu.
+kind yumi ga nakimashita.
+
+mugi mo kawaii.
+
+momo mo tabete.
+
+mugi shika kawaiku nai.
+
+momo shika tabenaide.
+
+mugi wa miruku wa nonda.
+masao wa konakatta.
+
+momo wa tabete.
+
+ninjin shika tabenai.
+
+nani tabeta?
+
+oishii miruku shika nomanakatta.
+sore dakeo kangaeta.
+
+sore dakeo mottekita.
+
+sore shika kangaenakatta.
+
+sore shika mottekonakatta.
+saitosan wa kagakusha desu.
+shinigami wa ringo shika tabenai.
+saitosan wa takoyaki o tabeta.
+
+saitosan wa takoyaki o tabenakatta.
+
+taro ga waratta?
+
+takoyaki tabeta.
+
+tokyoni wa jon ga iru.
+watashino pasokon.
+yasashii.
+
+yama ga kirei desu.
+
+yumi ga nakimashita.
+yoshimi mo kuru?
+yasashiku nai.
+
+yoshimi shika isogashiku nai?
+yoshimi wa isogashii.
+yoshimi wa isogashiku nai?
+
+Specifically the scientist is Saito.
+Yesterday exactly Yumi cried.
+
+Mugi and the other is cute.
+
+Eat peach too.
+
+Only Mugi is cute.
+
+Eat only peach.
+
+Specifically Mugi drank specifically milk.
+Specifically Masao did not come.
+
+Eat at least peach.
+
+Eats only carrot.
+
+What did you eat?
+
+Drank only milk that is tasty.
+
+(1) thought only about that.
+
+(1) brought only that.
+
+(1) thought only about that.
+
+(1) brought only that.
+
+Specifically Saito is a scientist.
+Specifically Death eats only apples.
+Specifically Saito ate exactly takoyaki.
+
+Specifically Saito did not exactly eat takoyaki.
+Specifically Saito did not eat exactly takoyaki.
+
+Did exactly Taro laugh?
+
+| ate takoyaki.
+
+Specifically in Tokyo John is present.
+It is my computer.
+
+is kind.
+
+Exactly the mountain is beautiful.
+Exactly Yumi cried.
+
+Is Yoshimi coming too?
+
+is not kind.
+
+Is only Yoshimi busy?
+Specifically Yumi is busy.
+
+ls specifically Yoshimi not busy?
+
+garlic
+titanium
+abstainer
+ice
+abstainer
+indict
+friction
+cookie
+
+ice
+
+leeway
+iquitos
+fundamentals
+lexington
+lexington
+lexington
+lexington
+garlic
+surrealism
+momentum
+nitrogen
+nitrogen
+ice
+momentum
+cookie
+genetics
+friction
+gateau
+Stardust
+ibuprofen
+friction
+ibuprofen
+humor
+ibuprofen
+REFERENCES
+
+Dawkins, R.                                       2016               The Selfish Gene. (40th anniversary edition.)                                         Oxford University Press.
+Hasegawa, N. (Eds.) (長谷川信子)         2007                 『日本語の主文現象-統語構造とモダリティ』                          ひつじ書房
+
+Heim, |. & Kratzer, A.                           1998              Semantics in Generative Grammar.                                                   Blackwell Publishers Ltd.
+Imbrie, W.                                      1914              Wa and Ga.                                                                           Kyo Bun Kwan.
+Kishimoto, H.(岸本秀樹)                   2007              主文と補文 : 数量詞の作用域から                                        [Hasegawa 2007, pp. 25-72].
+Kondo, Y. (@yhkondo)                         D.C                Aconversation in September 2024 through DMs.                                 X.COm
+
+Kubo, M.                                                                1994                      Japanese syntactic structures and their constructional meanings.                           Hituzi Syobo.
+
+Kuno, S.                                     1973             The structure of the Japanese language.                                         MIT Press.
+
+Kuroda, S-Y.                                  1965             Generative grammatical studies in the Japanese language.                    Thesis. MIT.
+
+Numata, Y (沼田善子)             2009         『現代日本語とりたて詞の研究』                        ひつじ書房
+Tsujimura, N.                                  2007              An introduction to Japanese linguistics. (2nd ed.)                                 Blackwell Publishers LTD.
+
+DICTIONARIES AND LITERARY SOURCES
+
+Araki, T. (director)                               2006-2007       Death Note                                                                               Nippon Television. Obtained on Amazon Prime Video in September 2024.
+Inaba, K.                       1993        愛のままにわがままに RISA EBT)           Obtained on Apple Music in December 2024.
+ENDNOTES (NOT REFERRED TO IN THE BODY TEXT)
+
+The following is an unstructured list of notes that could have been incorporated in
+
+the body text but have yet to.
+
+i)
+
+ii)
+
+Kishimoto (2007, pp. 29-30) claims that the sentence b allows the interpretation
+“speaking of birds, it is only that they fly” but not “only birds fly.” Based on this claim, he
+argues that the thematic wa cannot appear inside the scope of dake.
+
+a. tori ga tobu dake da.
+b. tori wa tobu dake da.
+
+This argument, however, seems to be a tautology. It is certainly possible to interpret b as it
+birds
+is only that 1      fy
+
+something else does not fly’ Notice that the nested part patterns identically
+with the case of the thematic wa unless the second line receives $. (Compare it with
+#YWI# or #KWO#.) This interpretation is especially easy to access (perhaps obligatory)
+when the sentence is pronounced as Tori wa tobu Dake da. But under this interpretation,
+the wa is conventionally categorized as the contrastive wa. That is, any would-be
+counterexamples may be dismissed here because “it is not the thematic wa.” To non-
+trivially claim that the thematic wa cannot appear in certain position, it needs to be
+
+shown that it is logically possible but is never actually realized.
+
+The true scope of “we are talking about” for a particular sentence is generally inaccessible
+for the listener (the problem of whether it is accessible for the consciousness of the
+speaker is put aside), so studying a discourse does not reveal “the hidden meaning” of a
+sentence. And entities referred to in a context which are not explicitly mentioned should
+be semantically represented as implicit, even if the referent seems unequivocal in the
+discourse. The meaning of a sentence differs depending on whether John is merely in the
+context of something else, e.g., Sarah, or John is explicitly mentioned, including with a
+pronoun. (The message—the pragmatic or real-word effect—of the utterance may be
+identical.) Further, a context belongs to a part, not the whole, of a sentence; in “only John
+only speaks English,’ meaning, John is the only person who speaks English and no other
+languages, if reasonably interpreted, the context of John (whose worldly referents may
+include John, Sarah, and Sumin) and the context of English (whose worldly referents may
+include English, Japanese, and Esperanto) are distinct. It is for this reason why in our
+framework it is semantic or lexical objects, as opposed to a sentence or a discourse, that
+
+carry a context, such as | John, John’, John'"|.

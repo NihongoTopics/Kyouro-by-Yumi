@@ -1,0 +1,380 @@
+\n===== ocr_tmp/romanization-001.png =====\n
+PROPOSING ANEW
+ROMANIZATION
+SYSTEM OF
+JAPANESE
+\n===== ocr_tmp/romanization-002.png =====\n
+In a world full of polyglot Als, study Japanese to understand how language works.
+\n===== ocr_tmp/romanization-003.png =====\n
+PREFACE                                                                                                 In some parts of this document, the intended lect is referred to as the “reference
+dialect.” Controversial claims about this dialect not supported by explicit
+references are based on my introspections.
+
+ABOUT KYOURO AND THIS PDF FILE                                                                                         yams.
+
+・ The person who writes Kyouro is referred to as the speller.
+Kyouro (rhymes with Kyoto) is a modern Japanese romanization system that unifies
+。                                           。                           。         。          ・ The symbol # prefixed to a sentence indicates that the meaning differs from the
+the spelling, phonology, syntax, and semantics of Tokyo Japanese into a single
+or                    。                                                                             intended one.
+
+romanization method. It aims to let learners type, read, and understand Japanese
+
+sentences directly from the romanized form without guessing hidden structures.            : This PDF file includes hyperlinks.
+
+Kyouro includes two parts: the theory and the spelling system. The theory analyzes * This PDF file includes the table of contents accessible via the PDF menu.
+
+how Japanese meanings, tones, and structures interact. The spelling system applies
+
+that theory to create a practical romanization. Author: Junichi lida, aka     OTHER KYOURO MATERIALS
+
+@awesomenewways on twitter.                                                   This subsection lists links to other important Kyouro materials. Since Kyouro is
+
+・ Feel free to redistribute this manuscript, partially or entirely, as long as the manually maintained solely by the author, occational deadlinks are expected; all
+
+original place is indicated.                                                                                             updates of Kyouro are available in at least one of the following places:
+
+・ This document is being updated at intervals. Errors are expected.                               ・ The github repository: https://github.com/NihongoTopics/Kyouro/
+
++ Japanese sentences, phrases, and words are written in the Hepburn system and — - The blog: https://spokenjapanese.wordpress.com/
+
+Kyouro. When clarification is necessary, Hepburn is italicized and Kyouro 3S | y. , .om/awesomenewwavs
+boldfaced.
+unless new locations are announced.
+・ Some sentences are taken from literary works such as novels and TV shows. Cited
+sentences are written in either Kyouro or Hepburn even if the original notation is       SEM ANTICS  OF TOKYO
+in the standard orthography. The pronunciation is assumed where the source
+does not include sound.
+・ Alphabetically ordered English words are given in place of page numbers.
+Sometimes the symbol “»” is employed to mean “refer to” with the English word
+assigned to the designated page. (“»apple” reads “refer to the page apple.’)
+・ Examples written in the Hepburn notation do not always reflect word boundaries
+as analyzed in Kyouro, but an effort was made to make the notation mostly
+consistent with Kyouro.
+・ The variant of the Japanese language described in Kyouro is intended to be the
+one that is conventionally called Tokyo Japanese in the literature or a version of it.
+\n===== ocr_tmp/romanization-004.png =====\n
+IF YOU WISH TO USE OR SUPPORT KYOURO                                                     ・ Comment on the notions of word and inflection.
+・                        h        ion of         heme.
+If you wish to use Kyouro in your classroom, textbook, YouTube videos, blogs, etc.,       Comment on the notion of morpheme
+Pll be happy to help. Also if you're looking for a Japanese teacher, I can offer you _‘In the spelling rules:
+personal lessons. Feel free to reach me on Twitter.                                                       ・ Predicative intonation R% shown by 3 prefixed to the affected word.
+VERSION HISTORY                                                                                       ・? no longer in charge of intonation.
+・ In-word comma rule.
+Notable changes in 4.1:
+・ Ellipsis rule.
+Ver. 4.1, in a separate file, released in October 2023.
+・ Non-typed long vowel symbol: combining macron.
+In the linguistic theory:
+・ Dot above reworked.
+・ New syllable theory (the CCGVG theory) proposed.
+・ Boundary fall reworked for verbal nouns.
+・ Binary predicative intonations: R% and nR%.
+- 1.x materials no longer effective.
+Notable changes in 5.0:
+Notable changes in 5.1:
+Ver. 5.0, the original version of this document, released in December 2023.
+Ver. 5.1 released in January 2024.
+In the linguistic theory:
+In the linguistic theory:
+・ Added P5, Gi, and G2 boundaries.
+・ The role of the lexicon explained.
+・ Ci reinterpreted.
+・ “Adjunct” ku no longer considered an adjective suffix.
+・ Trimming proposed.
+・ Boundary generation proposed.
+・ Merging direction specification.
+・ Potential split of R2 proposed.
+・ Comment on syllabification and word boundary.
+・ Comment on u offglide.
+・ Comment on nasal before a long consonant.
+・ Comment on syntactic compositionality.
+\n===== ocr_tmp/romanization-005.png =====\n
+Notable changes in 5.2:                                                                                            Notable changes in 6.3:
+Ver. 5.2 released in July 2024.                                                                                        Ver. 6.3 released in April 2025.
+- $ theory now written “$-theory” with hyphenation.                                                    ・ Preface and some subsections received a new style (font, layout, etc.).
+・ The subsection “subordinate clause” expanded with comments on some |Ci verb: The “provisional” Ci wa and mo are now rejected. In exchange, the verb paradigm
+suffixes. »northwest-obeche                                                                                      is now assumed to have tewa and temo.
+・ The subsection stab “the te iru form’ renamed to “progressive and perfect.” (The - The subsection “Progressive” (formerly “Progressive and perfect”) has been filled
+contents have been removed for easier editing but hopefully only temporarily.)       in.
+»obeche                                                                                                                       ・ Some new notations (not new spelling rules) are introduced.
+・ Some Ci] items now marked “provisional.” »jeans                                             ・ The Praat captures in p. brightness has been replaced with a new one showing a
+・ Several errors have been corrected.                                                                               new recording data. The old recordings are still availabel in the repository.
+Notable changes in 6.0:                                                                                             Notable changes in 6.4:
+Kyouro ver. 6.0 was released in December 2024 with the release of a separate file, Ver 6.4 released in June 2025
+Semantics of Tokyo Japanese, available in the same repository. In January 2025, the Anote on accent and lon g consonants added in p. sympathy.
+present manuscript received a minor modification (in p. surname) to reflect
+Semantics. Also,
+・ Chapter Four has been “cleaned up”: some less important words and sentences
+have been removed and some paragpraphes have been slightly modified to
+improve readability, without significantly changing the content.
+・ Table of contents has been added.
+Notable changes in 6.1:
+Ver. 6.1 released in January 2025.
+・ The subsection “boundary fall’ expanded with actual Praat plots of audio clips of
+boundary fall instances.
+Notable changes in 6.2:
+Ver. 6.2 released in February 2025.
+- The spelling rule of agnostic accents (p. sympathy) no longer cares about
+boundary fall.
+\n===== ocr_tmp/romanization-006.png =====\n
+TABLE OF CONTENTS                                                               Chapter Three: Lexical forms
+The nature of the lexicon -—______________________ easter
+The table of contents is also available from the PDF menu.                                                                 Phonology derives the phonetic form from the output of syntax
+Chapter One: Purposes and principles                                                                                       Information supplied by the lexicon
+The problems —————""_ apple                                        Some word boundaries are AP boundaries
+The lack of instruction on typing                                                                                       Some AP boundaries are boundary falls
+The lack of instruction on tones and intonations                                                                        Segments ficient
+Leaving obscure syntactic boundaries obscure                                                                             Verbs ;
+Design principles ーー一ーーー astronaut                               Adjectives
+The hierarchy of design principles                                                                               The noun group
+Broad design principles outside of the hierarchy                                                           Alec mt forest
+Letters and symbols 一ーーー autumn                         The upper accent
+Typed symbols                                                                                                   The lower accent
+Non-typed symbols                                                                                   The bimoraic rhyme rule
+Alphabet                                                                                                    Accent shift
+The long vowel symbol                                                                             (Continued on the next page.)
+Numbers
+Chapter Two: Prosody
+Prosodic structure -—————__________________ benevolence
+The prosodic hierarchy
+The mora
+The syllable
+The accent phrase (AP)
+The intonation phrase (IP)
+The sentence
+Tones and intonations -—______1_____—_ blank
+R
+ly
+F
+Boundary fall
+Predicative intonations
+Syllable AAA AAA desDair
+Syllable structure
+Syllabification
+The triangle constraint -—_ dock
+Triangle diagram
+\n===== ocr_tmp/romanization-007.png =====\n
+Chapter Four: Word-level syntax                                                                                         Main dlause
+
+Basic observasions ーーーーーーーーーーーーーーーーーーーーーーーーーーーー- lieXadOh                                Subordinate clause
+Syntactic compositionality                                                                             To verbal nouns
+Syntactic boundary                                                                                                                         Progressive
+Composition of forms                                                                                 Other suffixes
+Zero                                                                          The true passive rare and the annoyance rare
+Naming scheme                                                                             Adjectival nouns ーーー一ーー一 penmanship
+Branching                                                                                           The ontology of adjectival nouns
+Merging                                                                       General observations
+General principles of merging                                                                          km-i
+Boundary generation                                                                                  kmrii
+Branch notation                                                                                      km-ii
+
+Word boundaries ーー一ーー一ーーーーーーーーーー immunity                       Nouns ーー 『adOm
+Quotation (P1, P4, P5)                                                                                               Some typicala behaviors of anoun stem
+Predicate (P1, P2, P3)                                                                                 Some noun suffixes
+Around relative clauses (R1, R2, R2b, R2c, R2d)                                                                       Nouns, noun-like forms, and copulas
+Around copulas (C1, C2, C2b, C3, C3b, C4)                                                                  Temporal nouns - AA ___ stardust
+Arguments and adverbial phrases (A1, A2, A3, A4)                                                                             The ontology of temporal nouns
+The ontology of G1, G2, and C1                                                                                            Notes on temporarl nouns (tm-ii, tm-i)
+Amap of the boundary system                                                                          Chapter Six: Miscellaneous topics
+
+Chapter Five: Inflection                                                                                                           Syntax-phonology mapping 一ーーーーーーーーーーーーーーーーーーーーーー root
+
+Preliminary remarks on inflection ーー linguist                                        Syntactic and phonological trees
+On the (non)nature of the inflectional boundaries                                                                     The basic procedure to obtain the phonological tree (Trimming)
+Which boundaries are inflectional?                                                                  $Theory $7 NN scholarship
+Spelling design and boundary notation                                                                                 Restating the triangle constraint in terms of the abstract feature ‘$'
+Semantic features                                                                                     Distribution of $
+
+Adjectives -—_________________ median                                 $ and information structure
+Initial observations                                                                                     Topics on lexical items ———_________________________sjne
+Main clause                                                                                                        Items that require a modifier
+Subordinate clause                                                                                          Dake and its/their curious phonetic forms
+The "resultative" usage                                                                                                             Quantifiers
+The ku aru form                                                                                     (Continued on the next page.)
+The “adjunct” ku is not an adjective suffix
+Suffiexes that “derive” forms of other paradigms
+
+Verbs $$ A ________—_ negotiator
+Initial observations
+\n===== ocr_tmp/romanization-008.png =====\n
+Chapter Seven: Spelling guidelines                                                                     Appendix
+
+About Kyouro versions and older materials —--____________ speaker                                   Glossaries
+Version management                                                                                            Sentences and nonsentences
+Obsolete materials
+
+The dot above tA squirrel
+The general rules of the dot above
+The kanji rule
+The katakana rule
+The vowel verb rule
+The syllabicity rule
+The rule of velar verbs
+The rule of w
+The rule of h
+
+The boundary fl( , ) ————-——___________________ steadfast
+The basic rules of the boundary fall symbols
+The A1 boundary fall
+The G1 boundary fall
+Lexical boundary falls
+
+The inverted question mark (,) -——______—- superficial
+The usage of the inverted question mark
+
+General spelling guidelines 一ーー supervisor
+Source text
+Limitations of the present analyses of boundaries
+Romanization table
+Tokenized form
+Accent
+Long vowels
+Inflection symbols
+Punctuations
+Small tsu (doubled letters, xtu, and k)
+Proper names
+Capital letters
+
+Notes and References
+
+References
+References
+Dictionaries and literary sources
+\n===== ocr_tmp/romanization-009.png =====\n
+CH APTER ONE: PURPO SES AN D PRINCIPLES       In short, JSL education needs to give the students explicit instructions on
+romanization for typing. To address this issue, Kyouro serves as a reasonable
+T                                                                                                          representation of how the language is typed in on digital devices. For example, the
+HE PEDAGOGICAL PROBLEMS                                                            moraic nasal is writtne as a single n in the Hepburn romanization system (the most
+common one out side of digital contexts), potentially hindering the student from
+LACK OF INSTRUCTION ON TYPING                                                             correctly guessing the keystrokes of common phrases like konnichiwa, which is k-o-
+n-n-n-i-t-i-h-a. In Kyouro, this phrase is written as konmti'ha, mirrorring the
+Students learning Japanese in conventional settings, such as university foreign                   »         『                                  5
+。                        。                  keystroke exactly, e.g., the number of m's is how many times it has to be pressed
+language courses, face several problems in the course of learning. Some are
+-        -     -       ーー       -             -      oo,                down to type it. Similarly, the small tsu in Kyouro is writtne either xtu or by
+inherent difficulties of aquiring a foreign language, which are inevitable, but a few
+。                           。                                         doubling the following consonant letter, which is just how it should be typed in.
+are not so. In fact, Kyouro addresses certain problems precisely because they are
+addressable.
+THE LACK OF INSTRUCTION ON TONES AND INTONATIONS
+One example is the lack of instruction on typing. Today, written languages are
+primarily composed on digital devices such as computers and smartphones.   It has long been known that Japanese education falls short of giving students
+Japanese is not an exception. Hence, learning to write Japanese inevitably requires      sufficient information about tones and intonations. The Japan Foundation (2009, p.
+learning how to use the Japanese input systems on these devices. But conventional     193) points out that many institutions do not attach imporance to teaching lexical
+classrooms often neglect to give systematic instructions on how to type the phraes     tones. This aligns with some textbooks including Genki, which seems to make a
+they teach on the iPhone or Windows laptops. The focus is heavily skewed towards     deliberate choice of not showing lexical tones due to variations (including regional
+handwriting; students spend a considerable amount of time practicing pen strokes      and generational), as noted by the following:
+of hiragana, katakana, and kanji, leaving the more practial skills—precise        “This textbook does not indicate a word's accents. The accent of a Japanese word
+keystrokes and correct conversion—untouched.                                                 varies considerably, depending on region, the speaker's age (including the
+Most Japanese speakers use kana input systems on smartphones and romaji input        generation gap between speakers), the word's inflections, and its connection with
+systems on computers. Second language speakers, expecially those who speak       other words in the sentence. Therefore, there is no need to be overly concerned
+English natively, seem to prefer the romaji system, at least initially. Luckly, most        about accent, but try to imitate as closely as possible the intonation heard on the
+widespread systems offer a romaji input method on mobile and desktop, and the        accompanying audio aids.” (Genki 1, 2nd ed. p. 20.)
+students are somewhat familiar with romaji. At this point, some may assume that Lexical tone and inotnations are imporant components of the phonological
+they only need to know how to use their personal devices to type Japanese. The _ structure, but they are taught only briefly if at all, or taught through the
+y only                                       Pp                       ype Jap                                       y           8        y        y                      8           8
+truth is that the romaji input systems assume a slightly different romanization problematic traditional level tone theory.
+system from the familiar romaji spellings seen in the textbooks and therefore the        A separate section is in preparation to discuss why the level tone account is problematic. For
+students need to learn the specific romanization rules in order to properly use their        the issue put into the context of Japanese education, Hasegawa (1995) is convincing and
+Japanese input softwares.                                                                                                             cones:
+apple
+\n===== ocr_tmp/romanization-010.png =====\n
+Kyouro allows teachers and textbook authors to formally represent the lexical tones PJ) FSTGN PRINCIPLES
+and intonation components of a sentence in a sophisticated, more objective
+manner. Since it relies less on the learned “intuition” that the traditional account is     THE HIERARCHY OF DESIGN PRINCIPLES
+based on, it can be more intuitive to the second language Japanese speakers.
+Beginner           How do | type this on the smartphone?
+
+LEAVING OBSCURE SYNTACTIC BOUNDARIES OBSCURE                                                  How do | pronounce this?
+The conventional teaching does not teach (much) syntax. This issue is not specific                           Why do I pronounce this this way?
+to Japanese education. As it is often said, learning a language is different from                   Why do | use this form?
+studying linguistics. This adage is used as an excuse for not teaching linguistic       Advanced     What forms are possible and what aren‘t?
+structures (especially syntax) to the students. You study Japanese because you want — py desi gn principles of Kyouro can be summarized as the typeability principle, the
+to use it and speak it, not because you want to be a linguist. This may be practical.         pronounceability principle, and the parseability principle. These principles are
+The consequences of ignoring syntax may vary. If an English speaking student is _ prioritized in the order given: typing first, pronunciation second, and parsing last.
+studying German, the problem may be a relatively less serious. English and German Th。 typeability principle requires that the learner can easily guess from Kyouro
+syntaxes share some similarities. The German spelling employs notoriously long    spelling the keystrokes to get the correct orthographic form on screen. It has to be
+compound nouns, and words are generally spaced. This makes syntactic structure     spelled as it is typed. An average layperson who speaks General American natively
+relatively transparent. (Think of Chinese. You cannot tell if a five-character 43.4 knows  nothing about Japanese should be able to guess and type in the
+sentence is one word or five unless you know the vocabulary and the grammar. In sentence correctly (but not necessarily choose the conversion candidate correctly).
+German, a long noun is written as an unbroken sequence of letters.)                              By setting the bar to type Japanese so low, it intends to provide the potential learner
+In this regard, Japanese is closer to Chinese than German. The Japanese with an easy way to write her choice of phrases before even starting to study
+orthography does not contain spaces between syntactic entities. A sentence is Japanese. Since the Japanese input systems predict the correct conversion
+written without a break. This makes it difficult for the student to parse a sentence _ candidate most of the time, just knowing the keystrokes can allow the user to type
+correctly.                                                                                                               Japanese correctly. It potentially lowers the initial burden of learning Japanese.
+In Kyouro, a sentence is spelled in such a way that it is clear what tokens it consists | The pronounceability principle contends that a simple set of rules must deduce the
+of. The syntactic status of each token is broadly marked by spaces and a few special phonetic form from Kyouro spelling. The student should be able to see how the
+symbols. With each token clearly represented with its phonological and syntactic  sentente is pronounced without memorizing ad-hoc rules. The spelled and
+properties, the meaning of a sentence can be more easily deduced from the _ phonetic forms however do not have a one-to-one correspondence. Many spelling
+propertis of tokens present.                                                                                      forms can correspond to the same phonetic form. While the principle demands that
+
+the phonetic form can be deduced from the spelling, the reverse deduction is not
+
+expected. The same pronunciation can be obtained from multiple spelling forms.
+
+Astronaut
+\n===== ocr_tmp/romanization-011.png =====\n
+The parseability principle is that the phonological, syntactic, and semantic none of them can be sufficiently represented in the given version of Kyouro. If one
+properties of a unit form must be reasonably reflected in the spelling. The is caught, let go of the others.
+composition of a sentence must be to a reasonable degree transparent from the _ put a burden of ten on the teacher if it means lifting a burden of one from the
+representation.                                                                                                    student: A possible criticism of Kyouro is that it is often too difficult to write. That it
+These major principles are implemented in the spelling system in the order of js difficult to write is partly intentional. It is designed to be difficult to write, but
+priority given above. That is, when two or more of the three major principles _ easy to read. After all, it is a spelling system to help learners.
+compete, the one with the higher priority has its way.                                             It is intended that the written form reflects the best effort to analyze the language
+as formally and rationally as possible so that cultural background is not required to
+BROAD DESIGN PRINCIPLES OUTSIDE OF THE HIERARCHY                                                        。                               :               :
+learn Japanese. When teaching a language to a non-native speaker, since cultural
+Kyouro shall not replace existing writing systems: It is mainly intended to be used _ intuition or common sense cannot be relied upon, everything must be done
+alongside the full orthography of Japanese although it is also reasonable to formally and objectively. The speller is responsible for providing the student with
+occasionally use Kyouro without a parallel text. It is not intended to teach Japanese he best analysis of the language, as a direct component of the spelling or
+only with Kyouro or to use Kyouro as the everyday writing system. Kyouro is Otherwise, to make learning easier and smoother, even if the effect is minimal.
+designed to help students learn how to write and read the standard orthography. Kyouro is difficult precisely because human languages are difficult to objectively
+Perhaps its role is somewhat analogous to yomigana. It tells you how to pronounce _ characterize.
+and how to type. Kyouro’s spelling rules should be designed so that information
+that can be easily extracted from the usual orthography is not contained in the    LETTERS AND SYMBOLS
+Kyouro spelling.
+Change spelling as slowly as possible: As the theory develops, analyses often   TYPED SYMBOLS
+demand some of the previously accepted spelling forms be modified. Since as a   Segments are written as it is typed. While in typical input systems, both the
+spelling system stability is favored, when two analyses are nearly equally   kunreishiki system and the Hepburn system are allowed for the most part, in
+compelling, the one that makes smaller or fewer changes in spelling should be   Kyouro kunreishiki style is adopted where possible, with certain exceptions
+adopted.                                                                                                                      mentioned separately.
+Use fewer scary symbols: It is important to keep the spelling less scary for the    The primary reference system is currently the iPadOS’s default Japanese input
+student and the teacher. When two analyses are nearly equally compelling, the one     method, but it has been designed to be compatible with Windows as well. Other
+that uses fewer scary symbols should be adopted. Also, new spelling rules reducing      major systems may be added in the future. See also p. sweetheart.
+the use of scary symbols are more favored than the ones that increase it.
+Don't run after two hares: If multiple phonetic realizations of the same written | NON-TYPED SYMBOLS
+fi   interch  ble,  licating the rul  the th  i     ly if
+aan ncnmcmcnnmaea es CONAN TNE NEES OF INOAMENY IS MECESEAY ORI ®     The following non-alphabetic symbols are used. These symbols are ignored when
+typing the orthographic Japanese. Inside the parentheses are the unicode names.
+Autumn
+\n===== ocr_tmp/romanization-012.png =====\n
+・ ' (modifier letter vertical line): The upper accent. The phonetically ‘active’ accent | NUMBERS
+responsible for the surface tones.
+Numeric symbols (1, 2, 3, etc) are not used. Numbers are spelled out whenever
+- (modifier letter low vertical line): The lower accent. The phonetically ‘inactive’ or              。           。                                        。                        ュー
+                                                                                                                                    possible. If it cannot be spelled out, it cannot be written in Kyouro.
+‘void’ accent not affecting the surface tones.
+・ ‘ (modifier letter grave accent): The boundary fall. Phonetically, a steep pitch fall
+between two adjacent nF moras.
+・ . (modifier letter low grave accent): The lower boundary fall. 1. The trace of an
+unrealized boundary fall. 2. An AP boundary without a phonetic boundary fall
+within the limits of a tokenized form.
+- “(combining letter dot above): 1. Distinguishes a syllabic vowel from a nonsyllabic
+vowel (glide) after a vowel letter. 2. Given to the stem-final vowel of a vowel verb.
+3. Added to a vowel a or e when the preceding h is not pronounced as is (e.g., ha)
+・ ~ (combining macron): Vowel length that is not reflected in the orthographic
+form.
+- + (middle dot): Used in suffixes of the verb group. For verb suffixes, it is inserted
+on the right side of a segment that is subject to the segmental alternation. For
+adjective suffixes, it is inserted between the stem and the suffix.
+・- (hyphen minus): Used in suffixes of the noun group.
+- 4 (inverted question mark): The rising predicative intonation.
+More detailed explanations are provided in Chapter Seven.
+ALPHABET
+The following letters, including the dotted and dotless versions, are used:
+Lowercase letters:aabdeéfghiikmnooprstuvwxyzxtu
+Capital letters: AA BD EEF GHIiKMNOPRSTUVWXYZXtu
+THE LONG VOWEL SYMBOL
+The long vowel symbol is transcribed as the em dash: —.
+bachelor

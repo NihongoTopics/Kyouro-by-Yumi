@@ -1,0 +1,375 @@
+\n===== ocr_tmp/tokyo-01.png =====\n
+SEMANTICS OF TOKYO JAPANESE
+\n===== ocr_tmp/tokyo-02.png =====\n
+ABOUT THIS MANUSCRIPT                                                                        Sometimes, an orthographic sentence has different versions depending on the
+positions of $. In the body text, these versions are distinguished with initialisms
+This volume is intended to complement the volume titled Proposing a New     that include $, such as #$DI?#.
+Romanization System of Japanese (https://nihongotopics.github.io/Kyouro/),
+。      。            。        。             。           。         。             Example sentences and their associated initialisms are given at the end of this
+available in the following repository: https://github.com/NihongoTopics/Kyouro.
+。           。                        。                                                   manuscript sorted in the alphabetical order. (Initialisms with $ are not included.)
+The said volume is referred to as Proposing.
+Sentences with the same initial letters are listed under the same initialism.
+Like Proposing, this manuscript is expected to be updated dozens of times after the
+initial release. Be sure to check for the latest version from time to time.
+Feel free to redistribute this manuscript, partially or entirely, as long as the original
+place is indicated.
+Author: Junichi lida, aka @awesomenewways on x.com.
+VERSION HISTORY
+・ Initial release: ver. 6.0.0, December 2024 on https://github.com/NihongoTopics/
+Kyouro.
+・ Ver. 6.3, May 2025. Changed style to match Proposing. Fixed several errors.
+ Ver. 6.4, June 2025. Fixed the $-specification of dakeo as noted in pp. lexington-
+momentum.
+・ Ver. 6.5, July 2025. Added Convention 2.2 as discussed in p. henna. Fixed several
+errors.
+SENTENCE INITIALISM
+Japanese sentences used in this manuscript are referred to by a sequence of initials
+of spaced words it contains, bounded by ##. For example, the sentence mugi shika
+kawaiku nai is referred to as #MSKN#, and mugi mo kawaii is referred to as #MMK#.
+If the sentence has a question mark at the end, the question mark is included in the
+initialism. For example, the sentence doko itta? is referred to by #DI?#.
+\n===== ocr_tmp/tokyo-03.png =====\n
+TABLE OF CONTENTS                                                                               Moods and sentence types -—-________ humor
+Partial interrogative
+The table of contents is also available in the PDF menu.                                                                      Total interrogative
+Proposing a New Romanization of Japanese                                                                     Imperative
+vy.                                                                                             Declarative
+Sentence initialism                                                                                             i       」
+Table of contents                                                           h     h     F Other moods
+:         i        t
+Chapter One: The Framework                                                                 Chapter Three: Information Structure                                       =
+a           。                                                      :                          Preliminary 一ーーー iquitos
+Transcription of meaning ———_______ abstainer
+           。                                                                         Review
+Informal transcription of meaning                                                                           -             he position of
+Function notation                                                                                        Question types and the position of $                              .
+Tree notation                                                                                $-theory in semantics ————                                          japan
+i          t,       manti     ment
+Context and references ———________________________ apple                                     Topic, comment, and se      csegme
+$-specification of comments
+Context                                                                                                       61        ah       h
+Articles                                                                                                                  Bringing $  ve an ee to the comments
+。                                                                    i           t     ator
+Why three topics?                                                                         eee nests and the negato
+Node structure and operations —--------_____________ ditto                                                  Articles as Sassigners
+The vinculum notation                                                                                                         Predicates as “sone
+The dot notation                                                                                ;    Issues on complex predicates
+apter Four: Lexicon
+Mood                                                         Chapte  ~  exico
+.                                                                                                 .) 一一一一ーー一一- 「6SiOent
+The null topic                                                                                 ype (cont.)                                                            eside
+Role
+The dummy
+-                                                                                                                Relative root
+Negation
+」                                                                                                                   Lexical insertion 一ーー stardust
+Serials and parallels
+The target of lexical insertion
+Nest                                                                                                          。
+Identity index                                                                                               Arity
+Relative clause
+Role                                                                                              」
+Type 一ーーー OhGtics                Conclusion
+Sentences
+Node types
+References
+The type of a complex node
+-                                                                                                  Dictionaries and literary sources
+Type checking on merge                                                            end         ‘erred to Inthe bod
+Type checking at the base                                                                                     ndnotes (not referred to in the body text)
+Chapter Two: Truth-Conditional Meaning
+Truth condition tA ________________ hammer
+Proposal, entailment, and proposition
+Event
+\n===== ocr_tmp/tokyo-04.png =====\n
+CHAPTER ONE: THE FRAMEWORK                                        (We use the symbol .”. for “therefore” and = for equivalence. The symbols + and -
+stand for “plus” and “minus” here.)
+TRANSCRIPTION OF MEANING                                                  The value represented by the tentative symbol X is something that becomes “only
+Mugi” when “not” is added to it. This can be understood as a function that takes
+«     り】                 «    i  M    i”   hi  h         ite:
+INFORMAL TRANSCRIPTION OF MEANING                                                         not’ and returns “only Mugi,’ which we write
+not: only Mugi
+An easy way to transcribe the meaning of a sentence is to translate it into another
+language.                                                                                                                                                    Convention 1.1:
+mugi mo kawaii. — Mugi, too, is cute.                                                                          i) The form A: B is understood as a function that takes A and returns B.
+We translate sentence fragments to show partial correspondences between We then obtain:
+apanese and English:
+Jap                    9                                                                                                             mugi shika — not: only Mugi
+ュー Musi
+must         met                                                                                                                 kawaiku nai — is not cute
+o — too
+m                                                                                                                            which can be further broken down into:
+kawaii — is cute                                                                                                                 。             .
+mugi — Mugi
+FUNCTION NOTATION                                                                                                     shika — not: only
+kawaiku — is cut
+Sometimes it is difficult to establish partial bilingual correspondences. Observe the           awame 1s cure
+following example:                                                                                                                 nai — not
+mugi shika kawaiku nai. — Only Mugi is cute.
+TREE NOTATION
+Intuitively, this sentence can be broken down into two major parts:
+hik                                                                                                          Following Proposing, sentence structures are represented as trees. For semantics we
+mugi shika — ?
+8                                                                                                          put the terminal nodes at the top. A parent node is placed below its daughters. The
+kawaiku nai — is not cute                                                        last two sentences are represented by the following trees. (The phonetic form is
+How can we construct the meaning “only Mugi is cute” by combining two forms, __ italicized when included in the tree notation.)
+one of which is “is not cute”? We can do a pseudo-math with the following equation              ;                          7
+mugi       mo       kawaii
+and solve it for X.                                                                                                                  Mugi        too         is cute
+.                         ..                                                                    Mugi too
+X + is not cute = only Mugi is cute                                                                                Musi, too, is cute
+“. X = only Mugi 一 not
+#MMK# #MSKN#                                                                                                                             Page 4 of 53                                                                                                                                          abstainer
+\n===== ocr_tmp/tokyo-05.png =====\n
+i      shika        kawaiku nai                                                                     notes in pp. attention-boy) and Kuno (1973) discusses “registry of discourse” (see notes in p.
+ae        not: onl       is cute        A:                                                                                      bunnies). In formal semantics the term “domain” is often used to mean the set of denotations
+Nee onl Mai  y      is not cute                                                        under consideration. Perhaps the defining feature of our concept of context is that it is
+nena cute                                                                                                                           independently postulated for each input of an article (see p. attention).
+Definition of context:
+CONTEXT AND REFERENCES                                                             For any referent X in a sentence, the context of X is the triple [x, X',X ", where
+CONTEXT                                                                                                     X’ and X"’ are implicit, X # X’, X # X"", and X’F X”.
+(# stands for non-equivalence.)
+Consider #MSKN# again. A reasonable introspection would reveal that the meaning
+-                                   The dichotomy between the topics with and without primes is analogous to Numata's (2009,
+of the translated version of the sentence can be broken down into roughly the       pp. 37-58) dichotomy between jisha and tasha although, unlike our topics, Numata’s terms
+ine:                                                                                          refer to syntactic objects. Jisha and tasha do not distinguish between exhaustive and non-
+following:                                                                                                              y           )                                      8
+exhaustive references (see also p. ditto).
+ugh Is cute                                                                                       With the prime symbol, we can rewrite the meaning of the sentence as the
+Everybody else is not cute.                                                                                                    .
+following:
+が                                                                                                                               Mugi is cute
+(    ? means A, B,... and Z.)                                                                         Mugi’ is not cute
+Z                                                                                                                                             Mugi”’ is not cute
+Who i       body else? This d     d     the context. Let us say Mugi is a cat and       。                              .                。
+EGG                        yas                  This is a more accurate representation of the meaning of the sentence. When we
+there are two other cats, Bibi and Runa, living in the same house, and suppose that     .                                     .                  .                                 .
+interpret a sentence, we typically process it as a component of a discourse. Some
+the statement is about these three cats. Now the statement can be decomposed into                              。                               。                                   。
+may say for this reason the meaning depends on the discourse. But surely a
+following:                                                                                                                    No          。         。
+the following                                                                                          sentence has some intrinsic meaning. While the actual effect of the same sentence
+Mugi is cute.                                                                                         can be differently inferred from different surroundings, it would not be reasonable
+Bibi is not cute.                                                            to claim that given the discourse, the internal elements of the sentence do not
+Runa is not cute.                                                         matter to the meaning. Therefore we need some way to isolate semantics from
+In this case, the triple [Mugi, Bibi, Runa] is the context of Mugi. Each element of a    pragmatics. The idea is analogous to phonology. In phonology, we think that a
+context is called a topic. The sentence however does not specifically say that the     physical sound is a superficial realization of a truer, more abstract representation of
+other members of the context are Bibi and Runa. When a part of asentence refersto “ phonological segment. Here, as the worldly referents of the context of Mugi may
+an entity, the reference carries a context, but the rest of the contents of the context     vary utterance-to-utterance, we devised a means to represent contexts the way
+remain implicit as to what they refer to.                                                                            semantics should handle them.
+In the literature, concepts similar to our context are often rather informally employed. Kuroda
+(1965) uses the term relativized universe to talk about the scope of the exhaustive ga (see
+#MSKN#                                                                                                                                                                                                      apple
+\n===== ocr_tmp/tokyo-06.png =====\n
+ARTICLES                                                                                                                                                                    “The claim made here is that a sentence does not necessarily represent predication in
+the above sense but may be merely a description of a fact or situation. In such a sentence,
+Articles of the reference dialect include ga, mo, wa, 0, and dakeo, among others. They                which we shall call nonpredicational description or simply a description,? the subject can be
+eee’                  ’                         -                            considered neither the premise of some judgment nor something about which a predication is
+are some of what are commonly referred to as “particles,” but not all particles are an               made. Rather, the subject of the sentence is nothing more than an item which stands in a
+article in our terms. An article generally requires some reference to the context.               particular relation to the verb of the sentence, just as the object, if the sentence has one is an
+.                                                  .                         _                            item which stands in a particular relation to the verb. […] "(Kuroda 1965, p. 37. Underlines
+Each relevant topic of the context needs to be specified for the polarity of the                are his.)
+predicate. This implies that the polarity of a sentence is more complex than it may         An example of a nonpredicational description is “hito-ga macikado-ni tat-te i-ru” (Kuroda
+appear.                                                                                                                                          1965, p. 46).
+It is widel               dth         1               diff          -                 -              b            -                   Kuroda’s description of the exhaustive ga follows below.
+t is widely accepted that at least two different interpretations can be associated                  ‘Now iff on the one hand, use of the ga-phrase is restricted to nonpredicational
+with ga. One of them is called the exhaustive reading, and the other is the neutral             descriptions and, on the other hand, use of the copulative expression byooki-da is restricted
+reading, with slight variations of each term. According to Kuno (1973, p.38), this           to predications, then it should follow that the ga-phrases can never be the subject of the
+oo,                     -                                                                                                                                    predicate byooki-da. But this is not true, as seen below:
+distinction was pointed out for the first time by Kuroda (1965) (this claim is                                            」
+(5Z)  ano-hito-ga byooki-da.
+dubious; see notes below). I will discuss the exhaustive reading first.                                                             that man         sick
+Kuno’s (1973) explanations on the distinction between two types of ga’s are as follows:                                                     That man is sick
+©.        ga for neutral descriptions of actions or temporary states                                                              (59) John-ga byooki-da.
+Example:                                                                                                                                                                                      John is sick
+Ame ga hutte imasu.                                                                                                   The English translations of (57) and (58) do not really help to clarify the meaning of these two
+rain falling is                                                                                                  sentences. The two English sentences are more naturally taken to be translation of:
+‘It is raining.                                                                                                                               (59) | ano-hito-wa byooki-da.
+d.         ga for exhaustive listing.2 “X (and only X) ...” “It isX that ...”                                                                             That man is sick.
+Example:                                                                                                             (60) John-wa byooki-da.
+John ga gakusei desu                                                                                                                                  John is sick.
+student is                                                                                       which represent the familiar type of predication. But sentences (57) and (58) are not
+-                                                                                          descriptions either; seeing John lying on a bed, one would say:
+(Of all the people under discussion) John (and only John) is a student.’ 77 is                         6            h      byooki-d        -
+John who is a student.” (Kuno 1973, p. 38)                                                                                        (61) a John-ga byooki-de me CTU. li
+And in the footnotes of the same page, he argues that Kuroda (1965) was the first to point out                                                                 sleep (ie)
+the distinction:                                                                                                                                                                Oh, John is lying sick (on the bed).
+“The distinction between the ga for neutral descriptions of actions or temporary states and              but not:                            」
+the ga for exhaustive listing was first pointed out by Sige-Yuki Kuroda (1965a).” (Kuno 1973, p.                                (62) a, John-ga byooki-da.
+38)                                                                                                                                                                                                                 Oh, John is sick.
+Here it needs to be pointed out that, contrary to Kuno’s assertion, the distinction may have
+been described in 1914, long before Kuroda (1965), by William Imbrie. To see this, a quick
+comparison between the descriptions by Kuno and Kuroda, before comparing them with the
+description by Imbrie, would be worthwhile. In Kuroda (1965), exhaustive listing corresponds
+to characterizational judgment as opposed to nonpredicational description, which corresponds
+to neutral description. Kuroda explains the nonpredicational description as follows:
+attention
+\n===== ocr_tmp/tokyo-07.png =====\n
+The difference between the kind of judgment represented by (57) and (58) and that           Class IV seems to be the descriptive ga in Kuno’s terms. An example of Class IV ga is “Sakuban
+represented by (59) and (60) lies in the fact that (57) and (58) mean not only that that man is              kaji ga arimashita’” (p. 11).
+sick and John is sick in the usual reading of these English sentences, but also, conversely, the           By way of precaution, the following are excerpts from Imbrie’s descriptions of the four classes
+sick one is that man and the sick one is John. Sentences (57) and (58) characterize that man            of ga.
+and John by the property of sickness, rather than just attributing that property to them. This                                                                     “CLASS I
+h     terization is,           , made within some relativized universe. In the actual discourse                                                                        -                           -     -
+  re OE on . of course oe        _                               an                                         Subject and predicate are connected by Ga, when the subject is one of the
+the universe is explicitly or implicitly delimited, so that the characterization takes place           -        -                                    -    ーー
+vp         _       。                      。             」        。              ーー」     。                    interrogative pronouns. These are Dare, donata, dochira, dore (with its adjective form dono)
+within those limits (which may be vacuous, i.e., the relativized universe may coincide with the                               -               -                                                                            a
+。                     。                                                     。                                                         and nani: Who? which? what? Doko, Where? (what part of?) when the subject, is also followed
+whole universe). Let us give an example. Assume that a doctor is called, and when he comes               by Ga." (Imbrie 191       )
+he finds three people, John, Bill, and Tom lying in bed. He then wants to know which one of                  +         © 1914) Ps 4                 。
+them is sick. When his question is answered, the relativized universe includes only the three                                                            CLASS IE
+people in bed. If the answer is (58), then John, but neither Bill nor Tom, is sick. If, on the                    Subject and predicate are connected by Ga, when the purpose of the sentence is to
+contrary, John and Bill are sick, but not Tom, the answer should be:                                                     indicate, or (in questions) to determine, which one of a number is the subject by which in fact
+(3) John-to Bill-ga byooki-da.                                                                                           the predicate is qualified.” (Imbrie 1914, p. 6. Underline is mine.)
+。            。                                                                                                                                                                                                    “CLASS III.
+ohn and Bill are sick.
+On the other hand, if the doctor is given (60) as an answer, then he knows that John is sick,              ーー    Subject and / redicate are connected by Ca, when the / 28 of the sentence ‘s to
+but he gets no information about the other two.                                                                         indicate, or (in questions) to determine, the subject with incisive precision.” (Imbrie 1914, p. 8)
+The following two sentences can replace (58) and (63), respectively:                                                                                                    CLASS IV.
+(62) byooki-na-no-wa John da.                                                                                           Subject and predicate are connected by Ga, when attention is directed to the subject,
+ oinb                                                      though without the selective emphasis of Class Il, or the incisive precision of Class III.
+
+The one who is sick is John.                                                                                                                                                        。                            。           。              。
+
+-                 -                                                   Generally however, though not always, in such sentences in English there is at least an
+(65) byooki-na-no-wa John-to Bill-da                                                                                      appreciable emphasis on the subject.” (Imbrie 1914, pp. 10-11. Underline is mine.)
+Those who are sick areJohn and Bill.                                 」                」             The explanations and examples suggest that Kuno (1973), Kuroda (1965), and Imbrie (1914) all
+These forms can be considered as derived from (58) and (63) by a transformation, but we will           highlight the same distinction. It appears, therefore, that Imbrie’s description was overlooked.
+.       h                 ‘on h                                                                               eng                                PP                                        P
+not discuss that transformation here.                                                                         (To confirm my interpretation of the situation, I consulted Kondo (p.c.). After kindly
+As an another example one may say:                                                                      reviewing Imbrie’s monograph, he agreed that the two linguists seem to have overlooked this
+(66) — ningen-ga hane-no-na-i nihon-asi-no doobucu-da.                            description, which preceded theirs by decades. He further noted that, to his knowledge,
+P               P                    y                                                           8
+man                feather-not        two-leg animal                                                      Imbrie’s classification of ga has never been introduced in the literature.)
+
+Aman is a featherless biped.                                                                                It is also notable that Imbrie (1914) classified wa into four classes. It seems that the distinction
+characterizing human beings by that property. In this case one may say that the relativized           between Class II and Class IV well corresponds to the distinction between the contrastive and
+universe of the characterization coincides with the whole universe, and in this sense (66) may            thematic wa’s.
+be taken as a generic statement.” (Kuroda 1965, pp. 48-50. Underlines are his.)                   Kuno (1973) puts forth the following sentence as an example of the exhaustive ga.
+
+In Kuno (1973) and Kuroda (1965), using Kuno’s terminoogy, neutral description is pure            .                .                          。                                          。
+description of what can be said about the subject in an event or stiation, and exhaustive     In his words, this sentence means “(Of all the people we are talking about) John
+listing “singles out” the one that satisfies the predicate from the “registry” (Kuno’s term) or (and only John) is a student; it is John who is a student” (p. 51), which seems to fit
+Telativized universe” (Kuroda’s term),                                                                                    well with what I can observe in my introspection.
+What seems to be the same distinction was pointed out by Imbrie (1914). Imbrie classified ga
+into four classes. Class I is the use of ga with a wh-word, such as doko or dare. An example of
+Class I ga is “Dare ga iin ni narimashita ka” (p. 4). Class II seems to be the exhaustive ga in
+Kuno’s terms. An example of Class II ga is “Kore ga byoin da” (p. 6). Class III is the use of ga
+with “incisive precision.” An example of Class III ga is “Sore ga honto de gozaimasu” (p. 8).
+boy
+\n===== ocr_tmp/tokyo-08.png =====\n
+jon ga gakusei desu. — It is John who is a student.                                                   said she liked John too,” which perfectly fits in the conversation. This utterance is illformed
+and cooperative. Ilformedness and deviance are different.
+(The Japanese sentence and the English translation are both from Kuno 1973, pp.           Perhaps he meant some hypothetical discourse the sentence assumes which under the ideal
+38, 51, 60. Romanization of. Japanese has been altered.)                                             condition the actual discourse mirrors completely. (The discussion in the body text is based
+on this assumption.) Maybe this kind of idealization should be understood without saying,
+Kuno’s explanation of the exhaustive ga is sufficiently precise for our purpose. To        just like other types of idealization conventionally done in linguistics. But here it seems
+cite his words again, “all the people we are talking about” should correspond to       crucial to draw the line between inferences made from the actual, objectively observable
+-                     。                                          elements in a discourse and elements that a sentence or parts of a sentence refer to. When we
+what we call the context. (See notes below as what it takes to be “the people we are           talk about the intrinsic meaning of a sentence, we should only talk about the latter.
+
+Iki        ”                    ion). Within th        , John i          ,                          。                   。            。                     .
+talking about” may need some attention). Within the context, John is a student, and      Some may have noticed that the semantic representation of #JGGD# above is
+everybody else is not a student. In our notation, Kuno’s account can be represented      analogous to that of #MSKN#, reproduced below:
+as the following:
+
+Mugi is cute
+John is a student                                                                                                             Mugi' is not cute
+John’ is not a student                                                                                                     Mugi is not cute
+John’”’ is not a student
+(Reproduced)
+He seems to have failed in his wording to be precise about the distinction between pragmatics
+and semantics. He claims that, taken literally, whether a given object or concept canbe used Tdonot claim that jon shika gakusei ja arimasen is completely synonymous with
+ a rem of a sentence depends on whether the object or concept has been mentioned in     #]GGD#. The difference between ga and sg ... nai comes from somewhere else
+e discourse:
+‘It seems that only objects and concepts that have been mentioned and recorded in the    than what the prime notation can cover. Part of the difference will be treated in
+registry of the present discourse can become themes of sentences. [...] Objects of some specific Chapter Two. As far as the prime notation is concerned, the two constructions are
+references are added to the registry of the current discourse the first time they are      equal. The prime notation is not the whole picture.
+mentioned{.] [...] Only after this entry in the registry is accomplished can they become
+themes of sentences.” (Kuno 1973, p. 39)                                                                             The meaning of shika and ga can be schematized as follows:
+It is difficult for me to believe that he truly intended to claim what this assertion seems to
+contend. The grammaticality of a (non)sentence is independent of the discourse. A speaker of        Observation of shika and the exhaustive ga:
+a language can utter a sentence that deviates from the discourse. Take the following discourse
+as an example:                                                                                                                                                                                                                  mot Y
+John said he liked Sarah.                                                                                                   The meaning of a sentence X shika Y nai is schematized as: く X’’not Y.
+The cat walks, but the books need a shower and medication.                                                                                                                                                 xY
+Compare:                                                                                                     The meaning of a sentence X ga Y, where ga is the exhaustive ga, is schematized
+John said he liked Sarah.                                                                                                               XY
+*Liked John she too Sarah said.                                                                           as: ? X’notY.
+The first discourse is made of acceptable sentences only, but it is odd because the second            X’not Y
+sentence does not seem to fit into the conversation. This utterance is wellformed and deviant.
+The second discourse, in contrast, has an illformed utterance (a nonsentence), but a       (Seeing them as sets, they are identical, but for now we pretend that the order of
+charitable mind would promptly comprehend that the second speaker wants to say “Sarah       elements matters without stating how.)
+#JGGD# #JSGJA#                                                                                                                                                                                                                                bunnies
+\n===== ocr_tmp/tokyo-09.png =====\n
+We can obtain the meaning of the neutral ga by simply removing the lines of the distracted by the familiar distinction are asked to interpret wa as the contrastive
+primed topics from the meaning of the exhaustive ga. As Kuno observes, the _ one unless otherwise noted.
+neutral ga is more restricted in distribution than the exhaustive ga. It can only Consider the following sentence:
+appear with a predicate that represents, in his words, “an action, existence, or
+>                                                                                                                        (satoko wa pati ni kita kedo) masao wa konakatta.
+temporary state” (p. 60).
+From Tsujimura 2007, p. 408. Parentheses are mine. Romanization is altered.
+jon ga gakusei desu. — It is John who is a student. (Exhaustive)                                   (             J               oP                                                                      )
+The part masao wa konakatta is represented in the prime notation as:
+(Reproduced)                                                                                                     『                                      『                     『
+jon ga kita. 一 John came. (Neutral) / It was John who came. (Exhaustive)                         Masao does not come
+Masao’ comes
+(From Kuno 1973, pp. 53, 60. Romanization is altered.)
+In this particular case, we can infer from the parenthesized part that the primed
+The latter can be transcribed as:                                                                                    。                                                     。             。          。               a       a
+topic refers to Satoko. But referents of primed topics are inherently implicit. This is
+John came          (Neutral)                                                                                          shown by the following example:
+John comes                                                                                                        tokyoni wa jon ga iru.
+John’ does not come (Exhaustive)                                                                         (From Kubo 1994, p. 26. Romanization is altered.)
+John’’ does not come
+This sentence is interpreted as the following:
+Observation of the descriptive ga:                                                                                         {i Tokyo John is present
+The meaning of a sentence X ga Y, where ga is the neutral ga, is schematized as:               In Tokyo’ John is not present
+XY.                                                                                                                       In this case, we do not know what the primed topic in Tokyo’ refers to.
+Similarly, a sentence with mo can be schematized as follows (recall #MMK#):                                。
+Observation of wa:
+Observation of mo:                                                                                                                                                                                            XY
+The meaning of a sentence X wa is schematized as:    x’        ア
+            XY                                                                                                                      not
+The meaning of a sentence X mo Y is schematized as:    yy
+Compare this with the case of ga. In both cases, like shika, the semantic
+Lastly, let us take wa as an example of an article. The mainstream treatment of this     representation includes primed topics and each primed topic present is specified
+article is to divide it broadly into two kinds: the contrastive wa and the thematic wa. Tr the polarity of the predicate. The article decides which topics are present and
+In our framework, this particular distinction is considered inessential The prime nich of them receives which polarity.
+notation treats them identically. Later chapters sporadically discuss how the
+conventional categories are described in our theory of semantics. Readers who are
+#JGGD# #JGK# #MWK# #TWJGI#                                                                                                                                                                                                     cookie
+\n===== ocr_tmp/tokyo-10.png =====\n
+WHY THREE TOPICS?                                                                      NODE STRUCTURES AND OPERATIONS
+Each context has exactly three topics. The prime symbol is only used for two of the
+topics, one with just one prime, and the other with two primes. When all three    THE VINCULUM NOTATION
+topics appear, we know that the context is exhausted. (Each primed topic does not                                            Mugi is cute
+necessarily correspond nicely to a worldly entity. Surely when you refer toa person Recall that #MSKN# means le is not cute . Here, the topic Mugi receives is
+in your sentence you can think of more than three people in the context.)                                                                       Mugi’’ is not cute
+A practical implication of having more than two topics in a context is shown by cyte while the primed topics receive is not cute. We are dealing with two different
+#MMK#. Unlike #MSKN#, even within the context of mugi we do not know who else comments for this sentence. The difference between is cute and is not cute lies in the
+is cute. If in the context of mugi of #MMK¢# the primed topics are Bibi and Runa, the     polarity. The former is positive and the latter negative. This is an example of a case
+other cute one is either Bibi or Runa, but we do not know which. This is because    where for the same sentence topics of the same context receive comments of
+mugi mo is a non-exhaustive reference with respect to the context of mugi whereas     opposite polarities,
+mugi shika is an exhaustive reference.
+The semantic form of the predicate of this type of sentence contains both versions
+The meaning of#MMK# can be written as the following:                            of the comments. At the same time, the sentence needs to know which topics
+Mugi is cute                                                                                   receive which comments. We need some means to “divide” the comments and the
+{ eat is cute                                                                              topics into two groups: one that has the positive comment and the corresponding
+topics, and the other that has the negative comment and the corresponding topics.
+Convention 1.2:                                                            We use the following notation to implement such a mechanism (the vinculum
+i) When we refer to only one of the primed topics, we use exactly one prime.             notation):
+If the contents of a context are variable, why do we restrict a context to have exactly           kawaiku nai — isnot cute
+three topics? Assume that we alternatively have a context with four topics. In this                             's cute
+case, a context would have three primed topics: [x,X 2 6 | An exhaustive       mugi shika 一 Mugi ng
+reference would make use of three primed topics, and a non-exhaustive reference                              Yug
+one or two. Here is the problem with this alternative system: in the reference Each side of the vinculum (the line in the middle, as shown above) of a node is
+dialect, we do not (yet) find a minimal contrast between an expression that refers _ called a half (plural: halves). The one on the upper side of the vinculum is the upper
+to exactly two out of three primed topics and one that refers to exactly one. Ifsuch half: The one on the lower side the lower half. A half may contain more than one
+a case is found, our three-topic system is then falsified.                                        topics, separated by commas. The usage of the comma will be explained later, but
+Roughly speaking, for given X, X’ is “something else,’ and {X', X’’} is “all else” A four-topic here what matters is that the primed topics of mugi shika are in the upper half.
+system would introduce another mode of quantification in between. Whether a four-topic
+system is generally unfit for human language would be an interesting question.
+ditto

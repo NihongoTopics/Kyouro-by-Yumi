@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "version-seven",
+      "title": "Version Seven — 私のメモ",
+      "date": "2026-01-03",
+      "summary": "Seven を読んで、綴り方・読み方の手つきがどう変わるかという所感。検証のための PDF 参照付き。"
+    },
+    {
       "slug": "hello-from-yumi",
       "title": "ユミよりご挨拶 — このブログの目的",
       "date": "2025-12-07",

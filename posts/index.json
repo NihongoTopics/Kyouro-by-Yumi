@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "version-seven",
+      "title": "Version Seven — Notes From My Notebook",
+      "date": "2026-01-03",
+      "summary": "Personal reflections on how Seven changes my spelling and reading workflow, with pointers to the PDFs for verification."
+    },
+    {
       "slug": "hello-from-yumi",
       "title": "Hello from Yumi — Why I’m Writing This",
       "date": "2025-12-07",

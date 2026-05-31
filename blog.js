@@ -65,6 +65,13 @@ function renderPostPage() {
     bodyEl.textContent = 'Missing slug parameter.';
     return;
   }
+  // Keep the language-switch link pointing at the same post in the other language.
+  const langEl = document.getElementById('post-lang-switch');
+  if (langEl) {
+    const inJa = window.location.pathname.includes('/ja/');
+    const base = inJa ? '../post.html' : 'ja/post.html';
+    langEl.href = `${base}?slug=${encodeURIComponent(slug)}`;
+  }
   loadPost(slug).then(({ meta, body }) => {
     if (!meta) throw new Error('No metadata for this post');
     titleEl.textContent = meta.title;

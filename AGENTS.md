@@ -105,6 +105,9 @@ Disclaimer must contain these three points (both languages):
 - Add slug to `posts/index.json` and `ja/posts/index.json` simultaneously.
 - Post HTML files are fragments (no `<html>`/`<head>`) loaded by `post.html` via `blog.js`.
 - Titles, summaries, and dates in `index.json` must match what is in the post HTML.
+- **PDF link paths inside post fragments** are resolved relative to the *loader* (`post.html`), not the fragment file itself. Use:
+  - `posts/<slug>.html` → `sources/<file>.pdf`
+  - `ja/posts/<slug>.html` → `../sources/<file>.pdf`
 
 ---
 

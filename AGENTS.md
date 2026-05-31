@@ -38,20 +38,18 @@ All factual content on the site must be traceable to one of these four PDFs in `
 index.html          landing page
 blog.html           blog listing
 post.html           single-post template (loaded dynamically by blog.js)
-accent.html         accent / pitch reference page
 disclaimer.html     legal disclaimer
 styles.css          shared stylesheet
 blog.js             blog engine (reads posts/index.json)
 
 posts/
   index.json        post manifest (slug, title, date, summary)
-  <slug>.html       individual post bodies
+  <slug>.html       individual post bodies (reference articles live here too)
 
 ja/                 full Japanese mirror — same structure as root
   index.html
   blog.html
   post.html
-  accent.html
   disclaimer.html
   posts/
     index.json
@@ -91,7 +89,6 @@ Every English page must have a `ja/` counterpart with equivalent structure:
 | `index.html` | `ja/index.html` |
 | `blog.html` | `ja/blog.html` |
 | `post.html` | `ja/post.html` |
-| `accent.html` | `ja/accent.html` |
 | `disclaimer.html` | `ja/disclaimer.html` |
 | `posts/<slug>.html` | `ja/posts/<slug>.html` |
 | `posts/index.json` | `ja/posts/index.json` |
@@ -130,16 +127,19 @@ Before committing any change, run:
 # No "由美" anywhere in ja/
 grep -rn "由美" ja/ || true
 
-# Confirm bilingual parity — spot-check section headings
-grep -n "<h2\|<section\|class=\"card\"" accent.html
-grep -n "<h2\|<section\|class=\"card\"" ja/accent.html
+# Confirm bilingual parity — spot-check section headings of a page and its mirror
+grep -n "<h2\|<section\|class=\"card\"" index.html
+grep -n "<h2\|<section\|class=\"card\"" ja/index.html
 
-# Confirm post manifests are in sync (slugs must match)
+# Confirm post manifests are in sync (slugs match) and every post file exists
 python3 -c "
-import json
+import json, os
 en = json.load(open('posts/index.json'))['posts']
 ja = json.load(open('ja/posts/index.json'))['posts']
 assert [p['slug'] for p in en] == [p['slug'] for p in ja], 'slug mismatch'
+for p in en:
+    assert os.path.exists(f\"posts/{p['slug']}.html\"), p['slug']+' EN missing'
+    assert os.path.exists(f\"ja/posts/{p['slug']}.html\"), p['slug']+' JA missing'
 print('post manifests OK')
 "
 ```

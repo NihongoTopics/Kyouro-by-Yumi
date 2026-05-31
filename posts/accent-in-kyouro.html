@@ -1,0 +1,81 @@
+<p><strong>Accent in Kyouro — a reference I keep coming back to</strong></p>
+
+<p>Hi — it's Yumi. This is my reference note on how Kyouro treats accent, derived strictly from the two manuscripts in this repo: <a href="sources/Proposing a new romanization system of Japanese (book).pdf">Proposing a New Romanization System of Japanese</a> and <a href="sources/Semantics of Tokyo Japanese.pdf">Semantics of Tokyo Japanese</a>. No outside knowledge is used.</p>
+
+<h3>Prosodic units &amp; tones</h3>
+<p>The PDFs define a strict prosodic hierarchy: mora → syllable → accent phrase (AP) → intonation phrase (IP) → sentence. A sentence contains whole IPs; an IP contains whole APs; an AP contains whole syllables; a syllable contains whole moras.</p>
+<p>A mora bears one of three contour tones: rising (R), level (Lv), and falling (F). R and Lv together are called <strong>nF</strong> (non‑falling). Allocation of nF vs F is lexical. The position of accents in an AP determines which moras receive nF and which receive F. R vs Lv is determined by syntax/information structure; every sentence has at least one R.</p>
+<p>An AP begins with one or more nF moras and ends with zero or more F moras. If an nF follows an F, an AP boundary lies between them. Boundary falls can appear between APs.</p>
+
+<h3>How to read this</h3>
+<p>Kyouro connects spelling with phonological behavior and structure. Within that design, accent is handled through the items below. The manuscripts position accent alongside related concepts such as AP boundaries and boundary falls, which suggests interaction points; this note keeps to what is explicitly stated in the PDFs.</p>
+
+<h3>Accent symbols</h3>
+<ul>
+  <li><strong>Upper accent</strong> (modifier letter vertical line): phonetically active; responsible for surface tones.</li>
+  <li><strong>Lower accent</strong> (modifier letter low vertical line): phonetically inactive "goal" position; does not itself affect surface tones.</li>
+  <li><strong>Boundary fall</strong> (modifier letter grave accent): steep pitch fall between adjacent nF moras.</li>
+  <li><strong>Lower boundary fall</strong> (modifier letter low grave accent): trace of an unrealized boundary fall or an AP boundary without a phonetic fall inside a tokenized form.</li>
+</ul>
+
+<h3>Mechanics inside an AP</h3>
+<ul>
+  <li>For each accent within an AP, the mora immediately after the accent and all moras on the left receive nF; the rest receive F. (See "Proposing a New Romanization System of Japanese," p. 42.)</li>
+  <li>This makes the <strong>rightmost accent</strong> in the AP phonetically effective; earlier accents are redundant for surface tones.</li>
+  <li>Intuitively: moras default to F; accents assign nF to the leftward stretch from the accent.</li>
+</ul>
+
+<h3>Accent numbers</h3>
+<p>An AP (or relevant form) has an <strong>accent number</strong> N referring to position from the right edge of its segmental sequence:</p>
+<ul>
+  <li>N = 0: accent at the right segmental edge (immediately after the ultimate mora).</li>
+  <li>N = 1: immediately behind the rightmost mora; N = 2: behind the penultimate mora; and so on.</li>
+</ul>
+<p>Constraints noted in the PDFs:</p>
+<ul>
+  <li><strong>Verb stems</strong>: accent numbers are only 0, 1, or 2 (1 is marginal). Revealed when followed by items like <em>ta</em>.</li>
+  <li><strong>Adjective stems</strong>: 0, 1, or 2. N=2 is almost exclusively for two‑mora stems; N=1 mostly in three‑mora or longer stems. Revealed when followed by items like <em>ku</em>.</li>
+</ul>
+
+<h3>Suffixes and multiple accents</h3>
+<p>Some suffixes carry an accent or interact with nF assignment, so a single AP can contain multiple accents (e.g., a stem plus a suffix). The PDFs give these generalizations:</p>
+<ul>
+  <li><strong>-kara</strong> extends the nF sequence when the preceding item's accent number is 0. (p. 42)</li>
+  <li><strong>-no</strong> extends the nF sequence when the preceding item's accent number is 1 and the preceding item's accent is not on the left edge. (p. 42, "The lower accent")</li>
+  <li>The <strong>rightmost accent</strong> within the AP is phonetically effective; earlier accents mark structure but do not override that outcome.</li>
+</ul>
+
+<h3>The lower accent: moving an accent</h3>
+<p>Certain items can <strong>move</strong> the immediately preceding form's accent to a specified position P (the lower accent). The PDFs summarize the condition schematically: move A (the preceding form's accent) to P iff A is not initial in that form and is either final in that form or within one mora of P.</p>
+<ul>
+  <li><strong>-kara</strong> extends the nF sequence when the preceding item's accent number is 0. (p. 42)</li>
+  <li><strong>-no</strong> extends the nF sequence when the preceding item's accent number is 1 and the accent is not at the left edge. (p. 42)</li>
+  <li><strong>-katta</strong> can move an adjective stem's accent leftward when the stem's accent number is 0.</li>
+</ul>
+<p>Notation in tokenized form: P is marked by the lower‑accent symbol (modifier letter low vertical line). If movement happens, P is then marked by the upper‑accent symbol to show phonetic effectiveness, and the original position is marked as a trace.</p>
+
+<h3>Accent shift, boundaries &amp; accent</h3>
+<p>Kyouro includes a section on "accent shift," indicating that accent position can change under defined conditions. The manuscript discusses when and how such shifts occur, within Kyouro's own framework. The table of contents also places accent near sections on AP boundaries and boundary falls, and the version updates note specific interactions, such as the treatment of "agnostic accents" relative to boundary fall (see below). For technical specifics, refer to those sections in the PDF.</p>
+
+<h3>Version notes (from the PDFs)</h3>
+<ul>
+  <li>6.2: The spelling rule of "agnostic accents" no longer depends on boundary fall.</li>
+  <li>6.4: Adds a note on accent and long consonants (see page labeled "sympathy").</li>
+  <li>6.5.3: Wording fix on p. 42 — "behind it" was replaced with "on the left."</li>
+</ul>
+
+<h3>Verify and explore</h3>
+<ul>
+  <li>Prosody and accent basics: see Chapter "Prosody" and the "Accent" section.</li>
+  <li>Symbols: see the list of non‑alphabetic symbols in the Kyouro PDF.</li>
+  <li>Accent numbers and examples: see "The upper accent" and follow‑on sections.</li>
+  <li>Lower accent and movement: see "The lower accent" and examples with -kara, -no, -katta; plus verb suffix cases.</li>
+</ul>
+
+<h3>Sources</h3>
+<ul>
+  <li><a href="sources/Proposing a new romanization system of Japanese (book).pdf">Proposing a New Romanization System of Japanese (book).pdf</a> — p. 42 for the nF rule, accent numbers, and -kara/-no.</li>
+  <li><a href="sources/Semantics of Tokyo Japanese.pdf">Semantics of Tokyo Japanese.pdf</a> — for how meaning, structure, and prosody interact.</li>
+</ul>
+
+<p>I'll keep this note as my anchor and update it only against the PDFs. — Yumi</p>

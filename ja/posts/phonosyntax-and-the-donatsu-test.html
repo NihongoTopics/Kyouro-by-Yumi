@@ -16,7 +16,7 @@
 <p>読み方：<code>|</code> で始まり、どこかに <code>$</code> を含む文字列を受け取り、最初の <code>|</code> の直後に <code>$</code> を挿入する。つまり<strong>文字列の最左の AP</strong> にストレスをコピーします。適用はマージごとに一度、連結（concatenation）の直後です。肝心なのは<em>最左</em>という点：一回の適用が届くのはちょうど一つの AP、その瞬間に文字列の先頭にいる AP だけです。</p>
 
 <h3>結局は構成素の問題</h3>
-<p>二文は異なる二項マージで組み立てられます。三 AP の文にはマージがちょうど二回あり、各マージに左娘と右娘がいます——つまり三つの AP は平らに並んだ列<em>ではありません</em>。枝分かれが違うのです：</p>
+<p>マージは二項なので、三つの AP は平らに並んだ列<em>ではありません</em>——二つずつ、入れ子に結ばれます。（各 AP 自体も、連結によって複数の終端ノードから組み立てられます——<em>yumi</em> ＋ <em>ga</em>、<em>dōnatsu</em> ＋ <em>o</em> など——ので、終端ノードの数も、マージの回数も、AP を結ぶ二回より多くなります。対比にとって重要なのは、三つの AP が最終的にどう括られるかです。）枝分かれが違うのです：</p>
 <ul>
   <li><strong>最初の文は右枝分かれ：</strong> <code>[yumi ga [dōnatsu o tabemashita]]</code>。<em>dōnatsu o</em> と <em>tabemashita</em> が先に構成素を作ります。</li>
   <li><strong>二番目の文は左枝分かれ：</strong> <code>[[oishi dōnatsu o] tabemashita]</code>。<em>oishi</em> と <em>dōnatsu o</em> が先に構成素を作ります。</li>

@@ -16,7 +16,7 @@
 <p>Read: take a string beginning with <code>|</code> that contains a <code>$</code> somewhere, and insert <code>$</code> right after that first <code>|</code>. So it copies stress onto <strong>the leftmost AP of the string</strong>. It runs once per merge, right after concatenation joins two strings. The word that matters is <em>leftmost</em>: one application reaches exactly one AP — whichever one is leading the string at that moment.</p>
 
 <h3>It comes down to constituency</h3>
-<p>The two sentences are built by different binary merges. A three-AP sentence has exactly two merges, and each merge has a left daughter and a right daughter — so the three APs are <em>not</em> a flat row. The branching differs:</p>
+<p>Merge is binary, so the three APs are <em>not</em> a flat row — they're combined two at a time, in a nested structure. (Each AP is itself assembled from several terminal nodes by concatenation — <em>yumi</em> + <em>ga</em>, <em>dōnatsu</em> + <em>o</em>, and so on — so there are more terminal nodes, and more merges, than just the two that join the APs. What matters for the contrast is how the three APs end up bracketed.) The branching differs:</p>
 <ul>
   <li><strong>Sentence 1 is right-branching:</strong> <code>[yumi ga [dōnatsu o tabemashita]]</code>. <em>dōnatsu o</em> and <em>tabemashita</em> form a constituent first.</li>
   <li><strong>Sentence 2 is left-branching:</strong> <code>[[oishi dōnatsu o] tabemashita]</code>. <em>oishi</em> and <em>dōnatsu o</em> form a constituent first.</li>

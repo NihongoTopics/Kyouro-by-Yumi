@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "phonosyntax-and-the-donatsu-test",
+      "title": "ドーナツの文が教えてくれたこと — ストレスと構造の関係",
+      "date": "2026-05-31",
+      "summary": "三つの AP からなる二文で、動詞だけを強調する読みが一方は許容されず他方は許容される — $-伝播とマージ方向がその差を説明する。"
+    },
+    {
       "slug": "version-seven",
       "title": "Version Seven — 私のメモ",
       "date": "2026-01-03",

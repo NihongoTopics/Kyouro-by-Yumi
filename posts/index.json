@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "slug": "phonosyntax-and-the-donatsu-test",
+      "title": "The doughnut sentence and what stress tells me about structure",
+      "date": "2026-05-31",
+      "summary": "A pair of three-AP sentences where stressing only the verb is either illformed or fine — and how $-propagation and merge direction explain the difference."
+    },
+    {
       "slug": "version-seven",
       "title": "Version Seven — Notes From My Notebook",
       "date": "2026-01-03",

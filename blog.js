@@ -17,6 +17,17 @@ async function loadManifest() {
   return data.posts;
 }
 
+function postCardHTML(p, withReadMore) {
+  const link = `post.html?slug=${encodeURIComponent(p.slug)}`;
+  const readMore = withReadMore ? `\n        <p><a href="${link}">Read more →</a></p>` : '';
+  return `
+      <article class="card">
+        <h3><a href="${link}">${p.title}</a></h3>
+        <p class="tagline">${fmtDate(p.date)}</p>
+        <p>${p.summary ?? ''}</p>${readMore}
+      </article>`;
+}
+
 function renderBlogIndex() {
   const list = document.getElementById('blog-list');
   const fallback = document.getElementById('blog-fallback');
@@ -25,17 +36,20 @@ function renderBlogIndex() {
       fallback.style.display = 'block';
       return;
     }
-    list.innerHTML = posts.map(p => `
-      <article class="card">
-        <h3><a href="post.html?slug=${encodeURIComponent(p.slug)}">${p.title}</a></h3>
-        <p class="tagline">${fmtDate(p.date)}</p>
-        <p>${p.summary ?? ''}</p>
-        <p><a href="post.html?slug=${encodeURIComponent(p.slug)}">Read more →</a></p>
-      </article>
-    `).join('');
+    list.innerHTML = posts.map(p => postCardHTML(p, true)).join('');
   }).catch(() => {
     fallback.style.display = 'block';
   });
+}
+
+// Homepage: show the most recent posts so the blog is front and center.
+function renderRecentPosts(limit) {
+  const list = document.getElementById('home-blog-list');
+  if (!list) return;
+  loadManifest().then(posts => {
+    const shown = typeof limit === 'number' ? posts.slice(0, limit) : posts;
+    list.innerHTML = shown.map(p => postCardHTML(p, false)).join('');
+  }).catch(() => {});
 }
 
 function getQuery(name) {

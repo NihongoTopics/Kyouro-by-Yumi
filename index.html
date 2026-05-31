@@ -12,67 +12,33 @@
       <div class="container">
         <h1>Hi, I’m Yumi</h1>
         <p class="tagline">23 • Biology student in Wisconsin • English &amp; Japanese</p>
+        <p class="cta-row"><a class="btn" href="blog.html">Read the blog →</a></p>
       </div>
     </header>
 
     <main class="container">
+      <section>
+        <div class="section-head">
+          <h2>Latest from the blog</h2>
+          <a href="blog.html">View all posts →</a>
+        </div>
+        <div id="home-blog-list" class="facts-grid" aria-live="polite"></div>
+      </section>
+
       <section class="intro card">
         <h2>About Me</h2>
         <p>
-          I’m a biology student who splits time between lab work, field notes, and long coffee-fueled study sessions. I grew up moving between English and Japanese at home, and I care a lot about making ideas feel simple and usable—whether that’s explaining an experiment or how to type something on your phone.
-        </p>
-      </section>
-
-      <section class="facts-grid">
-        <div class="card">
-          <h3>Quick Facts</h3>
-          <ul>
-            <li>Lives near Madison, Wisconsin</li>
-            <li>Majors in Molecular &amp; Cell Biology</li>
-            <li>Speaks English and Japanese</li>
-            <li>Weekend hobbies: trail running, floral doodles, cooking</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>What I Care About</h3>
-          <ul>
-            <li>Clarity over jargon</li>
-            <li>Small, checkable examples</li>
-            <li>Notes you can actually use</li>
-            <li>Kind, curious conversations</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>Why This Site</h2>
-        <p>
-          I’m building a friendly guide to Kyouro. My goal is to help you see how the spelling relates to typing and how the pieces fit together—step by step, with practical examples. I’ll keep the explanations faithful to the source materials in this repo and make it easy to verify anything I say.
+          I’m a biology student who splits time between lab work, field notes, and long coffee-fueled study sessions. I grew up moving between English and Japanese at home, and I started this blog to explain Kyouro—a romanization system for Japanese—in clear, checkable steps.
         </p>
       </section>
 
       <section class="card">
-        <h2>How I’ll Write</h2>
+        <h2>How I keep it honest</h2>
         <ul class="checklist">
           <li>Base every claim on the PDFs in this repository.</li>
           <li>Keep examples small and testable on your own device.</li>
           <li>Use plain language first; add detail where it helps.</li>
-          <li>Link back to relevant sections for verification.</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>Say Hello</h2>
-        <p>
-          I love thoughtful questions and example requests. You can open an issue in the repository.
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>Major Pages</h2>
-        <ul>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li>Link back to the sources so you can verify anything I say.</li>
         </ul>
       </section>
     </main>
@@ -82,5 +48,10 @@
         <small>Made by Yumi • This site will only reference the PDFs in this repository • <a href="disclaimer.html">Disclaimer</a> • Language: English | <a href="ja/index.html">日本語</a></small>
       </div>
     </footer>
+
+    <script src="blog.js"></script>
+    <script>
+      renderRecentPosts(3);
+    </script>
   </body>
   </html>

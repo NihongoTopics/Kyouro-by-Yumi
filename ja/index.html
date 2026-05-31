@@ -12,67 +12,33 @@
       <div class="container">
         <h1>こんにちは、ユミです</h1>
         <p class="tagline">23歳・ウィスコンシンの生物学専攻・英語と日本語</p>
+        <p class="cta-row"><a class="btn" href="blog.html">ブログを読む →</a></p>
       </div>
     </header>
 
     <main class="container">
+      <section>
+        <div class="section-head">
+          <h2>ブログの最新記事</h2>
+          <a href="blog.html">記事をすべて見る →</a>
+        </div>
+        <div id="home-blog-list" class="facts-grid" aria-live="polite"></div>
+      </section>
+
       <section class="intro card">
         <h2>自己紹介</h2>
         <p>
-          私は生物学を学んでいて、実験や野外ノート、コーヒー片手の長い勉強時間のあいだを行き来しています。家では英語と日本語を行き来して育ちました。実験の説明でも、スマホでの入力の話でも、考えをシンプルで使いやすい形にすることを大切にしています。
-        </p>
-      </section>
-
-      <section class="facts-grid">
-        <div class="card">
-          <h3>クイックファクト</h3>
-          <ul>
-            <li>ウィスコンシン州マディソン近郊に在住</li>
-            <li>専攻は分子・細胞生物学</li>
-            <li>英語と日本語を話します</li>
-            <li>週末の趣味：トレイルラン、花のイラスト、料理</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>大切にしていること</h3>
-          <ul>
-            <li>専門用語よりも明快さ</li>
-            <li>小さく、検証できる例</li>
-            <li>実際に使えるノート</li>
-            <li>やさしく、好奇心のある対話</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>このサイトの理由</h2>
-        <p>
-          私は 教育ローマ字 のやさしいガイドを作っています。綴りが入力とどう結びつくか、各要素がどう組み合わさるかを、実用的な例とともに段階的に示します。ここでの説明はこのリポジトリのPDFに忠実で、私の主張はいつでも検証できるようにします。
+          私は生物学を学んでいて、実験や野外ノート、コーヒー片手の長い勉強時間のあいだを行き来しています。家では英語と日本語を行き来して育ちました。教育ローマ字（日本語のローマ字表記システム）を、明快で検証できる手順で説明するために、このブログを始めました。
         </p>
       </section>
 
       <section class="card">
-        <h2>書き方</h2>
+        <h2>忠実さを保つために</h2>
         <ul class="checklist">
           <li>すべての主張をこのリポジトリのPDFに基づけます。</li>
           <li>例は小さくし、自分の端末で試せるようにします。</li>
           <li>まず平易な言葉で書き、必要に応じて詳しくします。</li>
-          <li>検証できるよう、関連箇所へリンクします。</li>
-        </ul>
-      </section>
-
-      <section class="card">
-        <h2>ひとこと</h2>
-        <p>
-          質問や例のリクエストを歓迎します。リポジトリで Issue を開いてください。
-        </p>
-      </section>
-
-      <section class="card">
-        <h2>主要ページ</h2>
-        <ul>
-          <li><a href="blog.html">ブログ</a></li>
-          <li><a href="disclaimer.html">免責事項</a></li>
+          <li>検証できるよう、出典へリンクします。</li>
         </ul>
       </section>
     </main>
@@ -82,5 +48,10 @@
         <small>ユミ 作成 • このサイトは本リポジトリのPDFのみを参照します • <a href="disclaimer.html">免責事項</a> ／ 言語: <strong>日本語</strong> | <a href="../index.html">English</a></small>
       </div>
     </footer>
+
+    <script src="../blog.js"></script>
+    <script>
+      renderRecentPosts(3);
+    </script>
   </body>
   </html>

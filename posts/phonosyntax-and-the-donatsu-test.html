@@ -1,39 +1,59 @@
 <p><strong>The doughnut sentence and what stress tells me about structure</strong></p>
 
-<p>Hi — it's Yumi. I've been reading the new <em>Concatenation</em> paper and there's a pair of sentences in Section 5 that I keep coming back to. One of them has my name in it, which made me stop, and then the actual linguistic point made me stop again.</p>
+<p>Hi — it's Yumi. I've been reading the <em>Concatenation</em> paper and there's a pair of sentences in Section 5 that I keep coming back to. One has my name in it, which made me stop; then the actual linguistic point made me stop again, harder, because my first reading of it was wrong.</p>
 
-<h3>The two sentences</h3>
-<p>Both involve three accent phrases (APs) merging together. The paper gives these as examples:</p>
+<h3>The contrast</h3>
+<p>Both sentences have three accent phrases (APs). The paper gives them as (<em>Concatenation</em>, pp. 6–7):</p>
 <ul>
   <li><em>yumi ga dōnatsu o tabemashita</em> — "exactly Yumi ate exactly doughnuts"</li>
   <li><em>oishi dōnatsu o tabemashita</em> — "ate exactly doughnuts which are delicious"</li>
 </ul>
-<p>In both, <em>tabemashita</em> is the verb at the right edge. The question is: if you stress <em>tabemashita</em> and leave <em>dōnatsu o</em> unstressed, is that wellformed?</p>
-<p>For the first sentence, it's illformed. For the second, it's wellformed. The paper says this difference is explained by $-propagation once you know the merge direction of the middle AP. (<em>Concatenation</em>, p. 6.)</p>
+<p>The test: can you pronounce <em>tabemashita</em> stressed while leaving <em>dōnatsu o</em> unstressed? For the first sentence, no — that reading is illformed. For the second, yes — it's wellformed. The paper derives this difference entirely from $-propagation, once you take the tree structure of each sentence seriously.</p>
 
-<h3>What $-propagation does</h3>
-<p>$-propagation is defined in <em>Concatenation</em> (Section 5) as a subroutine that takes a string with an AP boundary at the left edge and a $ immediately after it, and copies that $ to just after the first AP boundary inside the string. Formally: |$XY : |$X$Y. In plain terms: when a string already marked as stressed merges into a larger string, the $ "propagates" one step leftward to the AP that now leads the string.</p>
+<h3>How $-propagation works</h3>
+<p>Section 5 defines $-propagation as the subroutine:</p>
+<blockquote><code>|X$Y : |$X$Y</code></blockquote>
+<p>Read: take a string beginning with <code>|</code> that contains a <code>$</code> somewhere, and insert <code>$</code> right after that first <code>|</code>. So it copies stress onto <strong>the leftmost AP of the string</strong>. It runs once per merge, right after concatenation joins two strings. The word that matters is <em>leftmost</em>: one application reaches exactly one AP — whichever one is leading the string at that moment.</p>
 
-<p>Since this happens on every merge, a $ placed on the rightmost item in a sequence of rightward-merging APs will propagate all the way to the left, giving every AP a $. That means every AP in the sequence gets stressed. If you want only <em>tabemashita</em> stressed and nothing else, you need to break that propagation path somewhere.</p>
+<h3>It comes down to constituency</h3>
+<p>The two sentences are built by different binary merges. A three-AP sentence has exactly two merges, and each merge has a left daughter and a right daughter — so the three APs are <em>not</em> a flat row. The branching differs:</p>
+<ul>
+  <li><strong>Sentence 1 is right-branching:</strong> <code>[yumi ga [dōnatsu o tabemashita]]</code>. <em>dōnatsu o</em> and <em>tabemashita</em> form a constituent first.</li>
+  <li><strong>Sentence 2 is left-branching:</strong> <code>[[oishi dōnatsu o] tabemashita]</code>. <em>oishi</em> and <em>dōnatsu o</em> form a constituent first.</li>
+</ul>
 
-<h3>Why merge direction matters</h3>
-<p>The paper introduces this distinction (p. 6): a leftward-merging AP, written |Y in the structure |X |Y |Z, does <em>not</em> block $-propagation for APs to its left in the way a rightward-merging AP does. The tree structure is different. In the first sentence (<em>yumi ga dōnatsu o tabemashita</em>), the structure is |X̄ |Ȳ |Z̄ — three APs each merging rightward. $-propagation from <em>tabemashita</em> reaches <em>dōnatsu o</em> and then <em>yumi ga</em>. You cannot stress only the verb.</p>
+<h3>Walking through the first sentence</h3>
+<p><em>tabemashita</em> carries $ on its base (it's the AP we're stressing). The derivation (p. 6):</p>
+<ol>
+  <li><em>dōnatsu o</em> merges with <em>$tabemashita</em>. It is the <strong>left daughter</strong> here — it merges <em>rightward</em>, pairing directly with the stressed AP on its right. Concatenation gives <code>|dōnatsuo|$tabemashita</code>; $-propagation copies $ to the leftmost AP, which is now <em>dōnatsu o</em>: <code>|$dōnatsuo|$tabemashita</code>.</li>
+  <li><em>yumi ga</em> merges with that string, again as the left daughter. Concatenation: <code>|yumiga|$dōnatsuo|$tabemashita</code>; $-propagation copies $ to <em>yumi ga</em>: <code>|$yumiga|$dōnatsuo|$tabemashita</code>.</li>
+</ol>
+<p>All three APs end up stressed. Because <em>dōnatsu o</em> merges rightward — straight onto the stressed verb — it becomes the leftmost AP at its merge and cannot avoid the propagated $. The reading with <em>dōnatsu o</em> unstressed is illformed.</p>
 
-<p>In the second sentence (<em>oishi dōnatsu o tabemashita</em>), the middle AP merges <em>leftward</em> into the structure. An AP that merges leftward belongs to the same $-span as the AP to its left that it merges with — it does not itself hold a $-slot. So when $ is placed only on <em>tabemashita</em>, $-propagation adds $ to the token that has the $-slot, but <em>dōnatsu o</em> — merging leftward — can evade stress. The reading with <em>tabemashita</em> stressed and <em>dōnatsu o</em> unstressed is wellformed. (<em>Concatenation</em>, p. 6; see also $-slot definition in <em>Version Seven</em>, p. 1.)</p>
+<h3>Walking through the second sentence</h3>
+<p>Same base $ on <em>tabemashita</em>. But the tree is different (p. 7):</p>
+<ol>
+  <li><em>oishi</em> merges with <em>dōnatsu o</em> first. Here <em>dōnatsu o</em> is the <strong>right daughter</strong> — it merges <em>leftward</em>, with <em>oishi</em> on its left. Concatenation gives <code>|oishi|dōnatsuo</code>. There is no $ anywhere in this string yet, so $-propagation has nothing to copy.</li>
+  <li>The constituent <code>|oishi|dōnatsuo</code> merges with <em>$tabemashita</em>. Concatenation: <code>|oishi|dōnatsuo|$tabemashita</code>; $-propagation copies $ to the leftmost AP — which is <em>oishi</em>: <code>|$oishi|dōnatsuo|$tabemashita</code>.</li>
+</ol>
+<p><em>dōnatsu o</em> is now stuck in the middle. It was bundled under <em>oishi</em> before the verb's $ ever showed up, and when the $ does propagate, <em>oishi</em> — not <em>dōnatsu o</em> — is the leftmost AP that catches it. So <em>dōnatsu o</em> is skipped. The wellformed reading has <em>oishi</em> and <em>tabemashita</em> stressed and <em>dōnatsu o</em> unstressed.</p>
 
-<h3>Why I find this useful as a test</h3>
-<p>Before reading <em>Concatenation</em>, I thought of stress mostly as something you assigned to an AP and then propagated by rule, roughly following $-theory in <em>Proposing</em>. What the dōnatsu pair makes concrete is that the <em>direction</em> of merging is a structural claim with a phonological consequence you can actually hear and test. If two sentences feel different in which stress patterns are natural, that difference may be telling you something about how the APs in those sentences were built.</p>
+<h3>What I got wrong at first — and the real lesson</h3>
+<p>My first instinct was to say sentence 1 "has all three APs merging rightward." That can't be right, and seeing why fixed my understanding. Merge is binary: the rightmost AP is always a right daughter, so you can never have three APs all merging in one direction. What actually decides the stress facts is the branching, and in particular whether <em>dōnatsu o</em> is a left daughter or a right daughter.</p>
+<ul>
+  <li>In sentence 1, <em>dōnatsu o</em> <strong>merges rightward</strong> — it pairs directly with the stressed <em>tabemashita</em> and becomes the leftmost AP, so the propagated $ lands on it.</li>
+  <li>In sentence 2, <em>dōnatsu o</em> <strong>merges leftward</strong> — it is bundled under <em>oishi</em>, which shields it; when $ propagates, it lands on <em>oishi</em> instead.</li>
+</ul>
+<p>This is exactly what the paper states: "a leftward-merging AP … may evade stress even when an AP on the right is stressed" (<em>Concatenation</em>, p. 6), and "APs that merge leftwards will not receive stress unless $ is assigned there on the base" (p. 8). The "evasion" isn't a special rule for leftward APs — it falls straight out of <em>where each AP sits when <code>|X$Y : |$X$Y</code> fires</em>.</p>
 
-<p>I can use this as a self-check. When I'm deciding how to spell something in Kyouro and I'm unsure about the structure, I can ask: does the prosody I'm predicting match the stress patterns I find natural? If stressing only the verb sounds fine for one sentence but forced for another, that's a signal about merge direction — not just stylistic variation.</p>
-
-<h3>The step I had to take carefully</h3>
-<p>The paper is careful to note that $-theory predicts the rightmost stressed AP implies all APs on its left are also stressed, while a leftward-merging AP may evade stress even when the AP on its right is stressed. These are different cases, and it's easy to conflate them. What helps me keep them apart is writing the tree out: if I draw |X̄ |Ȳ |Z̄, I know $ on Z propagates through Y to X. If I draw a structure where Y merges leftward, I know Y may not receive $. The spelled-out structure is doing real work here, not just decoration.</p>
+<h3>Why I find this useful</h3>
+<p>Before this, I treated stress as something you checked after a sentence was assembled. The dōnatsu pair shows it's built into the derivation: each merge is a chance for $-propagation to fire, and whether it reaches a given AP depends on whether that AP merged leftward or rightward — i.e., on the constituency. So when two sentences differ in which stress patterns feel natural, that difference can be read as evidence about how their APs are bracketed. Same words in a row, different tree, different stress.</p>
 
 <h3>Sources</h3>
 <ul>
-  <li><a href="sources/Concatenation.pdf">Concatenation.pdf</a> — Sections 5–6 are where the $-propagation rule and the dōnatsu examples are worked through.</li>
-  <li><a href="sources/Version Seven.pdf">Version Seven.pdf</a> — $-slot and $-span definitions (p. 1–2) are needed to understand what $-propagation is propagating into.</li>
-  <li><a href="sources/Proposing a new romanization system of Japanese (book).pdf">Proposing a New Romanization System of Japanese (book).pdf</a> — the original $-theory context (p. scholarship) and the nF rule (p. 42).</li>
+  <li><a href="sources/Concatenation.pdf">Concatenation.pdf</a> — Section 4 (concatenation), Section 5 ($-propagation and the dōnatsu derivations, pp. 5–7), and the leftward-merging remark on p. 8.</li>
+  <li><a href="sources/Proposing a new romanization system of Japanese (book).pdf">Proposing a New Romanization System of Japanese (book).pdf</a> — the original $-theory context.</li>
+  <li><a href="sources/Version Seven.pdf">Version Seven.pdf</a> — stress definition (a syllable is stressed iff it bears its AP's final R, p. 1).</li>
 </ul>
 
-<p>That's where I am with this. It's one of the clearest examples I've found where a structural choice has a directly testable prosodic consequence. — Yumi</p>
+<p>The fix for me was drawing the two trees side by side and asking, at each merge, "which AP is leftmost right now?" Once I did that, the contrast stopped being a rule to memorize and became something I could re-derive. — Yumi</p>

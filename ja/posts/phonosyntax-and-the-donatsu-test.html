@@ -1,39 +1,59 @@
 <p><strong>ドーナツの文が教えてくれたこと — ストレスと構造の関係</strong></p>
 
-<p>こんにちは、ユミです。新しい <em>Concatenation</em> 論文のセクション5に、ずっと頭から離れない文のペアがあります。一方には私の名前が入っていて、それで一度立ち止まって、それから言語学的な論点でもう一度立ち止まりました。</p>
+<p>こんにちは、ユミです。<em>Concatenation</em> 論文のセクション5に、頭から離れない文のペアがあります。片方には私の名前が入っていて、それで一度立ち止まりました。それから言語学的な論点でもう一度、もっと強く立ち止まりました——最初の読み方が間違っていたからです。</p>
 
-<h3>二つの文</h3>
-<p>どちらも、三つのアクセント句（AP）が合流する構造です。論文はこの二文を例として挙げています：</p>
+<h3>対比する二文</h3>
+<p>どちらも三つのアクセント句（AP）からなります（<em>Concatenation</em>, pp. 6–7）：</p>
 <ul>
   <li><em>yumi ga dōnatsu o tabemashita</em>（「まさにユミが、まさにドーナツを食べた」）</li>
   <li><em>oishi dōnatsu o tabemashita</em>（「おいしいドーナツを食べた」）</li>
 </ul>
-<p>どちらも右端の動詞は <em>tabemashita</em> です。問いはこうです：<em>tabemashita</em> にストレスを置き、<em>dōnatsu o</em> を非強調にする読みは、それぞれの文で許容されるか？</p>
-<p>最初の文では許容されません。二番目の文では許容されます。この差は、中間 AP のマージ方向を踏まえると、$-伝播（$-propagation）から自然に出てくる、と論文は言います（<em>Concatenation</em>, p. 6）。</p>
+<p>テストはこうです：<em>tabemashita</em> を強調しつつ <em>dōnatsu o</em> を非強調のままにできるか？ 最初の文では不可——その読みは非許容形です。二番目の文では可——許容形です。論文は、それぞれの文のツリー構造を踏まえれば、この差が $-伝播（$-propagation）だけから導けると示します。</p>
 
-<h3>$-伝播とは何か</h3>
-<p>$-伝播は <em>Concatenation</em>（セクション5）で、AP 境界と、その直後の $ を含む文字列を入力とし、最初の AP 境界の直後に $ を挿入するサブルーティンとして定義されています。形式的には |$XY : |$X$Y。平たく言えば、すでに強調済みの文字列が大きな文字列にマージされるとき、$ が「伝播」して左隣の AP に届く、ということです。</p>
+<h3>$-伝播の仕組み</h3>
+<p>セクション5は $-伝播をこのサブルーティンとして定義します：</p>
+<blockquote><code>|X$Y : |$X$Y</code></blockquote>
+<p>読み方：<code>|</code> で始まり、どこかに <code>$</code> を含む文字列を受け取り、最初の <code>|</code> の直後に <code>$</code> を挿入する。つまり<strong>文字列の最左の AP</strong> にストレスをコピーします。適用はマージごとに一度、連結（concatenation）の直後です。肝心なのは<em>最左</em>という点：一回の適用が届くのはちょうど一つの AP、その瞬間に文字列の先頭にいる AP だけです。</p>
 
-<p>これはマージのたびに起こるので、右向きにマージする AP が連続していれば、右端に置かれた $ は左へ左へと伝播し、すべての AP に $ が付きます。つまり、動詞だけにストレスを置いて他には何も置かない、という読みを実現するには、どこかでこの伝播を断ち切る必要があります。</p>
+<h3>結局は構成素の問題</h3>
+<p>二文は異なる二項マージで組み立てられます。三 AP の文にはマージがちょうど二回あり、各マージに左娘と右娘がいます——つまり三つの AP は平らに並んだ列<em>ではありません</em>。枝分かれが違うのです：</p>
+<ul>
+  <li><strong>最初の文は右枝分かれ：</strong> <code>[yumi ga [dōnatsu o tabemashita]]</code>。<em>dōnatsu o</em> と <em>tabemashita</em> が先に構成素を作ります。</li>
+  <li><strong>二番目の文は左枝分かれ：</strong> <code>[[oishi dōnatsu o] tabemashita]</code>。<em>oishi</em> と <em>dōnatsu o</em> が先に構成素を作ります。</li>
+</ul>
 
-<h3>なぜマージの方向が重要なのか</h3>
-<p>論文（p. 6）はこの区別を導入します：構造 |X |Y |Z における左向きマージの AP（|Y のように書かれる）は、右向きマージの AP とは異なる形でツリーに組み込まれます。最初の文（<em>yumi ga dōnatsu o tabemashita</em>）の構造は |X̄ |Ȳ |Z̄ — 三つの AP が全員右向きにマージ。<em>tabemashita</em> への $ 付与は伝播して <em>dōnatsu o</em> へ、さらに <em>yumi ga</em> へと達します。動詞だけにストレスを置くことはできません。</p>
+<h3>最初の文をたどる</h3>
+<p><em>tabemashita</em> は基底に $ を持ちます（これが強調する AP です）。派生（p. 6）：</p>
+<ol>
+  <li><em>dōnatsu o</em> が <em>$tabemashita</em> にマージ。ここで <em>dōnatsu o</em> は<strong>左娘</strong>です——右隣にある強調済みの AP と直接組む、<em>右向き</em>のマージです。連結で <code>|dōnatsuo|$tabemashita</code>、$-伝播が最左の AP（いまや <em>dōnatsu o</em>）に $ をコピー：<code>|$dōnatsuo|$tabemashita</code>。</li>
+  <li><em>yumi ga</em> がその文字列にマージ、これも左娘。連結で <code>|yumiga|$dōnatsuo|$tabemashita</code>、$-伝播が <em>yumi ga</em> に $ をコピー：<code>|$yumiga|$dōnatsuo|$tabemashita</code>。</li>
+</ol>
+<p>三つの AP すべてが強調されます。<em>dōnatsu o</em> は右向きにマージする——強調済みの動詞に直接つく——ので、そのマージで最左の AP になり、伝播してくる $ を避けられません。<em>dōnatsu o</em> を非強調にする読みは非許容形です。</p>
 
-<p>二番目の文（<em>oishi dōnatsu o tabemashita</em>）では、中間 AP が<em>左向き</em>にマージします。左向きにマージする AP は、マージ先の AP と同じ $-スパンに属し、自身の $-スロットを持ちません（<em>Version Seven</em>, p. 1 の $-スロット定義を参照）。そのため、$ が <em>tabemashita</em> にのみ付与されたとき、$-伝播は $-スロットを持つ AP には届きますが、<em>dōnatsu o</em> — 左向きマージ — はストレスを回避できます。<em>tabemashita</em> が強調されて <em>dōnatsu o</em> が非強調の読みは、許容形です（<em>Concatenation</em>, p. 6）。</p>
+<h3>二番目の文をたどる</h3>
+<p>同じく <em>tabemashita</em> に基底の $。しかしツリーが違います（p. 7）：</p>
+<ol>
+  <li><em>oishi</em> が <em>dōnatsu o</em> に先にマージ。ここで <em>dōnatsu o</em> は<strong>右娘</strong>です——左隣の <em>oishi</em> と組む、<em>左向き</em>のマージです。連結で <code>|oishi|dōnatsuo</code>。この文字列にはまだ $ がどこにもないので、$-伝播はコピーすべきものを持ちません。</li>
+  <li>構成素 <code>|oishi|dōnatsuo</code> が <em>$tabemashita</em> にマージ。連結で <code>|oishi|dōnatsuo|$tabemashita</code>、$-伝播が最左の AP——すなわち <em>oishi</em>——に $ をコピー：<code>|$oishi|dōnatsuo|$tabemashita</code>。</li>
+</ol>
+<p><em>dōnatsu o</em> は真ん中に取り残されます。動詞の $ が現れる前に <em>oishi</em> の下に束ねられており、いざ $ が伝播しても、それを受け取る最左の AP は <em>dōnatsu o</em> ではなく <em>oishi</em> です。だから <em>dōnatsu o</em> は飛ばされます。許容形の読みは、<em>oishi</em> と <em>tabemashita</em> が強調され、<em>dōnatsu o</em> が非強調です。</p>
 
-<h3>これが検証として使えると思う理由</h3>
-<p><em>Concatenation</em> を読む前、私はストレスを「AP に割り当てて規則で伝播させるもの」として漠然と捉えていました。ドーナツのペアが具体化してくれたのは、マージの<em>方向</em>が構造上の主張であり、実際に耳で確かめられる音声的な帰結を持つ、という点です。二つの文でどちらのストレスパターンが自然に感じられるかが異なるなら、その差は AP の構造の違いを示しているかもしれない。</p>
+<h3>最初に間違えたこと——そして本当の教訓</h3>
+<p>最初の私は、最初の文を「三つの AP がすべて右向きにマージする」と言いたくなりました。それはあり得ません。そして、なぜあり得ないかを見たことで理解が直りました。マージは二項です：最右の AP は必ず右娘なので、三つの AP が全部同じ方向にマージすることは決してありません。ストレスの事実を決めるのは枝分かれであり、とりわけ <em>dōnatsu o</em> が左娘か右娘かです。</p>
+<ul>
+  <li>最初の文では <em>dōnatsu o</em> は<strong>右向きにマージ</strong>——強調済みの <em>tabemashita</em> に直接つき、最左の AP になるので、伝播した $ が乗ります。</li>
+  <li>二番目の文では <em>dōnatsu o</em> は<strong>左向きにマージ</strong>——<em>oishi</em> の下に束ねられて遮蔽され、$ が伝播するときは代わりに <em>oishi</em> に乗ります。</li>
+</ul>
+<p>これはまさに論文の記述どおりです：「左向きにマージする AP は、右の AP が強調されていてもストレスを回避し得る」（<em>Concatenation</em>, p. 6）、「左向きにマージする AP は、基底で $ が割り当てられない限りストレスを受けない」（p. 8）。この「回避」は左向き AP のための特別規則ではありません——<code>|X$Y : |$X$Y</code> が適用される瞬間に<em>各 AP がどこにいるか</em>から直接出てきます。</p>
 
-<p>これを自分への確認手段として使えます。Kyouro で何かを綴るとき、構造に迷ったら自問できます：予測したプロソディは、私が自然だと感じるストレスパターンと合っているか？ある文では動詞だけのストレスが自然で、別の文では無理に聞こえるなら、それはマージ方向についての手がかりです。単なる文体的な揺れではなく。</p>
-
-<h3>注意が必要だったステップ</h3>
-<p>論文は、$-理論が「右端の強調 AP は、左側のすべての AP も強調されることを含意する」と予測すること、そして左向きマージの AP は右隣が強調されてもストレスを回避し得ること、という二つのケースを慎重に区別しています。混同しやすい箇所ですが、ツリーを書き出すと整理できます。|X̄ |Ȳ |Z̄ と書けば、Z への $ が Y を経て X に届くとわかります。Y が左向きにマージする構造なら、Y は $ を受け取らないかもしれないとわかります。書き出した構造が実際の仕事をしているのです。</p>
+<h3>これが役に立つと思う理由</h3>
+<p>これまで私は、ストレスを「文が組み上がってから照合するもの」として扱っていました。ドーナツのペアは、それが派生の中に組み込まれていることを示します。各マージが $-伝播の発火機会であり、ある AP に届くかどうかは、その AP が左向きにマージしたか右向きにマージしたか——つまり構成素の組み方——によります。だから二つの文でどちらのストレスパターンが自然に感じられるかが異なるなら、その差は AP の括られ方についての証拠として読めます。同じ語の並び、違うツリー、違うストレス。</p>
 
 <h3>出典</h3>
 <ul>
-  <li><a href="../sources/Concatenation.pdf">Concatenation.pdf</a>（セクション5–6が $-伝播の規則とドーナツの例を詳述しています）</li>
-  <li><a href="../sources/Version Seven.pdf">Version Seven.pdf</a>（$-スロットと $-スパンの定義、pp. 1–2）</li>
-  <li><a href="../sources/Proposing a new romanization system of Japanese (book).pdf">Proposing a New Romanization System of Japanese (book).pdf</a>（$-理論の元の文脈および nF 規則 p. 42）</li>
+  <li><a href="../sources/Concatenation.pdf">Concatenation.pdf</a>（セクション4：連結、セクション5：$-伝播とドーナツの派生図 pp. 5–7、左向きマージの言及は p. 8）</li>
+  <li><a href="../sources/Proposing a new romanization system of Japanese (book).pdf">Proposing a New Romanization System of Japanese (book).pdf</a>（$-理論の元の文脈）</li>
+  <li><a href="../sources/Version Seven.pdf">Version Seven.pdf</a>（ストレスの定義：AP の最終 R を担う音節が強調される、p. 1）</li>
 </ul>
 
-<p>今日はここまでです。構造の選択が聞いて確かめられるプロソディの帰結を持つ、という点が一番鮮明に見えた例でした。— ユミ</p>
+<p>私にとっての解決は、二つのツリーを並べて描き、各マージで「いま最左の AP はどれか」と問うことでした。そうすると、この対比は暗記すべき規則ではなく、自分で導き直せるものになりました。— ユミ</p>
